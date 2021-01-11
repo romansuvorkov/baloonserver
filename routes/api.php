@@ -27,3 +27,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('{model}', 'App\Http\Controllers\TestController@index');
 
 Route::get('{model}/{id}', 'App\Http\Controllers\TestController@lazyLoad');
+
+Route::post('test', 'App\Http\Controllers\OrderController@order');

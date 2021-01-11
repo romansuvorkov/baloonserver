@@ -8,6 +8,7 @@ export default class API {
       return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.open('GET', `${this.server}/${address}`);
+        xhr.setRequestHeader('X-CSRF-TOKEN', window.csrfToken);
         xhr.addEventListener('load', () => {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
@@ -27,6 +28,7 @@ export default class API {
         return new Promise((resolve, reject) => {
           const xhr = new XMLHttpRequest();
           xhr.open('GET', `${this.server}/${address}/${number}`);
+          xhr.setRequestHeader('X-CSRF-TOKEN', window.csrfToken);
           xhr.addEventListener('load', () => {
             if (xhr.readyState === 4) {
               if (xhr.status === 200) {
@@ -40,6 +42,24 @@ export default class API {
           });
           xhr.send();
         });
+    }
+
+    sendOrder(text, email) {
+      return new Promise((resolve, reject) => {
+        const params = new URLSearchParams();
+        params.append('text', text);
+        params.append('email', email);
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', `${this.server}/test`);
+        xhr.setRequestHeader('X-CSRF-TOKEN', window.csrfToken);
+        xhr.addEventListener('load', () => {
+          if (xhr.status === 204) {
+            return resolve(xhr.responseText);
+          }
+          return reject(xhr.responseText);
+        });
+        xhr.send(params);
+      });
     }
   
 }

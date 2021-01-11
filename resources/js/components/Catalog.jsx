@@ -74,7 +74,7 @@ function Catalog(props) {
           {items.map(o => (
             <CatalogCard key={o.id} descr={o} setter={setActiveImage}/>
           ))}
-          <BigImage setter={setActiveImage} img={activeImage} />      
+          <BigImage setter={setActiveImage} img={activeImage} api={API}/>      
         </div>
         {showButtonActive && <button className="show_more_btn" onClick={handleMoreClick}>Ещё</button>}   
       </div>
