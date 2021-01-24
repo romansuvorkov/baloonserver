@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import CatalogCard from './CatalogCard';
 import BigImage from './BigImage';
+import Description from './Description';
 import Api from '../api/API';
 
 function Catalog(props) {
@@ -12,6 +13,7 @@ function Catalog(props) {
   const category = props.category;
   const API = new Api;
   // const category = 'test';
+  let screenWidth = 0;
 
   React.useEffect( () => {
     // setItems(await API.getAllItems(category));
@@ -19,7 +21,7 @@ function Catalog(props) {
     // console.log(category);
     setItems([]);
     setLastItem(5);
-    let screenWidth = window.screen.width;
+    screenWidth = window.screen.width;
     if (screenWidth < 1024) {
       // console.log('work123123');
       // console.log(lastItem);
@@ -70,11 +72,12 @@ function Catalog(props) {
     return (
       <div className="catalog_wrapper">
         <h2 className="header2" id="catalog_start">{props.header}</h2>
+        <Description />
         <div className="catalog_list_wrapper">
           {items.map(o => (
             <CatalogCard key={o.id} descr={o} setter={setActiveImage}/>
           ))}
-          <BigImage setter={setActiveImage} img={activeImage} api={API}/>      
+          <BigImage setter={setActiveImage} screen={screenWidth} img={activeImage} api={API}/>      
         </div>
         {showButtonActive && <button className="show_more_btn" onClick={handleMoreClick}>Ещё</button>}   
       </div>

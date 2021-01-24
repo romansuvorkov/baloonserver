@@ -44,10 +44,11 @@ export default class API {
         });
     }
 
-    sendOrder(text, email) {
+    sendOrder(name, phone, email) {
       return new Promise((resolve, reject) => {
         const params = new URLSearchParams();
-        params.append('text', text);
+        params.append('name', name);
+        params.append('phone', phone);
         params.append('email', email);
         const xhr = new XMLHttpRequest();
         xhr.open('POST', `${this.server}/test`);

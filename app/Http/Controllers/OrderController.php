@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\SMTP;
+// use PHPMailer\PHPMailer\Exception;
+// require 'vendor/autoload.php';
+// require 'PHPMailer/src/Exception.php';
+// require 'PHPMailer/src/PHPMailer.php';
+// require 'PHPMailer/src/SMTP.php';
 
 class OrderController extends Controller
 {
@@ -18,35 +22,71 @@ class OrderController extends Controller
     
     public function order(Request $request)
     {
-        $text = $request->text;
+        $name = $request->name;
+        $phone = $request->phone;
         $email = $request->email;
+        $arr = array(
+            'Имя заказчика: ' => $name,
+            'Телефон: ' => $phone,
+            'Email: ' => $email
+        );
 
-        require 'PHPMailer/vendor/autoload.php';
-        $mail = new PHPMailer(true);
+        // $message = "Имязаказчикаntktajy";
+        // $txt = "tryrty zds fsf < dsf  >sdf ds ,rty";
+        // $txt1 = urlencode($txt);
+        // $txt1 = mb_convert_encoding($txt, 'ASCII');
+        // $txt2 = mb_detect_encoding($txt1);
+        // $txt = "Имя заказчика: ".$name.", Телефон: ".$phone.", Email: ".$email;
+        // $txt = $name.$phone.$email;
+        $txt = "";
+        foreach($arr as $key => $value) {
+            $txt .= $key.$value."\n";
+            // $txt .= "<b>".$key."</b> ".$value."%0A";
+        };
+        $txt1 = urlencode($txt);
+        // return $txt1;
+        $token = "1529131917:AAEKpyR6-R_yJESgArdJcxtDQ9ESmk1Iq5M";
+        $chat_id = "854476836";
+        $test123123 = "https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}parse_mode=html&text={$txt1}";
+        // $test123 = html_entity_decode($test123123);
+        $sendToTelegram = fopen($test123123,"r");
+        // $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt1}","r");
 
-        try {
-            //Server settings
-            $mail->SMTPDebug = 0;                      // Enable verbose debug output
-            $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = '';                    // Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = '';                     // SMTP username
-            $mail->Password   = '';                               // SMTP password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-            $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-
-            //Recipients
-            $mail->setFrom('from@example.com', 'Mailer');
-            $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-            $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-
-            $mail->send();
-            return response(null, 204);
-        } catch (Exception $e) {
-            return $mail->ErrorInfo;
+        if ($sendToTelegram) {
+            return 'Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.';
+        } else {
+            return 'Что-то пошло не так. Попробуйте отправить форму ещё раз.';
         }
+
+        // require '../vendor/autoload.php';
+
+        // $mail = new PHPMailer(true);
+
+        // try {
+        //     return response(null, 204);
+        //     //Server settings
+        //     $mail->SMTPDebug = 0;                      // Enable verbose debug output
+        //     $mail->isSMTP();                                            // Send using SMTP
+        //     $mail->Host       = 'smtp.mail.ru';                    // Set the SMTP server to send through
+        //     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+        //     $mail->Username   = '';                     // SMTP username
+        //     $mail->Password   = '';                               // SMTP password
+        //     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+        //     $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+        //     //Recipients
+        //     $mail->setFrom($email, 'Тестовый заказ Laravel');
+        //     $mail->addAddress('');      // Add a recipient
+        //     $mail->addAddress('');    
+        //     $mail->isHTML(true);                                  // Set email format to HTML
+        //     $mail->Subject = 'Here is the subject';
+        //     $mail->Body    = $text;
+
+        //     $mail->send();
+        //     return response(null, 204);
+        // } catch (Exception $e) {
+        //     return $mail->ErrorInfo;
+        // }
 
 
         return response(null, 204);

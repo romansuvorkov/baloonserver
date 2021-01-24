@@ -15,7 +15,7 @@ function CatalogCard(props) {
           </div>
           <div className="catalog_card_info">
             <div className="catalog_card_text_wrapper"><span className="catalog_card_text">{props.descr.description}</span></div>
-            <span className="catalog_card_price">{props.descr.price}</span>
+            <span className="catalog_card_price">Цена:{props.descr.price} руб.</span>
           </div>
         </div>
     );
