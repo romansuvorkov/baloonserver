@@ -42,7 +42,8 @@ function HeaderMenu() {
                 <Link className="mobile_menu_link link" to="/bouqet#catalog_start" onClick={handleClick}>Букеты из шаров</Link>
             </nav>
         </div>
-        <span className="phone">+88888888</span>
+        <span className="phone phone_text">+79521381601</span>
+        <a className="phone phone_link" href="tel:+79521381601">+79521381601</a>
         </header>
     );
   }

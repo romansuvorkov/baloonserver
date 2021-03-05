@@ -6,7 +6,8 @@ function Footer() {
       <footer className="main_footer">
         <h2 className="header2">Контакты</h2>
         <div className="footer_wrapper">
-          <span className="phone">+88888888</span>
+          <span className="phone phone_text">+79521381601</span>
+          <a className="phone phone_link" href="tel:+79521381601">+79521381601</a>
           <span className="city">г. Каменск-Уральский</span>
           <div className="footer_social">
                 <ul className="socials">

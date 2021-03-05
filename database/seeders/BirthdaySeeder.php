@@ -16,60 +16,60 @@ class BirthdaySeeder extends Seeder
     {
         DB::table('birthday')->insert([
             'img' => 'images/birthday1.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала воздушными шарами из 124 шаров',
             'price' => 1000,
         ]);
 
         DB::table('birthday')->insert([
             'img' => 'images/birthday2.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала шариками с обработкой hi-float',
             'price' => 1000,
         ]);
 
         DB::table('birthday')->insert([
             'img' => 'images/birthday3.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала на день рождения шариками с обработкой hi-float',
             'price' => 1000,
         ]);
 
         DB::table('birthday')->insert([
             'img' => 'images/birthday4.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала на день рождения шариками с обработкой hi-float',
             'price' => 1000,
         ]);
 
         DB::table('birthday')->insert([
             'img' => 'images/birthday5.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала на день рождения шариками с обработкой hi-float',
             'price' => 1000,
         ]);
         DB::table('birthday')->insert([
             'img' => 'images/birthday1.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала на день рождения шариками с обработкой hi-float',
             'price' => 1000,
         ]);
 
         DB::table('birthday')->insert([
             'img' => 'images/birthday2.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала на день рождения шариками с обработкой hi-float',
             'price' => 1000,
         ]);
 
         DB::table('birthday')->insert([
             'img' => 'images/birthday3.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала на день рождения шариками с обработкой hi-float',
             'price' => 1000,
         ]);
 
         DB::table('birthday')->insert([
             'img' => 'images/birthday4.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала на день рождения шариками с обработкой hi-float',
             'price' => 1000,
         ]);
 
         DB::table('birthday')->insert([
             'img' => 'images/birthday5.jpg',
-            'description' => 'Тестовое описание',
+            'description' => 'Украшение зала на день рождения шариками с обработкой hi-float',
             'price' => 1000,
         ]);
         DB::table('birthday')->insert([

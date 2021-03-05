@@ -41,9 +41,13 @@ function BigImage(props) {
           <div className="bi_interface">
             <span className="order_form_desrc"><span className="fat_font">Сделайте заказ</span><br/> удобным Вам способом:</span>
             <div className="big_image_interface">
-              <span className="order_mail_btn order_btn">Email</span>
-              <span className="order_wsapp_btn order_btn">WhatsApp</span>
+              <a href="https://wa.me/79521381601?text=Тестовый+текст" target="_blank" rel="noreferrer" className="order_link order_wsapp_btn order_btn">WhatsApp</a>
+              <a className="order_mail_btn order_btn order_link"
+                href="mailto:centr_ug@mail.ru?subject=Игрушка с метрикой лев &body=Здравствуйте!%0AПрошу направить предложение по макетам для игрушки - лев.%0A%0A%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШЕ ИМЯ%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШ ТЕЛЕФОН%0A%0A%0AВ ответном письме Вы получите варианты макетов. Любой из макетов может быть изменен по Вашему желанию."
+                target="_blank"
+              >Email</a>
               <span className="order_phone order_btn">888888888</span>
+              <a className="order_btn phone_link order_link" href="tel:+79521381601">+79521381601</a>
               <span className="order_by_form order_btn" onClick={handleFormClick}>Заказать звонок</span>
             </div>
             {isActive && <form className="order_form" method="POST" onSubmit={(e) => handleSubmit(e)}>

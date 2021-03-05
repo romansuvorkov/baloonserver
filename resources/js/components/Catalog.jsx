@@ -7,53 +7,27 @@ import Api from '../api/API';
 function Catalog(props) {
   const [activeImage, setActiveImage] = useState('');
   const [lastItem, setLastItem] = useState(5);
-  // let lastItem = 0;
   const [items, setItems] = useState([]);
   const [showButtonActive, setShowButtonActive] = useState(true);
   const category = props.category;
   const API = new Api;
-  // const category = 'test';
   let screenWidth = 0;
 
   React.useEffect( () => {
-    // setItems(await API.getAllItems(category));
-    // console.log('work');
-    // console.log(category);
     setItems([]);
     setLastItem(5);
     screenWidth = window.screen.width;
-    if (screenWidth < 1024) {
-      // console.log('work123123');
-      // console.log(lastItem);
+    if (screenWidth <= 1024) {
       setShowButtonActive(true);
-      // setItems(API.lazyload(category, lastItem));
       const loadedItems = API.lazyload(category, 0).then(function(value) {
-        // setLastItem(lastItem + 5);
-        // lastItem = lastItem + 5;
-        setItems(prevState => ([...prevState, ...value])); // Успех!
-        // setTables(prevState => ({...prevState, ...prevState[activeTable].orderer = ''}));
-        // console.log(items.length);
-        // console.log(items.length);
+        setItems(prevState => ([...prevState, ...value]));
       });
-      // setItems(await API.lazyload(category, 3));
     } else {
       setShowButtonActive(false);
-      // setItems(API.getAllItems(category));
       const loadedItems = API.getAllItems(category).then(function(value) {
-        setItems(value); // Успех!
+        setItems(value);
       });
-      // const test = API.getAllItems(category).then(function(value) {
-      //   setItems(value);
-      // });
-      // setItems(await API.getAllItems(category));
     }
-    // console.log(window.screen.width);
-    // setItems(await API.lazyload(category, 2));
-    // setItems(await API.getAllItems(category));
-    // Api.getAllPosts(category).then(res => {
-    //   console.log(res.data.data);
-    //   setItems(res.data.data);
-    // })
   }, [category]);
 
   const handleMoreClick = () => {
@@ -63,10 +37,6 @@ function Catalog(props) {
       }
       setItems(prevState => ([...prevState, ...value])); // Успех!
     });
-    console.log(items.length);
-    // lastItem = lastItem + 5;
-    // setLastItem(items.length);
-    console.log(lastItem);
   }
 
     return (
