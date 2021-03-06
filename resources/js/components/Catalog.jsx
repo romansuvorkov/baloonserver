@@ -35,7 +35,7 @@ function Catalog(props) {
       if (value.length < 5) {
         setShowButtonActive(false);
       }
-      setItems(prevState => ([...prevState, ...value])); // Успех!
+      setItems(prevState => ([...prevState, ...value]));
     });
   }
 

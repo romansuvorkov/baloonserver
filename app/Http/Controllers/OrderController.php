@@ -24,11 +24,11 @@ class OrderController extends Controller
     {
         $name = $request->name;
         $phone = $request->phone;
-        $email = $request->email;
+        $messenger = $request->messenger;
         $arr = array(
             'Имя заказчика: ' => $name,
             'Телефон: ' => $phone,
-            'Email: ' => $email
+            'Мессенджер: ' => $messenger
         );
 
         // $message = "Имязаказчикаntktajy";
@@ -89,6 +89,6 @@ class OrderController extends Controller
         // }
 
 
-        return response(null, 204);
+        // return response(null, 204);
     }
 }
