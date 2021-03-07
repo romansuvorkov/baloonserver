@@ -1190,6 +1190,10 @@ body {
     font-size: 30px;
   }
 
+  .input_field {
+    font-size: 20px;
+  }
+
   .phone_link {
     display: none;
   }
@@ -1414,6 +1418,10 @@ body {
     margin-top: 0;
   }
 
+  .catalog_img_wrapper {
+    cursor: pointer;
+  }
+
   .big_image_wrapper {
     font-size: 35px;
     width: 70%;
@@ -1450,6 +1458,10 @@ body {
 
   .order_wsapp_btn {
     display: none;
+  }
+
+  .order_form {
+    margin-bottom: 10px;
   }
 
   .main_footer {

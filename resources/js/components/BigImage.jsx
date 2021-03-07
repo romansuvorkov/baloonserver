@@ -5,6 +5,7 @@ function BigImage(props) {
 
     const [isActive, setIsActive] = useState(false);
     const [isError, setIsError] = useState(false);
+    const [errorText, setErrorText] = useState('');
     const setImage = props.setter;
     const API = props.api;
     // const screenWidth = props.screen;
@@ -23,6 +24,25 @@ function BigImage(props) {
       e.preventDefault();
       const clientName = orderCall.name;
       const clientPhone = orderCall.phone;
+      if (clientName.length === '') {
+        setIsError(true);
+        setErrorText('Поле с именем должно быть заполнено');
+        return;
+      }
+      if (clientPhone.length === '') {
+        setIsError(true);
+        setErrorText('Поле с телефоном должно быть заполнено');
+        return;
+      }
+      if (clientName.search(/^[A-ЯЁ][а-яё]+/) == -1) {
+        setIsError(true);
+        setErrorText('Для ввода имени допускаются только кириллические символы');
+        return;
+      }
+      if (clientName.search(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/) == -1) {
+        setIsError(true);
+        setErrorText('Телефон должен быть введен в формате +7ХХХХХХХХ');
+      }
       if (clientPhone.search(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/) !== -1 
           && clientName.search(/^[A-ЯЁ][а-яё]+/) !== -1) {
         const order = await API.sendOrder(clientName, clientPhone, messenger);
@@ -40,10 +60,11 @@ function BigImage(props) {
     }
 
     const handleChange = (e) => {
+      setIsError(false);
       const { name, value } = e.target;
-      if (value.length > 20) {
+      if (value.length > 30) {
         setIsError(true);
-        console.log("work");
+        setErrorText('Длина имени не может быть более 30 символов');
         return;
       } else {
         setIsError(false);
@@ -82,9 +103,9 @@ function BigImage(props) {
             </div>
             {isActive && <form className="order_form" method="POST" onSubmit={(e) => handleSubmit(e)}>
               <label className="input_label" htmlFor="name_input">Ваше имя</label>
-              <input className="input_field" type="text" name="name" onChange={(e) => handleChange(e)}/>
+              <input className="input_field" type="text" required name="name" onChange={(e) => handleChange(e)}/>
               <label className="input_label" htmlFor="phone_input">Телефон</label>
-              <input className="input_field" type="number" name="phone" onChange={(e) => handleChange(e)} />
+              <input className="input_field" type="number" required name="phone" onChange={(e) => handleChange(e)} />
               <span className="radio_qestion">Связаться с Вами через мессенджер?</span>
               <div className="radio_wrapper">
               <input type="radio" id="messengersChoice1" name="messengers" value="Telegramm" onClick={(e) => handleRadio(e)}/>
@@ -100,7 +121,7 @@ function BigImage(props) {
                   onClick={() => setMessenger('telegramm')}
                 />  */}
               </div>
-              {isError && <p>Максимальная длина имени 20 символов</p>}
+              {isError && <p>{errorText}</p>}
               {/* <label className="input_label" htmlFor="email_input">Email</label>
                <input className="input_field" type="email" name="email_input" id="email_input" /> */}
               {!isError && <button className="order_btn" type="submit">Отправить</button>}
