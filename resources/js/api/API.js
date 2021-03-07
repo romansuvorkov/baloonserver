@@ -1,7 +1,7 @@
 export default class API {
     constructor() {
       // this.server = 'http://localhost:8000/api';
-      this.server = 'http://lit-sierra-16668.herokuapp.com/api';
+      this.server = 'https://lit-sierra-16668.herokuapp.com/api';
     }
 
     getAllItems(address) {
