@@ -39,7 +39,7 @@ function BigImage(props) {
         setErrorText('Для ввода имени допускаются только кириллические символы');
         return;
       }
-      if (clientName.search(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/) == -1) {
+      if (clientName.search(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/) !== -1) {
         setIsError(true);
         setErrorText('Телефон должен быть введен в формате +7ХХХХХХХХ');
       }
@@ -105,7 +105,7 @@ function BigImage(props) {
               <label className="input_label" htmlFor="name_input">Ваше имя</label>
               <input className="input_field" type="text" required name="name" onChange={(e) => handleChange(e)}/>
               <label className="input_label" htmlFor="phone_input">Телефон</label>
-              <input className="input_field" type="number" required name="phone" onChange={(e) => handleChange(e)} />
+              <input className="input_field" type="number" placeholder="Телефон в формате 8ХХХХХХХХХХ" required name="phone" onChange={(e) => handleChange(e)} />
               <span className="radio_qestion">Связаться с Вами через мессенджер?</span>
               <div className="radio_wrapper">
               <input type="radio" id="messengersChoice1" name="messengers" value="Telegramm" onClick={(e) => handleRadio(e)}/>

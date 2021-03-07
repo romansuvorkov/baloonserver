@@ -55492,7 +55492,7 @@ function BigImage(props) {
               return _context.abrupt("return");
 
             case 15:
-              if (clientName.search(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/) == -1) {
+              if (clientName.search(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/) !== -1) {
                 setIsError(true);
                 setErrorText('Телефон должен быть введен в формате +7ХХХХХХХХ');
               }
@@ -55607,6 +55607,7 @@ function BigImage(props) {
   }, "\u0422\u0435\u043B\u0435\u0444\u043E\u043D"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "input_field",
     type: "number",
+    placeholder: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D \u0432 \u0444\u043E\u0440\u043C\u0430\u0442\u0435 8\u0425\u0425\u0425\u0425\u0425\u0425\u0425\u0425\u0425\u0425",
     required: true,
     name: "phone",
     onChange: function onChange(e) {
