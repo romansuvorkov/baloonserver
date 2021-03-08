@@ -136,7 +136,7 @@ function BigImage(props) {
               {isError && <p>{errorText}</p>}
               {/* <label className="input_label" htmlFor="email_input">Email</label>
                <input className="input_field" type="email" name="email_input" id="email_input" /> */}
-               {!isError && <button className="order_btn" type="reset">Отменить</button>}
+               {!isError && <button className="order_btn" type="reset" onClick={clearImage}>Отменить</button>}
               {!isError && <button className="order_btn" type="submit">Отправить</button>}
             </form>}    
           </div>

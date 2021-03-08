@@ -630,7 +630,7 @@ body {
   margin-top: 15px;
   border: none;
   font-size: 12px;
-  /* cursor: pointer; */
+  cursor: pointer;
   /* margin-bottom: 20px; */
 }
 
@@ -1206,6 +1206,18 @@ body {
     font-size: 30px;
   }
 
+  .radio_label {
+    font-size: 20px;
+  }
+
+  .order_form {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+
   .input_field {
     font-size: 20px;
   }
@@ -1478,6 +1490,10 @@ body {
 
   .order_form {
     margin-bottom: 10px;
+  }
+
+  .radio_label {
+    font-size: 30px;
   }
 
   .main_footer {
