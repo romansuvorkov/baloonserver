@@ -30,13 +30,24 @@ function Catalog(props) {
     }
   }, [category]);
 
-  const handleMoreClick = () => {
-    const loadedItems = API.lazyload(category, lastItem).then(function(value) {
-      if (value.length < 5) {
-        setShowButtonActive(false);
-      }
-      setItems(prevState => ([...prevState, ...value]));
-    });
+  const handleMoreClick = async () => {
+    const loadedItems = await API.lazyload(category, lastItem);
+    console.log(loadedItems);
+    console.log(lastItem);
+    if (loadedItems.length < 5) {
+      setShowButtonActive(false);
+    }
+    if (loadedItems.length > 0) {
+      setItems(prevState => ([...prevState, ...loadedItems]));
+      const loadedNumb = lastItem + 5;
+      setLastItem(loadedNumb);
+    }
+    // const loadedItems = API.lazyload(category, lastItem).then(function(value) {
+    //   if (value.length < 5) {
+    //     setShowButtonActive(false);
+    //   }
+    //   setItems(prevState => ([...prevState, ...value]));
+    // });
   }
 
     return (

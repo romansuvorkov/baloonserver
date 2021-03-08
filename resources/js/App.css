@@ -420,6 +420,7 @@ body {
   flex-wrap: wrap;
   align-content: space-between;
   position: relative;
+  font-size: 10px;
 }
 
 .catalog_card::before {
@@ -503,8 +504,8 @@ body {
   display: block;
   width: 100%;
   text-align: center;
-  min-height: 35px;
-  line-height: 35px;
+  min-height: 25px;
+  line-height: 25px;
   border-radius: 0 0 15px 15px;
 }
 

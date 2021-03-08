@@ -32,9 +32,9 @@ export default class API {
           xhr.addEventListener('load', () => {
             if (xhr.readyState === 4) {
               if (xhr.status === 200) {
-              console.log(xhr);
+              // console.log(xhr);
               const data = JSON.parse(xhr.responseText);
-              console.log(data.data);
+              // console.log(data.data);
               return resolve(data.data);
               }
             }
