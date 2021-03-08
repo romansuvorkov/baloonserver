@@ -53,9 +53,9 @@ class OrderController extends Controller
         // $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt1}","r");
 
         if ($sendToTelegram) {
-            return 'Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.';
+            return 'Заявка принята';
         } else {
-            return 'Что-то пошло не так. Попробуйте отправить форму ещё раз.';
+            return 'Ошибка';
         }
 
         // require '../vendor/autoload.php';

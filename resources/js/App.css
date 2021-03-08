@@ -594,6 +594,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 500;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  background-color: #ffffffd0;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .order_by_form {
@@ -620,6 +629,7 @@ body {
   border-radius: 30px;
   margin-top: 15px;
   border: none;
+  font-size: 12px;
   /* cursor: pointer; */
   /* margin-bottom: 20px; */
 }
@@ -650,6 +660,11 @@ body {
 
 .radio_wrapper {
   width: 100%;
+}
+
+.radio_label {
+  width: 55%;
+  font-size: 10px;
 }
 
 .header2 {

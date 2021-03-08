@@ -46,7 +46,19 @@ function BigImage(props) {
       if (clientPhone.search(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/) !== -1 
           && clientName.search(/^[A-ЯЁ][а-яё]+/) !== -1) {
         const order = await API.sendOrder(clientName, clientPhone, messenger);
+        if (order === "Заявка принята") {
+          setIsError(true);
+          setErrorText('Ваша зявка принята. Мы свяжемся с Вами в ближайшее время');
+        } else {
+          setIsError(true);
+          setErrorText('Произошла техническая ошибка. Попробуйте отправить заявку еще раз или свяжитесь другим способом');
+        }
+        // Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.
+      } else {
+        setIsError(true);
+        setErrorText('Ошибка в вводе данных. Имя должно сдержать только кириллические символы. Телефон в формате 8ХХХХХХХХХХ');
       }
+
       // const clientEmail = e.target.email_input.value;
       // const order = API.sendOrder(clientName, clientPhone, clientEmail).then(function(value) {
       //   console.log(typeof value);
@@ -102,18 +114,18 @@ function BigImage(props) {
               <span className="order_by_form order_btn" onClick={handleFormClick}>Заказать звонок</span>
             </div>
             {isActive && <form className="order_form" method="POST" onSubmit={(e) => handleSubmit(e)}>
-              <label className="input_label" htmlFor="name_input">Ваше имя</label>
+              <label className="input_label" htmlFor="name">Ваше имя</label>
               <input className="input_field" type="text" required name="name" onChange={(e) => handleChange(e)}/>
-              <label className="input_label" htmlFor="phone_input">Телефон</label>
-              <input className="input_field" type="number" placeholder="Телефон в формате 8ХХХХХХХХХХ" required name="phone" onChange={(e) => handleChange(e)} />
+              <label className="input_label" htmlFor="phone">Телефон</label>
+              <input className="input_field" type="number" placeholder="8ХХХХХХХХХХ" required name="phone" onChange={(e) => handleChange(e)} />
               <span className="radio_qestion">Связаться с Вами через мессенджер?</span>
               <div className="radio_wrapper">
               <input type="radio" id="messengersChoice1" name="messengers" value="Telegramm" onClick={(e) => handleRadio(e)}/>
-              <label htmlFor="messengersChoice1">Telegramm</label>
+              <label className="radio_label" htmlFor="messengersChoice1">Telegramm</label>
               <input type="radio" id="messengersChoice2" name="messengers" value="Whatsapp" onClick={(e) => handleRadio(e)} />
-              <label htmlFor="messengersChoice2">Whatsapp</label>
+              <label className="radio_label" htmlFor="messengersChoice2">Whatsapp</label>
               <input type="radio" id="messengersChoice3" name="messengers" value="Viber" onClick={(e) => handleRadio(e)} />
-              <label htmlFor="messengersChoice3">Viber</label>
+              <label className="radio_label" htmlFor="messengersChoice3">Viber</label>
                 {/* <input
                   type="radio"
                   name="messengers"
@@ -124,6 +136,7 @@ function BigImage(props) {
               {isError && <p>{errorText}</p>}
               {/* <label className="input_label" htmlFor="email_input">Email</label>
                <input className="input_field" type="email" name="email_input" id="email_input" /> */}
+               {!isError && <button className="order_btn" type="reset">Отменить</button>}
               {!isError && <button className="order_btn" type="submit">Отправить</button>}
             </form>}    
           </div>
