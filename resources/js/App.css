@@ -599,7 +599,8 @@ body {
   top: 10%;
   left: 10%;
   width: 80%;
-  background-color: #ffffffd0;
+  /* background-color: #ffffffd0; */
+  background-color: #ff9e32;
   border-radius: 15px;
   padding: 10px;
   box-sizing: border-box;

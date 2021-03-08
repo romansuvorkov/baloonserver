@@ -6,6 +6,8 @@ function BigImage(props) {
     const [isActive, setIsActive] = useState(false);
     const [isError, setIsError] = useState(false);
     const [errorText, setErrorText] = useState('');
+    const [showResult, setShowResult] = useState(false);
+    const [resultText, setResultText] = useState('');
     const setImage = props.setter;
     const API = props.api;
     // const screenWidth = props.screen;
@@ -47,11 +49,13 @@ function BigImage(props) {
           && clientName.search(/^[A-ЯЁ][а-яё]+/) !== -1) {
         const order = await API.sendOrder(clientName, clientPhone, messenger);
         if (order === "Заявка принята") {
-          setIsError(true);
-          setErrorText('Ваша зявка принята. Мы свяжемся с Вами в ближайшее время');
+          setShowResult(true);
+          handleFormClick();
+          setResultText('Ваша зявка принята. Мы свяжемся с Вами в ближайшее время');
         } else {
-          setIsError(true);
-          setErrorText('Произошла техническая ошибка. Попробуйте отправить заявку еще раз или свяжитесь другим способом');
+          setShowResult(true);
+          handleFormClick();
+          setResultText('Произошла техническая ошибка. Попробуйте отправить заявку еще раз или свяжитесь другим способом');
         }
         // Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.
       } else {
@@ -112,6 +116,7 @@ function BigImage(props) {
               <span className="order_phone">888888888</span>
               <a className="order_btn phone_link order_link" href="tel:+79521381601">+79521381601</a>
               <span className="order_by_form order_btn" onClick={handleFormClick}>Заказать звонок</span>
+              {showResult && <p>{resultText}</p>}
             </div>
             {isActive && <form className="order_form" method="POST" onSubmit={(e) => handleSubmit(e)}>
               <label className="input_label" htmlFor="name">Ваше имя</label>
@@ -136,7 +141,7 @@ function BigImage(props) {
               {isError && <p>{errorText}</p>}
               {/* <label className="input_label" htmlFor="email_input">Email</label>
                <input className="input_field" type="email" name="email_input" id="email_input" /> */}
-               {!isError && <button className="order_btn" type="reset" onClick={clearImage}>Отменить</button>}
+               <button className="order_btn" type="reset" onClick={handleFormClick}>Отменить</button>
               {!isError && <button className="order_btn" type="submit">Отправить</button>}
             </form>}    
           </div>
