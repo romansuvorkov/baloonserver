@@ -14,7 +14,7 @@ function CatalogCard(props) {
             <img className="catalog_card_img" onClick={handleClick} src={props.descr.img} alt="Пример"/>
           </div>
           <div className="catalog_card_text_wrapper">
-            <span className="catalog_card_text">{props.descr.description}</span>
+            <span className="catalog_card_text"><span className="iphone">Текст для iphone</span><span className="iphone_px">Текст 16px</span>{props.descr.description}</span>
           </div>
           <span className="catalog_card_price">Цена:{props.descr.price} руб.</span>
         </div>

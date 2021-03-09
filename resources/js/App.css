@@ -423,6 +423,14 @@ body {
   font-size: 10px;
 }
 
+.iphone {
+  font-size: 1rem;
+}
+
+.iphone_px {
+  font-size: 16px;
+}
+
 .catalog_card::before {
   content: '';
   display: block;
@@ -712,6 +720,7 @@ body {
 }
 
 .footer_baloons {
+  display: block;
   width: 50%;
 }
 
