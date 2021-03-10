@@ -18,6 +18,8 @@ function Footer() {
                 </ul>
           </div>
           <img className="footer_baloons" src={baloons} alt="Шарики для фона"/>
+          <div className="test_wrapp"><img className="footer_baloons_test_wrapp" src={baloons} alt="Шарики для фона"/></div>
+          <img className="footer_baloons_test_absolute" src={baloons} alt="Шарики для фона"/>
         </div>
         
       </footer>

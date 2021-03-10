@@ -115,7 +115,7 @@ function BigImage(props) {
               >Email</a>
               <span className="order_phone">888888888</span>
               <a className="order_btn phone_link order_link" href="tel:+79521381601">+79521381601</a>
-              <span className="order_by_form order_btn" onClick={handleFormClick}>Заказать звонок</span>
+              {/* <span className="order_by_form order_btn" onClick={handleFormClick}>Заказать звонок</span> */}
               {showResult && <p>{resultText}</p>}
             </div>
             {isActive && <form className="order_form" method="POST" onSubmit={(e) => handleSubmit(e)}>

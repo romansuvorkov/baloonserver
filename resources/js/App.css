@@ -420,16 +420,17 @@ body {
   flex-wrap: wrap;
   align-content: space-between;
   position: relative;
-  font-size: 10px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
-.iphone {
+/* .iphone {
   font-size: 1rem;
 }
 
 .iphone_px {
   font-size: 16px;
-}
+} */
 
 .catalog_card::before {
   content: '';
@@ -499,8 +500,6 @@ body {
 
 .catalog_card_text_wrapper {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
   min-height: 50px;
   padding: 10px;
   display: flex;
@@ -684,7 +683,7 @@ body {
 
 .main_footer {
   display: block;
-  height: 50vh;
+  /* height: 50vh; */
   width: 100%;
   background: linear-gradient(0deg, #98deea, #00cafc);
   overflow: hidden;
@@ -694,7 +693,30 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  position: relative;
 }
+
+
+.test_wrapp {
+  display: block;
+  width: 51%;
+}
+
+.footer_baloons_test_wrapp {
+  width: 100%;
+}
+
+.footer_baloons_test_absolute {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 25%;
+}
+
+
+
+
 
 .footer_social {
   width: 100%;

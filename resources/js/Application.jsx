@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import HeaderMenu from './components/HeaderMenu';
 import ServiceList from './components/ServicesList';
@@ -6,9 +6,16 @@ import Catalog from './components/Catalog';
 import Footer from './components/Footer';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch, Redirect} from 'react-router-dom';
-import itemsData from './data/itemsData';
+// import itemsData from './data/itemsData';
+import ReactGA from 'react-ga';
 
 function Application() {
+
+  useEffect( () => {
+    ReactGA.initialize('G-3H76J208LR');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    // ReactGA.pageview('/');
+  }, []);
 
   return (
     <Router>
