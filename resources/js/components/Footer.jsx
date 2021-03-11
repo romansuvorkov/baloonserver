@@ -17,9 +17,7 @@ function Footer() {
                   <li className="socials_item"><a href="https://www.instagram.com/uralgraf.ru/" target="_blank" rel="noreferrer" className="socials_link socials_link_instagram"><span className="social_link_text">instagram</span></a></li>
                 </ul>
           </div>
-          <img className="footer_baloons" src={baloons} alt="Шарики для фона"/>
-          <div className="test_wrapp"><img className="footer_baloons_test_wrapp" src={baloons} alt="Шарики для фона"/></div>
-          <img className="footer_baloons_test_absolute" src={baloons} alt="Шарики для фона"/>
+          <div className="footer_baloons_wrapper"><img className="footer_baloons" src={baloons} alt="Шарики для фона"/></div>
         </div>
         
       </footer>

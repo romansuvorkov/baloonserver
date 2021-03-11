@@ -698,25 +698,14 @@ body {
 }
 
 
-.test_wrapp {
+.footer_baloons_wrapper {
   display: block;
-  width: 51%;
+  width: 50%;
 }
 
-.footer_baloons_test_wrapp {
+.footer_baloons {
   width: 100%;
 }
-
-.footer_baloons_test_absolute {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  width: 25%;
-}
-
-
-
-
 
 .footer_social {
   width: 100%;
@@ -741,10 +730,10 @@ body {
   width: 100%;
 }
 
-.footer_baloons {
+/* .footer_baloons {
   display: block;
   width: 50%;
-}
+} */
 
 .socials {
   display: flex;
