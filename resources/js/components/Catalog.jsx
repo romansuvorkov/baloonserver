@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import CatalogCard from './CatalogCard';
 import BigImage from './BigImage';
 import Description from './Description';
@@ -9,22 +9,22 @@ function Catalog(props) {
   const [lastItem, setLastItem] = useState(5);
   const [items, setItems] = useState([]);
   const [showButtonActive, setShowButtonActive] = useState(true);
-  const category = props.category;
-  const API = new Api;
+  const { category } = props;
+  const API = new Api();
   let screenWidth = 0;
 
-  React.useEffect( () => {
+  React.useEffect(() => {
     setItems([]);
     setLastItem(5);
     screenWidth = window.screen.width;
     if (screenWidth <= 1024) {
       setShowButtonActive(true);
-      const loadedItems = API.lazyload(category, 0).then(function(value) {
-        setItems(prevState => ([...prevState, ...value]));
+      const loadedItems = API.lazyload(category, 0).then((value) => {
+        setItems((prevState) => ([...prevState, ...value]));
       });
     } else {
       setShowButtonActive(false);
-      const loadedItems = API.getAllItems(category).then(function(value) {
+      const loadedItems = API.getAllItems(category).then((value) => {
         setItems(value);
       });
     }
@@ -38,7 +38,7 @@ function Catalog(props) {
       setShowButtonActive(false);
     }
     if (loadedItems.length > 0) {
-      setItems(prevState => ([...prevState, ...loadedItems]));
+      setItems((prevState) => ([...prevState, ...loadedItems]));
       const loadedNumb = lastItem + 5;
       setLastItem(loadedNumb);
     }
@@ -48,21 +48,21 @@ function Catalog(props) {
     //   }
     //   setItems(prevState => ([...prevState, ...value]));
     // });
-  }
+  };
 
-    return (
-      <div className="catalog_wrapper">
-        <h2 className="header2" id="catalog_start">{props.header}</h2>
-        <Description />
-        <div className="catalog_list_wrapper">
-          {items.map(o => (
-            <CatalogCard key={o.id} descr={o} setter={setActiveImage}/>
-          ))}
-          <BigImage setter={setActiveImage} screen={screenWidth} img={activeImage} api={API}/>      
-        </div>
-        {showButtonActive && <button className="show_more_btn" onClick={handleMoreClick}>Ещё</button>}   
+  return (
+    <div className="catalog_wrapper">
+      <h2 className="header2" id="catalog_start">{props.header}</h2>
+      <Description />
+      <div className="catalog_list_wrapper">
+        {items.map((o) => (
+          <CatalogCard key={o.id} descr={o} setter={setActiveImage} />
+        ))}
+        <BigImage setter={setActiveImage} screen={screenWidth} img={activeImage} api={API} />
       </div>
-    );
-  }
-  
-  export default Catalog;
+      {showButtonActive && <button className="show_more_btn" onClick={handleMoreClick}>Ещё</button>}
+    </div>
+  );
+}
+
+export default Catalog;

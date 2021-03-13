@@ -28,143 +28,142 @@
 // import bouqet4 from '../img/bouqet4.jpg';
 // import bouqet5 from '../img/bouqet5.jpg';
 
-
-const itemsData = {child: [
+const itemsData = {
+  child: [
     {
       img: 'images/ch_ex1.jpg',
       price: 1200,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/ch_ex2.jpg',
       price: 1234,
-      description: 'Тестовое описание3456565'
+      description: 'Тестовое описание3456565',
     },
     {
       img: 'images/ch_ex3.jpg',
       price: 1200,
-      description: 'Тестовое описание343434'
+      description: 'Тестовое описание343434',
     },
     {
       img: 'images/ch_ex4.jpg',
       price: 12040,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/ch_ex5.jpg',
       price: 12002,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/ch_ex6.jpg',
       price: 120033,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     }],
 
-    wedding: [
-        {
+  wedding: [
+    {
       img: 'images/wedding1.jpg',
       price: 1200,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/wedding2.jpg',
       price: 1234,
-      description: 'Тестовое описание3456565'
+      description: 'Тестовое описание3456565',
     },
     {
       img: 'images/wedding3.jpg',
       price: 1200,
-      description: 'Тестовое описание343434'
+      description: 'Тестовое описание343434',
     },
     {
       img: 'images/wedding4.jpg',
       price: 12040,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/wedding5.jpg',
       price: 12002,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     }],
 
-    business: [
-        {
+  business: [
+    {
       img: 'images/business1.jpg',
       price: 1200,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/business2.jpg',
       price: 1234,
-      description: 'Тестовое описание3456565'
+      description: 'Тестовое описание3456565',
     },
     {
       img: 'images/business3.jpg',
       price: 1200,
-      description: 'Тестовое описание343434'
+      description: 'Тестовое описание343434',
     },
     {
       img: 'images/business4.jpg',
       price: 12040,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     }],
 
-    birthday: [
-        {
+  birthday: [
+    {
       img: 'images/birthday1.jpg',
       price: 1200,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/birthday2.jpg',
       price: 1234,
-      description: 'Тестовое описание3456565'
+      description: 'Тестовое описание3456565',
     },
     {
       img: 'images/birthday3.jpg',
       price: 1200,
-      description: 'Тестовое описание343434'
+      description: 'Тестовое описание343434',
     },
     {
       img: 'images/birthday4.jpg',
       price: 12040,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/birthday5.jpg',
       price: 1200,
-      description: 'Тестовое описание123'
-    }], 
+      description: 'Тестовое описание123',
+    }],
 
-    bouqet: [
-        {
+  bouqet: [
+    {
       img: 'images/bouqet1.jpg',
       price: 1200,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/bouqet2.jpg',
       price: 1234,
-      description: 'Тестовое описание3456565'
+      description: 'Тестовое описание3456565',
     },
     {
       img: 'images/bouqet3.jpg',
       price: 1200,
-      description: 'Тестовое описание343434'
+      description: 'Тестовое описание343434',
     },
     {
       img: 'images/bouqet4.jpg',
       price: 12040,
-      description: 'Тестовое описание'
+      description: 'Тестовое описание',
     },
     {
       img: 'images/bouqet5.jpg',
       price: 12040,
-      description: 'Тестовое описание'
-    }]
+      description: 'Тестовое описание',
+    }],
 
+};
 
-}
-
-  export default itemsData;
+export default itemsData;
