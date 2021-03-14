@@ -400,17 +400,57 @@ body {
   }
 }
 
-.info_wrapper {
+.advantage_wrapper {
   display: flex;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 700;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #00cafc;
+  overflow: hidden;
+  padding-bottom: 10px;
 }
 
-.info_item {
-  margin: 10px;
+.advantage_card {
+  display: block;
+  width: 75%;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  /* background: linear-gradient(45.9deg, #ff9e32 0%, #f83e45 100%); */
 }
+
+.advantage_card::after {
+  content: '';
+  background-color: #ffffff;
+  transform: skewX(-15deg);
+  width: calc(100% + 45px);
+  height: 100%;
+  left: -30px;
+  top: 0;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.advantage_text {
+  z-index: 15;
+  position: relative;
+}
+
+
+/* .advantage_card::before {
+  content: '';
+  background: linear-gradient(45.9deg, rgba(0, 0, 0, 0.69) 0%, rgba(248, 248, 248, 0) 100%);
+  background-color: #0070C0;
+  height: 58px;
+  width: calc(100% + 45px);
+  position: absolute;
+  left: -30px;
+  top: 0;
+  transform: skewX(-15deg);
+  z-index: 0;
+} */
 
 .catalog_card {
   width: 40%;
@@ -907,14 +947,6 @@ body {
     margin-top: 30vh;
   }
 
-  .info_wrapper {
-    font-size: 20px;
-  }
-  
-  .info_item {
-    margin: 15px;
-  }
-
   .catalog_card {
     width: 35%;
     font-size: 22px;
@@ -1150,14 +1182,6 @@ body {
     border-top: solid 4px;
     border-left: solid 4px;
     border-color: #f83e45;
-  }
-
-  .info_wrapper {
-    font-size: 25px;
-  }
-  
-  .info_item {
-    margin: 15px;
   }
 
   .catalog_list_wrapper {
@@ -1421,14 +1445,6 @@ body {
   .service_list_link {
     font-size: 20px;
     width: 250px;
-  }
-
-  .info_wrapper {
-    font-size: 25px;
-  }
-  
-  .info_item {
-    margin: 20px;
   }
 
   .catalog_list_wrapper {

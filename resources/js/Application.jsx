@@ -10,6 +10,7 @@ import ServiceList from './components/ServicesList';
 import Catalog from './components/Catalog';
 import Footer from './components/Footer';
 import Location from './components/Location';
+import Advantage from './components/Advantage';
 import './App.css';
 // import itemsData from './data/itemsData';
 
@@ -31,7 +32,7 @@ function Application() {
     <Router>
       <div className="App">
         <HeaderMenu />
-        <RouteChangeTracker />
+        {/* <RouteChangeTracker /> */}
         <Location />
         <YMInitializer accounts={[73558078]} options={{ webvisor: true }} />
         <Header />
@@ -40,18 +41,45 @@ function Application() {
             <ServiceList />
           </Route>
           <Route path="/child">
+            <Advantage dataText={[
+              'Три варианта оформления Вашего праздника уже через час после заявки',
+              'Без обработки гарантия полета 8 часов',
+              'С обработкой hi-float гаратия полета 20 часов'
+            ]}/>
             <Catalog category="child" header="Примеры украшения дестких праздников" />
           </Route>
           <Route path="/wedding">
+            <Advantage dataText={[
+              'Три варианта оформления Вашего праздника уже через час после заявки',
+              'Без обработки гарантия полета 8 часов',
+              'С обработкой hi-float гаратия полета 20 часов'
+            ]}/>
             <Catalog category="wedding" header="Примеры украшения свадеб" />
           </Route>
           <Route path="/business">
+            <Advantage dataText={[
+              'Три варианта оформления Вашего праздника уже через час после заявки',
+              'Без обработки гарантия полета 8 часов',
+              'С обработкой hi-float гаратия полета 20 часов',
+              'Документально оформление, в соответсвии с законодательством'
+            ]}/>
             <Catalog category="business" header="Примеры украшения магазинов" />
           </Route>
           <Route path="/birthday">
+            <Advantage dataText={[
+              'Три варианта оформления Вашего праздника уже через час после заявки',
+              'Без обработки гарантия полета 8 часов',
+              'С обработкой hi-float гаратия полета 20 часов',
+            ]}/>
             <Catalog category="birthday" header="Примеры украшения залов на день рождения" />
           </Route>
           <Route path="/bouqet">
+            <Advantage dataText={[
+              'Готовность букета в течение 3 часов',
+              'Без обработки гарантия полета 8 часов',
+              'С обработкой hi-float гаратия полета 20 часов',
+              'Бесплатная доставка по Каменску-Уральскому'
+            ]}/>
             <Catalog category="bouqet" header="Доставка букетов из шаров" />
           </Route>
         </Switch>

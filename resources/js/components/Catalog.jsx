@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import CatalogCard from './CatalogCard';
 import BigImage from './BigImage';
-import Description from './Description';
 import Api from '../api/API';
 
 function Catalog(props) {
@@ -52,8 +51,7 @@ function Catalog(props) {
 
   return (
     <div className="catalog_wrapper">
-      <h2 className="header2" id="catalog_start">{props.header}</h2>
-      <Description />
+      <h2 className="header2">{props.header}</h2>
       <div className="catalog_list_wrapper">
         {items.map((o) => (
           <CatalogCard key={o.id} descr={o} setter={setActiveImage} />
