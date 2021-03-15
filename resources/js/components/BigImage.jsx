@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ReactGA from 'react-ga';
+import ym from 'react-yandex-metrika';
 
 function BigImage(props) {
   const [isActive, setIsActive] = useState(false);
@@ -96,6 +98,14 @@ function BigImage(props) {
     setImage('');
   };
 
+  const sendActionGAandYM = (counter, actionName) => {
+    ReactGA.event({
+      category: 'Button',
+      action: actionName
+    });
+    ym(counter, 'reachGoal', actionName);
+  }
+
   return (
     props.img !== '' && (
       <div className="big_image_wrapper">
@@ -111,7 +121,14 @@ function BigImage(props) {
             удобным Вам способом:
           </span>
           <div className="big_image_interface">
-            <a href="https://wa.me/79521381601?text=Тестовый+текст" target="_blank" rel="noreferrer" className="order_link order_wsapp_btn order_btn">WhatsApp</a>
+            <a href="https://wa.me/79521381601?text=Тестовый+текст"
+              target="_blank"
+              rel="noreferrer"
+              className="order_link order_wsapp_btn order_btn"
+              onClick={() => {
+                sendActionGAandYM(164338828, 'Переход WhatsApp');
+              }}
+            >WhatsApp</a>
             <a
               className="order_mail_btn order_btn order_link"
               href="mailto:centr_ug@mail.ru?subject=Игрушка с метрикой лев &body=Здравствуйте!%0AПрошу направить предложение по макетам для игрушки - лев.%0A%0A%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШЕ ИМЯ%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШ ТЕЛЕФОН%0A%0A%0AВ ответном письме Вы получите варианты макетов. Любой из макетов может быть изменен по Вашему желанию."
