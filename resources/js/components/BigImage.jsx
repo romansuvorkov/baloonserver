@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactGA from 'react-ga';
-import ym from 'react-yandex-metrika';
+// import ym from 'react-yandex-metrika';
 
 function BigImage(props) {
   const [isActive, setIsActive] = useState(false);
@@ -98,12 +98,21 @@ function BigImage(props) {
     setImage('');
   };
 
-  const sendActionGAandYM = (counter, actionName) => {
-    ReactGA.event({
-      category: 'Button',
-      action: actionName
-    });
-    ym(counter, 'reachGoal', actionName);
+  const sendActionGAandYM = (actionName) => {
+    // ReactGA.event({
+    //   category: 'Button',
+    //   action: actionName
+    // });
+
+    // ym('reachGoal', actionName);
+    // ym('reachGoal', 'testGoal');
+
+    window.ym(73558078,'reachGoal','testWindow');
+    ym(73558078,'reachGoal','ymTest');
+
+    // window.ym(73558078, 'reachGoal', actionName);
+    // ym(73558078,'reachGoal','testGoal');
+
   }
 
   return (
@@ -126,7 +135,7 @@ function BigImage(props) {
               rel="noreferrer"
               className="order_link order_wsapp_btn order_btn"
               onClick={() => {
-                sendActionGAandYM(164338828, 'Переход WhatsApp');
+                sendActionGAandYM('Переход WhatsApp');
               }}
             >WhatsApp</a>
             <a
