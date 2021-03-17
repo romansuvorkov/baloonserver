@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactGA from 'react-ga';
-// import ym from 'react-yandex-metrika';
+import ym from 'react-yandex-metrika';
 
 function BigImage(props) {
   const [isActive, setIsActive] = useState(false);
@@ -99,16 +99,18 @@ function BigImage(props) {
   };
 
   const sendActionGAandYM = (actionName) => {
-    // ReactGA.event({
-    //   category: 'Button',
-    //   action: actionName
-    // });
+    ReactGA.event({
+      category: 'Messenger',
+      action: actionName,
+      label: 'WhatsApp',
+      value: 50
+    });
 
-    // ym('reachGoal', actionName);
+    ym('reachGoal', 'ymTest');
     // ym('reachGoal', 'testGoal');
 
-    window.ym(73558078,'reachGoal','testWindow');
-    ym(73558078,'reachGoal','ymTest');
+    // window.ym(73558078,'reachGoal','testWindow');
+    // ym(73558078,'reachGoal','ymTest');
 
     // window.ym(73558078, 'reachGoal', actionName);
     // ym(73558078,'reachGoal','testGoal');

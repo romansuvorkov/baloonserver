@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
-// import ym from 'react-yandex-metrika';
+import ym from 'react-yandex-metrika';
 
 function Location() {
   const location = useLocation();
@@ -12,10 +12,11 @@ function Location() {
     ReactGA.set({ page: currentPath });
     ReactGA.pageview(currentPath);
 
-    // ym('hit', currentPath);
 
-    window.ym('hit', currentPath);
     ym('hit', currentPath);
+
+    // window.ym('hit', currentPath);
+    // ym('hit', currentPath);
 
 
     // const searchParams = new URLSearchParams(location.search);

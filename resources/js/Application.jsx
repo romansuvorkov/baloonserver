@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-// import { YMInitializer } from 'react-yandex-metrika';
+import { YMInitializer } from 'react-yandex-metrika';
 import ReactGA from 'react-ga';
 import {
   BrowserRouter as Router, Route, Link, Switch, Redirect,
@@ -34,7 +34,7 @@ function Application() {
         <HeaderMenu />
         {/* <RouteChangeTracker /> */}
         <Location />
-        {/* <YMInitializer accounts={[73558078]} options={{ webvisor: true }} /> */}
+        <YMInitializer accounts={[73558078]} options={{ webvisor: true }} />
         <Header />
         <Switch>
           <Route path="/" exact>
