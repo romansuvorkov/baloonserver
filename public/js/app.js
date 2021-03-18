@@ -57975,7 +57975,7 @@ function BigImage(props) {
     rel: "noreferrer",
     className: "order_link order_wsapp_btn order_btn"
   }, "Viber"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "t.me/RomanSuvorkov",
+    href: "https://t.me/RomanSuvorkov",
     target: "_blank",
     rel: "noreferrer",
     className: "order_link order_wsapp_btn order_btn"

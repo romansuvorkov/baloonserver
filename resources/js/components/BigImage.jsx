@@ -149,7 +149,7 @@ function BigImage(props) {
               className="order_link order_wsapp_btn order_btn"
             >Viber</a>
             <a 
-              href="t.me/RomanSuvorkov"
+              href="https://t.me/RomanSuvorkov"
               target="_blank"
               rel="noreferrer"
               className="order_link order_wsapp_btn order_btn"
