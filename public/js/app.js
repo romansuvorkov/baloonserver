@@ -57961,7 +57961,8 @@ function BigImage(props) {
   }, "\u0421\u0434\u0435\u043B\u0430\u0439\u0442\u0435 \u0437\u0430\u043A\u0430\u0437"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), ' ', "\u0443\u0434\u043E\u0431\u043D\u044B\u043C \u0412\u0430\u043C \u0441\u043F\u043E\u0441\u043E\u0431\u043E\u043C:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "big_image_interface"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "https://wa.me/79521381601?text=\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439+\u0442\u0435\u043A\u0441\u0442",
+    href: "https://wa.me/79521381601" // href="https://wa.me/79521381601?text=Тестовый+текст"
+    ,
     target: "_blank",
     rel: "noreferrer",
     className: "order_link order_wsapp_btn order_btn",
@@ -57969,6 +57970,16 @@ function BigImage(props) {
       sendActionGAandYM('Переход WhatsApp');
     }
   }, "WhatsApp"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "viber://add?number=79521381601",
+    target: "_blank",
+    rel: "noreferrer",
+    className: "order_link order_wsapp_btn order_btn"
+  }, "Viber"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "t.me/RomanSuvorkov",
+    target: "_blank",
+    rel: "noreferrer",
+    className: "order_link order_wsapp_btn order_btn"
+  }, "Telegram"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     className: "order_mail_btn order_btn order_link",
     href: "mailto:centr_ug@mail.ru?subject=\u0418\u0433\u0440\u0443\u0448\u043A\u0430 \u0441 \u043C\u0435\u0442\u0440\u0438\u043A\u043E\u0439 \u043B\u0435\u0432 &body=\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435!%0A\u041F\u0440\u043E\u0448\u0443 \u043D\u0430\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u043F\u043E \u043C\u0430\u043A\u0435\u0442\u0430\u043C \u0434\u043B\u044F \u0438\u0433\u0440\u0443\u0448\u043A\u0438 - \u043B\u0435\u0432.%0A%0A%0A\u0423\u041A\u0410\u0416\u0418\u0422\u0415 \u041F\u041E\u0416\u0410\u041B\u0423\u0419\u0421\u0422\u0410 \u0412\u0410\u0428\u0415 \u0418\u041C\u042F%0A\u0423\u041A\u0410\u0416\u0418\u0422\u0415 \u041F\u041E\u0416\u0410\u041B\u0423\u0419\u0421\u0422\u0410 \u0412\u0410\u0428 \u0422\u0415\u041B\u0415\u0424\u041E\u041D%0A%0A%0A\u0412 \u043E\u0442\u0432\u0435\u0442\u043D\u043E\u043C \u043F\u0438\u0441\u044C\u043C\u0435 \u0412\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u044B \u043C\u0430\u043A\u0435\u0442\u043E\u0432. \u041B\u044E\u0431\u043E\u0439 \u0438\u0437 \u043C\u0430\u043A\u0435\u0442\u043E\u0432 \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u0438\u0437\u043C\u0435\u043D\u0435\u043D \u043F\u043E \u0412\u0430\u0448\u0435\u043C\u0443 \u0436\u0435\u043B\u0430\u043D\u0438\u044E.",
     target: "_blank"
