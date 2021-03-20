@@ -156,6 +156,27 @@ body {
   text-decoration: none;
 }
 
+.header_menu_logo {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 50;
+}
+
+.whatsapp_logo {
+  background-image: url("./img/whats_logo.png");
+}
+
+.telegram_logo {
+  background-image: url("./img/logo_tel.svg");
+}
+
+.viber_logo {
+  background-image: url("./img/logo_viber.svg");
+}
+
 .header_background_baloons {
   position: absolute;
   top: 10%;
@@ -639,6 +660,13 @@ body {
   padding-bottom: 20px;
 }
 
+.messengers_wrapper {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
 .fat_font {
   font-weight: 700;
 }
@@ -758,11 +786,11 @@ body {
 }
 
 .phone {
-  width: 150px;
-  background-image: url("./img/messengers.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center right;
+  /* width: 120px; */
+  /* background-image: url("./img/messengers.png"); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center right; */
   color: #ffffff;
   z-index: 50;
 }

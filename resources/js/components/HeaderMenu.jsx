@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import whats_logo from '../img/whats_logo.png';
 // import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -39,6 +40,26 @@ function HeaderMenu() {
           <Link className="mobile_menu_link link" to="/bouqet#catalog_start" onClick={handleClick}>Букеты из шаров</Link>
         </nav>
       </div>
+      <a 
+        href="https://wa.me/79521381601"
+        target="_blank"
+        rel="noreferrer"
+        className="header_menu_logo whatsapp_logo"
+      />
+      <a 
+        href="https://wa.me/79521381601"
+        target="_blank"
+        rel="noreferrer"
+        className="header_menu_logo telegram_logo"
+      />
+      <a 
+        href="https://wa.me/79521381601"
+        target="_blank"
+        rel="noreferrer"
+        className="header_menu_logo viber_logo"
+      />
+
+      {/* <img className="header_menu_logo" src={whats_logo} alt="WhatsApp"/> */}
       <span className="phone phone_text">+79521381601</span>
       <a className="phone phone_link" href="tel:+79521381601">+79521381601</a>
     </header>

@@ -132,7 +132,51 @@ function BigImage(props) {
             удобным Вам способом:
           </span>
           <div className="big_image_interface">
+
+          <div className="messengers_wrapper">
             <a 
+              href="https://wa.me/79521381601"
+              target="_blank"
+              rel="noreferrer"
+              className="header_menu_logo whatsapp_logo"
+            />
+            <a 
+              href="https://t.me/RomanSuvorkov"
+              target="_blank"
+              rel="noreferrer"
+              className="header_menu_logo telegram_logo"
+            />
+            <a 
+              href="viber://add?number=79521381601"
+              target="_blank"
+              rel="noreferrer"
+              className="header_menu_logo viber_logo"
+            />
+          </div>
+          {/* <a 
+            href="https://wa.me/79521381601"
+            target="_blank"
+            rel="noreferrer"
+            className="header_menu_logo whatsapp_logo"
+          />
+          <a 
+            href="https://wa.me/79521381601"
+            target="_blank"
+            rel="noreferrer"
+            className="header_menu_logo telegram_logo"
+          />
+          <a 
+            href="https://wa.me/79521381601"
+            target="_blank"
+            rel="noreferrer"
+            className="header_menu_logo viber_logo"
+          /> */}
+
+
+
+
+
+            {/* <a 
               href="https://wa.me/79521381601"
               // href="https://wa.me/79521381601?text=Тестовый+текст"
               target="_blank"
@@ -153,7 +197,10 @@ function BigImage(props) {
               target="_blank"
               rel="noreferrer"
               className="order_link order_wsapp_btn order_btn"
-            >Telegram</a>
+            >Telegram</a> */}
+
+
+
             <a
               className="order_mail_btn order_btn order_link"
               href="mailto:centr_ug@mail.ru?subject=Игрушка с метрикой лев &body=Здравствуйте!%0AПрошу направить предложение по макетам для игрушки - лев.%0A%0A%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШЕ ИМЯ%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШ ТЕЛЕФОН%0A%0A%0AВ ответном письме Вы получите варианты макетов. Любой из макетов может быть изменен по Вашему желанию."
