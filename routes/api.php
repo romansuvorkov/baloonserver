@@ -14,18 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::resource('child', 'App\Http\Controllers\ChildController');
+Route::get('{model}', 'App\Http\Controllers\CategoryController@index');
 
-// Route::resource('bouqet', 'App\Http\Controllers\BouqetController');
-
-// Route::resource('business', 'App\Http\Controllers\BusinessController');
-
-// Route::resource('wedding', 'App\Http\Controllers\WeddingController');
-
-// Route::resource('birthday', 'App\Http\Controllers\BirthdayController');
-
-Route::get('{model}', 'App\Http\Controllers\TestController@index');
-
-Route::get('{model}/{id}', 'App\Http\Controllers\TestController@lazyLoad');
+Route::get('{model}/{id}', 'App\Http\Controllers\CategoryController@lazyLoad');
 
 Route::post('test', 'App\Http\Controllers\OrderController@order');

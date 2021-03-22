@@ -856,8 +856,8 @@ body {
   margin-right: 10px;
 }
 
-.socials_link_twitter {
-  background-image: url("./img/tw100.jpg");
+.socials_link_fb {
+  background-image: url("./img/fb100.png");
 }
 
 .socials_link_ok {
@@ -886,6 +886,13 @@ body {
 
   .main_page_header {
     height: 130vw;
+  }
+
+  .header_menu_logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 
   .header_background_baloons {
@@ -1076,8 +1083,8 @@ body {
     height: 60px;
   }
 
-  .socials_link_twitter {
-    background-image: url("./img/tw200.jpg");
+  .socials_link_fb {
+    background-image: url("./img/fb200.png");
   }
   
   .socials_link_ok {
@@ -1124,6 +1131,10 @@ body {
 
   .header_menu_list_point .link:hover{
     color: #f83e45;
+  }
+
+  .header_menu_logo {
+    display: none;
   }
 
   .mobile_menu_wrapper {
@@ -1392,8 +1403,8 @@ body {
     height: 60px;
   }
 
-  .socials_link_twitter {
-    background-image: url("./img/tw400.jpg");
+  .socials_link_fb {
+    background-image: url("./img/fb400.png");
   }
   
   .socials_link_ok {
@@ -1534,20 +1545,20 @@ body {
   }
 
   .catalog_card {
-    width: 350px;
-    font-size: 30px;
+    width: 250px;
+    font-size: 25px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 100px;
   }
 
   .catalog_card_text_wrapper {
-    min-height: 170px;
+    min-height: 140px;
   }
 
   .catalog_card_price {
-    min-height: 70px;
-    line-height: 70px;
+    min-height: 60px;
+    line-height: 60px;
   }
 
   .catalog_card:nth-child(odd) {
@@ -1648,22 +1659,6 @@ body {
   .socials_link {
     width: 60px;
     height: 60px;
-  }
-
-  .socials_link_twitter {
-    background-image: url("./img/tw400.jpg");
-  }
-  
-  .socials_link_ok {
-    background-image: url("./img/ok400.jpg");
-  }
-  
-  .socials_link_vk {
-    background-image: url("./img/vk400.jpg");
-  }
-      
-  .socials_link_instagram {
-    background-image: url("./img/inst400.jpg");
   }
 
 }

@@ -12,12 +12,10 @@ function Location() {
     ReactGA.set({ page: currentPath });
     ReactGA.pageview(currentPath);
 
-
     ym('hit', currentPath);
 
     // window.ym('hit', currentPath);
     // ym('hit', currentPath);
-
 
     // const searchParams = new URLSearchParams(location.search);
     // console.log(searchParams);

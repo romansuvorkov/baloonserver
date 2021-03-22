@@ -11,7 +11,7 @@ use App\Models\Child;
 use App\Models\Wedding;
 
 
-class TestController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.

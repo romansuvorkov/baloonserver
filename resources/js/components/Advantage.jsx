@@ -6,13 +6,13 @@ function AdvantageCard(props) {
 
   return (
     <div className="advantage_wrapper" id="catalog_start">
-        <div className="advantage_list">
-          {dataText.map((textString) => (
-              <div className="advantage_card" key={uuidv4()}>
-                  <span className="advantage_text">{textString}</span>
-              </div>
-          ))}          
-        </div>
+      <div className="advantage_list">
+        {dataText.map((textString) => (
+          <div className="advantage_card" key={uuidv4()}>
+            <span className="advantage_text">{textString}</span>
+          </div>
+        ))}
+      </div>
 
     </div>
   );

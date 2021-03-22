@@ -40,19 +40,19 @@ function HeaderMenu() {
           <Link className="mobile_menu_link link" to="/bouqet#catalog_start" onClick={handleClick}>Букеты из шаров</Link>
         </nav>
       </div>
-      <a 
+      <a
         href="https://wa.me/79521381601"
         target="_blank"
         rel="noreferrer"
         className="header_menu_logo whatsapp_logo"
       />
-      <a 
+      <a
         href="https://wa.me/79521381601"
         target="_blank"
         rel="noreferrer"
         className="header_menu_logo telegram_logo"
       />
-      <a 
+      <a
         href="https://wa.me/79521381601"
         target="_blank"
         rel="noreferrer"
