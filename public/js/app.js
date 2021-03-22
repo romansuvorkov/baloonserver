@@ -57537,7 +57537,8 @@ var API = /*#__PURE__*/function () {
   function API() {
     _classCallCheck(this, API);
 
-    this.server = 'http://localhost:8000/api'; // this.server = 'https://lit-sierra-16668.herokuapp.com/api';
+    // this.server = 'http://localhost:8000/api';
+    this.server = 'https://lit-sierra-16668.herokuapp.com/api';
   }
 
   _createClass(API, [{
