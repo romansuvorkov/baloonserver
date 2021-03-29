@@ -31,8 +31,6 @@ function Catalog(props) {
 
   const handleMoreClick = async () => {
     const loadedItems = await API.lazyload(category, lastItem);
-    console.log(loadedItems);
-    console.log(lastItem);
     if (loadedItems.length < 5) {
       setShowButtonActive(false);
     }
@@ -56,7 +54,7 @@ function Catalog(props) {
         {items.map((o) => (
           <CatalogCard key={o.id} descr={o} setter={setActiveImage} />
         ))}
-        <BigImage setter={setActiveImage} screen={screenWidth} img={activeImage} api={API} />
+        <BigImage setter={setActiveImage} img={activeImage} api={API} />
       </div>
       {showButtonActive && <button className="show_more_btn" onClick={handleMoreClick}>Ещё</button>}
     </div>

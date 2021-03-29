@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 
 function AdvantageCard(props) {
@@ -19,3 +20,11 @@ function AdvantageCard(props) {
 }
 
 export default AdvantageCard;
+
+AdvantageCard.propTypes = {
+  dataText: PropTypes.arrayOf(PropTypes.string),
+};
+
+AdvantageCard.defaultProps = {
+  dataText: null,
+};

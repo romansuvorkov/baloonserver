@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 // import whats_logo from '../img/whats_logo.png';
 // import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
+import ReactGA from 'react-ga';
+import ym from 'react-yandex-metrika';
 
 function HeaderMenu() {
   const [mobMenuActive, setMobMenuActive] = useState(false);
@@ -12,6 +14,17 @@ function HeaderMenu() {
     } else {
       setMobMenuActive(true);
     }
+  };
+
+  const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
+    ReactGA.event({
+      category,
+      action: actionName,
+      label,
+      value,
+    });
+
+    ym('reachGoal', yandexMetrics);
   };
 
   return (
@@ -45,23 +58,44 @@ function HeaderMenu() {
         target="_blank"
         rel="noreferrer"
         className="header_menu_logo whatsapp_logo"
+        onClick={() => {
+          sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymWhatsapp');
+          sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+        }}
       />
       <a
-        href="https://wa.me/79521381601"
+        href="https://t.me/RomanSuvorkov"
         target="_blank"
         rel="noreferrer"
         className="header_menu_logo telegram_logo"
+        onClick={() => {
+          sendActionGAandYM('Messenger', 'Переход Telegram', 'Telegram', 50, 'ymTelegram');
+          sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+        }}
       />
       <a
-        href="https://wa.me/79521381601"
+        href="viber://add?number=79521381601"
         target="_blank"
         rel="noreferrer"
         className="header_menu_logo viber_logo"
+        onClick={() => {
+          sendActionGAandYM('Messenger', 'Переход Viber', 'Viber', 50, 'ymViber');
+          sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+        }}
       />
 
       {/* <img className="header_menu_logo" src={whats_logo} alt="WhatsApp"/> */}
       <span className="phone phone_text">+79521381601</span>
-      <a className="phone phone_link" href="tel:+79521381601">+79521381601</a>
+      <a
+        className="phone phone_link"
+        href="tel:+79521381601"
+        onClick={() => {
+          sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
+          sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+        }}
+      >
+        +79521381601
+      </a>
     </header>
   );
 }

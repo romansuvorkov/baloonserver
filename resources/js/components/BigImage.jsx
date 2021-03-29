@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactGA from 'react-ga';
+import PropTypes from 'prop-types';
 import ym from 'react-yandex-metrika';
 
 function BigImage(props) {
@@ -8,8 +9,7 @@ function BigImage(props) {
   const [errorText, setErrorText] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [resultText, setResultText] = useState('');
-  const setImage = props.setter;
-  const API = props.api;
+  const { setter, api, img } = props;
   // const screenWidth = props.screen;
   const [messenger, setMessenger] = useState('');
   const [orderCall, setOrderCall] = useState({
@@ -20,6 +20,10 @@ function BigImage(props) {
   const handleRadio = (e) => {
     setMessenger(e.target.value);
     // console.log(e.target.value);
+  };
+
+  const handleFormClick = () => {
+    isActive ? setIsActive(false) : setIsActive(true);
   };
 
   const handleSubmit = async (e) => {
@@ -36,7 +40,7 @@ function BigImage(props) {
       setErrorText('Поле с телефоном должно быть заполнено');
       return;
     }
-    if (clientName.search(/^[A-ЯЁ\s][а-яё\s]+/) == -1) {
+    if (clientName.search(/^[A-ЯЁ\s][а-яё\s]+/) === -1) {
       setIsError(true);
       setErrorText('Для ввода имени допускаются только кириллические символы');
       return;
@@ -47,7 +51,7 @@ function BigImage(props) {
     }
     if (clientPhone.search(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/) !== -1
           && clientName.search(/^[A-ЯЁ][а-яё]+/) !== -1) {
-      const order = await API.sendOrder(clientName, clientPhone, messenger);
+      const order = await api.sendOrder(clientName, clientPhone, messenger);
       if (order === 'Заявка принята') {
         setShowResult(true);
         handleFormClick();
@@ -90,38 +94,35 @@ function BigImage(props) {
     }));
   };
 
-  const handleFormClick = () => {
-    isActive ? setIsActive(false) : setIsActive(true);
-  };
-
   const clearImage = () => {
-    setImage('');
+    setter('');
   };
 
   const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
     ReactGA.event({
-      category: 'Messenger',
+      category,
       action: actionName,
-      label: 'WhatsApp',
-      value: 50,
+      label,
+      value,
     });
 
-    ym('reachGoal', 'ymTest');
-    // ym('reachGoal', 'testGoal');
-
-    // window.ym(73558078,'reachGoal','testWindow');
-    // ym(73558078,'reachGoal','ymTest');
-
-    // window.ym(73558078, 'reachGoal', actionName);
-    // ym(73558078,'reachGoal','testGoal');
+    ym('reachGoal', yandexMetrics);
   };
 
   return (
-    props.img !== '' && (
+    img !== '' && (
       <div className="big_image_wrapper">
         <div className="bi_image">
-          <img className="big_image" src={props.img} alt="Пример" />
-          <span className="close_btn" onClick={clearImage}>&#10008;</span>
+          <img className="big_image" src={img} alt="Пример" />
+          <span
+            className="close_btn"
+            role="button"
+            onClick={clearImage}
+            tabIndex={0}
+            onKeyPress={(e) => { if (e.key === 'Enter') clearImage(); }}
+          >
+            &#10008;
+          </span>
         </div>
         <div className="bi_interface">
           <span className="order_form_desrc">
@@ -137,81 +138,53 @@ function BigImage(props) {
                 href="https://wa.me/79521381601"
                 target="_blank"
                 rel="noreferrer"
-                // onClick={() => {
-                //   sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymTest');
-                // }}
+                onClick={() => {
+                  sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymWhatsapp');
+                  sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
+                }}
                 className="header_menu_logo whatsapp_logo"
               />
               <a
                 href="https://t.me/RomanSuvorkov"
                 target="_blank"
                 rel="noreferrer"
-                // onClick={() => {
-                //   sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymTest');
-                // }}
+                onClick={() => {
+                  sendActionGAandYM('Messenger', 'Переход Telegram', 'Telegram', 50, 'ymTelegram');
+                  sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
+                }}
                 className="header_menu_logo telegram_logo"
               />
               <a
                 href="viber://add?number=79521381601"
                 target="_blank"
                 rel="noreferrer"
-                // onClick={() => {
-                //   sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymTest');
-                // }}
+                onClick={() => {
+                  sendActionGAandYM('Messenger', 'Переход Viber', 'Viber', 50, 'ymViber');
+                  sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
+                }}
                 className="header_menu_logo viber_logo"
               />
             </div>
-            {/* <a
-            href="https://wa.me/79521381601"
-            target="_blank"
-            rel="noreferrer"
-            className="header_menu_logo whatsapp_logo"
-          />
-          <a
-            href="https://wa.me/79521381601"
-            target="_blank"
-            rel="noreferrer"
-            className="header_menu_logo telegram_logo"
-          />
-          <a
-            href="https://wa.me/79521381601"
-            target="_blank"
-            rel="noreferrer"
-            className="header_menu_logo viber_logo"
-          /> */}
-
-            {/* <a
-              href="https://wa.me/79521381601"
-              // href="https://wa.me/79521381601?text=Тестовый+текст"
-              target="_blank"
-              rel="noreferrer"
-              className="order_link order_wsapp_btn order_btn"
-              onClick={() => {
-                sendActionGAandYM('Переход WhatsApp');
-              }}
-            >WhatsApp</a>
-            <a
-              href="viber://add?number=79521381601"
-              target="_blank"
-              rel="noreferrer"
-              className="order_link order_wsapp_btn order_btn"
-            >Viber</a>
-            <a
-              href="https://t.me/RomanSuvorkov"
-              target="_blank"
-              rel="noreferrer"
-              className="order_link order_wsapp_btn order_btn"
-            >Telegram</a> */}
-
             <a
               className="order_mail_btn order_btn order_link"
               href="mailto:centr_ug@mail.ru?subject=Заказ на шарики &body=Здравствуйте!%0AПрошу связаться со мной.%0A%0A%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШИ КОНТАКТНЫЕ ДАННЫЕ"
               target="_blank"
+              onClick={() => {
+                sendActionGAandYM('Email', 'emailClick', 'emailClick', 50, 'ymEmail');
+              }}
             >
               Email
             </a>
             <span className="order_phone">888888888</span>
-            <a className="order_btn phone_link order_link" href="tel:+79521381601">+79521381601</a>
+            <a
+              className="order_btn phone_link order_link"
+              href="tel:+79521381601"
+              onClick={() => {
+                sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
+              }}
+            >
+              +79521381601
+            </a>
             {/* <span className="order_by_form order_btn" onClick={handleFormClick}>Заказать звонок</span> */}
             {showResult && <p>{resultText}</p>}
           </div>
@@ -239,7 +212,7 @@ function BigImage(props) {
               {isError && <p>{errorText}</p>}
               {/* <label className="input_label" htmlFor="email_input">Email</label>
                <input className="input_field" type="email" name="email_input" id="email_input" /> */}
-              <button className="order_btn" type="reset" onClick={handleFormClick}>Отменить</button>
+              <button className="order_btn" type="button" onClick={handleFormClick}>Отменить</button>
               {!isError && <button className="order_btn" type="submit">Отправить</button>}
             </form>
           )}
@@ -251,3 +224,15 @@ function BigImage(props) {
 }
 
 export default BigImage;
+
+BigImage.propTypes = {
+  setter: PropTypes.func,
+  img: PropTypes.string,
+  api: PropTypes.func,
+};
+
+BigImage.defaultProps = {
+  setter: () => {},
+  api: () => {},
+  img: null,
+};

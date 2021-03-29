@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { YMInitializer } from 'react-yandex-metrika';
 import ReactGA from 'react-ga';
 import {
-  BrowserRouter as Router, Route, Link, Switch, Redirect,
+  BrowserRouter as Router, Route, Switch, Redirect,
 } from 'react-router-dom';
 import Header from './components/Header';
 import HeaderMenu from './components/HeaderMenu';
@@ -11,6 +11,7 @@ import Catalog from './components/Catalog';
 import Footer from './components/Footer';
 import Location from './components/Location';
 import Advantage from './components/Advantage';
+import Page404 from './components/Page404';
 import './App.css';
 // import itemsData from './data/itemsData';
 
@@ -86,6 +87,12 @@ function Application() {
             ]}
             />
             <Catalog category="bouqet" header="Доставка букетов из шаров" />
+          </Route>
+          <Route path="/404" exact>
+            <Page404 />
+          </Route>
+          <Route path="*">
+            <Redirect to="/404" />
           </Route>
         </Switch>
         <Footer />

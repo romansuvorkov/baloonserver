@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import wedding from '../img/wedding.jpg';
 import b2b from '../img/b2b.jpg';
@@ -42,8 +42,20 @@ function ServicesList() {
             <img className={activeItem === 4 ? 'service_list_img appear_img' : 'service_list_img'} src={child} alt="Фото свадьбы" />
             <img className={activeItem === 5 ? 'service_list_img appear_img' : 'service_list_img'} src={bouquet} alt="Фото свадьбы" />
           </div>
-          <span className="left_arrow slider_navigation" onClick={() => handleClick(-1)} />
-          <span className="right_arrow slider_navigation" onClick={() => handleClick(1)} />
+          <span
+            className="left_arrow slider_navigation"
+            onClick={() => handleClick(-1)}
+            role="button"
+            tabIndex={0}
+            onKeyPress={(e) => { if (e.key === 'Enter') handleClick(-1); }}
+          />
+          <span
+            className="right_arrow slider_navigation"
+            onClick={() => handleClick(1)}
+            role="button"
+            tabIndex={0}
+            onKeyPress={(e) => { if (e.key === 'Enter') handleClick(1); }}
+          />
         </div>
         <div className="service_list_info">
           <span className={activeItem === 1 ? 'service_list_item_name vertical_text appear_top' : 'service_list_item_name vertical_text'}>Свадьба</span>

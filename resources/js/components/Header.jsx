@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactGA from 'react-ga';
+import ym from 'react-yandex-metrika';
 import baloons from '../img/baloons.png';
 import confetti from '../img/confetti.png';
 

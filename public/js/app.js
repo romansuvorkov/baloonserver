@@ -1999,7 +1999,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".App {\r\n  text-align: center;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.header_menu {\r\n  display: none;\r\n}\r\n\r\n.mobile_menu_wrapper {\r\n  display: block;\r\n  width: 50px;\r\n  background-color: transparent;\r\n  position: relative;\r\n  color: white;\r\n  text-align: center;\r\n  height: 40px;\r\n  z-index: 250;\r\n}\r\n\r\n.burger_line {\r\n  position: absolute;\r\n  top: 8px;\r\n  right: 10px;\r\n  width: 35px;\r\n  height: 2px;\r\n  background-color: #fff;\r\n  display: block;\r\n}\r\n\r\n.second, .third {\r\n  top: 18px;\r\n}\r\n\r\n.fourth {\r\n  top: 28px;\r\n}\r\n\r\n.mobile_menu_active > .mobile_menu {\r\n  max-height: 500px;\r\n  font-size: 16px;\r\n}\r\n\r\n.mobile_menu_active > .first {\r\n  display: none;\r\n}\r\n\r\n.mobile_menu_active > .second {\r\n  transform: rotate(45deg);\r\n}\r\n\r\n.mobile_menu_active > .third {\r\n  transform: rotate(-45deg);\r\n}\r\n\r\n.mobile_menu_active > .fourth {\r\n  display: none;\r\n}\r\n\r\n.mobile_menu_link {\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10px;\r\n  color: white;\r\n  text-decoration: none;\r\n  border-top: 1px solid rgba(255,255,255,.3);\r\n  text-align: center;\r\n  box-sizing: border-box;\r\n  font-size: 3.5vw;\r\n  opacity: 1;\r\n}\r\n\r\n.mobile_menu_link:nth-child(1) {\r\n  background-color: #4dcbc6;\r\n}\r\n\r\n.mobile_menu_link:nth-child(2) {\r\n  background-color: #589fd1;\r\n}\r\n\r\n.mobile_menu_link:nth-child(3) {\r\n  background-color: #597db0;\r\n}\r\n\r\n.mobile_menu_link:nth-child(4) {\r\n  background-color: #685f90;\r\n}\r\n\r\n.mobile_menu_link:nth-child(5) {\r\n  background-color: #5e426e;\r\n}\r\n\r\n.mobile_menu_link:nth-child(6) {\r\n  background-color: #703b69;\r\n}\r\n\r\n.mobile_menu {\r\n  display: block;\r\n  position: absolute;\r\n  width: 150px;\r\n  bottom: 0;\r\n  left: 0;\r\n  transform: translateY(100%);\r\n  max-height: 0;\r\n  font-size: 0;\r\n  overflow: hidden;\r\n  transition: .5s all;\r\n}\r\n\r\n.head_menu {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  position: fixed;\r\n  width: 100%;\r\n  z-index: 250;\r\n  text-transform: uppercase;\r\n  padding-left: 5px;\r\n  padding-right: 5px;\r\n}\r\n\r\n.head_menu::after {\r\n  content: \"\";\r\n  background-color: #0734ffee;\r\n  opacity: 0.2;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n}\r\n\r\n.header_menu_list {\r\n  display: flex;\r\n  padding: 0;\r\n}\r\n\r\n.header_menu {\r\n  z-index: 1;\r\n}\r\n\r\n.header_menu_list_point {\r\n  list-style-type: none;\r\n  margin-top: 1rem;\r\n  margin-bottom: 1rem;\r\n  color: #ffffff;\r\n  margin-left: 0.8rem;\r\n  margin-right: 0.8rem;\r\n}\r\n\r\n.phone_link {\r\n  text-decoration: none;\r\n}\r\n\r\n.header_menu_logo {\r\n  width: 30px;\r\n  height: 30px;\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  z-index: 50;\r\n}\r\n\r\n.whatsapp_logo {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/whats_logo.png */ "./resources/js/img/whats_logo.png")) + ");\r\n}\r\n\r\n.telegram_logo {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/logo_tel.svg */ "./resources/js/img/logo_tel.svg")) + ");\r\n}\r\n\r\n.viber_logo {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/logo_viber.svg */ "./resources/js/img/logo_viber.svg")) + ");\r\n}\r\n\r\n.header_background_baloons {\r\n  position: absolute;\r\n  top: 10%;\r\n  left: 0;\r\n  z-index: 1;\r\n  width: 100%;\r\n}\r\n\r\n@keyframes confetti {\r\n  from {\r\n    -webkit-transform: scale(0.4);\r\n    transform: scale(0.4);\r\n  }\r\n\r\n  to {\r\n    -webkit-transform: scale(1);\r\n    transform: scale(1);\r\n  }\r\n}\r\n\r\n.header_background_confetti {\r\n  position: absolute;\r\n  top: 10%;\r\n  left: 0;\r\n  z-index: 2;\r\n  width: 100%;\r\n  animation-duration: 20s;\r\n  animation-name: confetti;\r\n}\r\n\r\n.main_page_header {\r\n  width: 100%;\r\n  height: 170vw;\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-wrap: wrap;\r\n  background: linear-gradient(0deg, #00cafc, #98deea);\r\n  align-content: flex-start;\r\n  padding-top: 30px;\r\n  overflow: hidden;\r\n}\r\n\r\n.image_hero {\r\n  position: relative;\r\n  width: 100%;\r\n}\r\n\r\n.header_name {\r\n  width: 80%;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 50%;\r\n}\r\n\r\n.name_item {\r\n  display: block;\r\n  width: 60%;\r\n  height: 40px;\r\n  position: relative;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  background-color: #ffffff;\r\n  z-index: 20;\r\n  text-transform: uppercase;\r\n  font-weight: 700;\r\n  font-size: 20px;\r\n  line-height: 40px;\r\n}\r\n\r\n.name_item:last-child {\r\n  transform: rotate(-3deg);\r\n  background-color: #eeeaea;\r\n  z-index: 10;\r\n}\r\n\r\n.main_header {\r\n  font-size: 18px;\r\n  margin-top: 40vw;\r\n  z-index: 50;\r\n  color: #ffffff;\r\n  width: 90%;\r\n}\r\n\r\n.service_list_wrapper {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  width: 100%;\r\n  margin-bottom: 0;\r\n  background-color: #00cafc;\r\n}\r\n\r\n.service_list_slider_wrapper {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n.service_list_slider {\r\n  width: 100%;\r\n  position: relative;\r\n}\r\n\r\n.service_list_img_wrapper {\r\n  width: 100%;\r\n  background-color: #ff9e32;\r\n}\r\n\r\n.service_list_img {\r\n  width: 90%;\r\n  display: none;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.appear_img {\r\n  animation-duration: 0.5s;\r\n  animation-name: imgappear;\r\n  display: block;\r\n}\r\n\r\n@keyframes imgappear {\r\n  from {\r\n    -webkit-transform: translateX(-100px);\r\n    transform: translateX(-100px);\r\n  }\r\n\r\n  to {\r\n    -webkit-transform: translateX(0);\r\n    transform: translateX(0);\r\n  }\r\n}\r\n\r\n.service_list_link {\r\n  display: block;\r\n  height: 40px;\r\n  width: 150px;\r\n  background-color: #0e64ff;\r\n  border-radius: 35px;\r\n  font-size: 13px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  line-height: 40px;\r\n  text-decoration: none;\r\n  color: #ffffff;\r\n  margin-bottom: 20px;\r\n  margin-top: 10px;\r\n}\r\n\r\n.slider_navigation {\r\n  position: absolute;\r\n  background-color: #00cafc;\r\n  opacity: 0.5;\r\n  display: block;\r\n  border-radius: 30px;\r\n  width: 30px;\r\n  height: 30px;\r\n  cursor: pointer;\r\n}\r\n\r\n.display_none {\r\n  display: none;\r\n}\r\n\r\n.left_arrow::before {\r\n  left: 10px;\r\n  transform: rotate(-45deg);\r\n  content: '';\r\n  position: absolute;\r\n  width: 10px;\r\n  height: 10px;\r\n  top: 50%;\r\n  border-top: solid 2px;\r\n  border-left: solid 2px;\r\n  border-color: #f83e45;\r\n  transform-origin: 0 0;\r\n}\r\n\r\n.right_arrow::after {\r\n  right: -2px;\r\n  transform: rotate(135deg);\r\n  content: '';\r\n  position: absolute;\r\n  width: 10px;\r\n  height: 10px;\r\n  top: 50%;\r\n  border-top: solid 2px;\r\n  border-left: solid 2px;\r\n  transform-origin: 0 0;\r\n  border-color: #f83e45;\r\n}\r\n\r\n.left_arrow {\r\n  top: 45%;\r\n  left: 5px;\r\n}\r\n\r\n.right_arrow {\r\n  top: 45%;\r\n  right: 5px;\r\n}\r\n\r\n.service_list_item_name {\r\n  display: none;\r\n  top: 45%;\r\n  left: -35px;\r\n  pointer-events: none;\r\n  width: 200%;\r\n  font-size: 10px;\r\n}\r\n\r\n.service_list_text_wrapper {\r\n  width: 100%;\r\n  background-color: #14b1ff;\r\n  border-top: solid 3px;\r\n  border-color: #ff9e32;\r\n  z-index: 5;\r\n  overflow: hidden;\r\n  min-height: 50px;\r\n}\r\n\r\n.service_list_text {\r\n  color: #ffffff;\r\n  display: none;\r\n}\r\n\r\n.appear_left {\r\n  animation-duration: 1s;\r\n  animation-name: textappear;\r\n  display: block;\r\n}\r\n\r\n@keyframes textappear {\r\n  from {\r\n    -webkit-transform: scale(3) translateX(-100px);\r\n    transform: scale(3) translateX(-100px);\r\n  }\r\n\r\n  to {\r\n    -webkit-transform: scale(1) translateX(0);\r\n    transform: scale(1) translateX(0);\r\n  }\r\n}\r\n\r\n.advantage_wrapper {\r\n  width: 100%;\r\n  background-color: #00cafc;\r\n  padding-bottom: 10px;\r\n}\r\n\r\n.advantage_list {\r\n  overflow: hidden;\r\n  flex-wrap: wrap;\r\n  justify-content: flex-start;\r\n  display: flex;\r\n  margin-left: 35px;\r\n}\r\n\r\n.advantage_card {\r\n  display: block;\r\n  width: 75%;\r\n  position: relative;\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n  padding: 5px;\r\n  min-height: 60px;\r\n  /* background: linear-gradient(45.9deg, #ff9e32 0%, #f83e45 100%); */\r\n}\r\n\r\n.advantage_card::after {\r\n  content: '';\r\n  background-color: #ffffff;\r\n  transform: skewX(-15deg);\r\n  width: calc(100% + 45px);\r\n  height: 100%;\r\n  left: -30px;\r\n  top: 0;\r\n  position: absolute;\r\n  z-index: 0;\r\n  opacity: 0.4;\r\n  min-height: 60px;\r\n}\r\n\r\n.advantage_text {\r\n  z-index: 15;\r\n  position: relative;\r\n}\r\n\r\n\r\n/* .advantage_card::before {\r\n  content: '';\r\n  background: linear-gradient(45.9deg, rgba(0, 0, 0, 0.69) 0%, rgba(248, 248, 248, 0) 100%);\r\n  background-color: #0070C0;\r\n  height: 58px;\r\n  width: calc(100% + 45px);\r\n  position: absolute;\r\n  left: -30px;\r\n  top: 0;\r\n  transform: skewX(-15deg);\r\n  z-index: 0;\r\n} */\r\n\r\n.catalog_card {\r\n  width: 40%;\r\n  background-color: #ffffff73;\r\n  border-radius: 15px;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  position: relative;\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n}\r\n\r\n/* .iphone {\r\n  font-size: 1rem;\r\n}\r\n\r\n.iphone_px {\r\n  font-size: 16px;\r\n} */\r\n\r\n.catalog_card::before {\r\n  content: '';\r\n  display: block;\r\n  width: 50px;\r\n  height: 70px;\r\n  top: -55px;\r\n  left: 0;\r\n  position: absolute;\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/baloons.png */ "./resources/js/img/baloons.png")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  /* z-index: 1; */\r\n}\r\n\r\n.catalog_card::after {\r\n  content: '';\r\n  display: block;\r\n  width: 50px;\r\n  height: 70px;\r\n  top: -50px;\r\n  right: 0;\r\n  position: absolute;\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/baloons.png */ "./resources/js/img/baloons.png")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.catalog_card:nth-child(odd) {\r\n  margin-top: 60px;\r\n}\r\n\r\n.catalog_card:nth-child(even) {\r\n  margin-bottom: 60px;\r\n}\r\n\r\n.catalog_wrapper {\r\n  background-color: #00cafc;\r\n  padding-bottom: 30px;\r\n}\r\n\r\n.catalog_list_wrapper {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\r\n  align-content: flex-start;\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/cloud.png */ "./resources/js/img/cloud.png")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: contain;\r\n  background-attachment: fixed;\r\n  padding-top: 55px;\r\n}\r\n\r\n.catalog_img_wrapper {\r\n  width: 100%;\r\n  overflow: hidden;\r\n  border-radius: 15px 15px 0 0;\r\n}\r\n\r\n.catalog_card_img {\r\n  width: 100%;\r\n}\r\n\r\n.catalog_card_text_wrapper {\r\n  width: 100%;\r\n  min-height: 50px;\r\n  padding: 10px;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.catalog_card_price {\r\n  display: block;\r\n  width: 100%;\r\n  text-align: center;\r\n  min-height: 25px;\r\n  line-height: 25px;\r\n  border-radius: 0 0 15px 15px;\r\n}\r\n\r\n.catalog_card:nth-child(odd) .catalog_card_price {\r\n  background-color: #ff9e32;\r\n}\r\n\r\n.catalog_card:nth-child(even) .catalog_card_price {\r\n  background-color: #f83e45;\r\n}\r\n\r\n.catalog_card:nth-child(3n+2) .catalog_card_price {\r\n  background-color: #14b1ff;\r\n}\r\n\r\n.show_more_btn {\r\n  height: 30px;\r\n  min-width: 90px;\r\n  background-color: #ffffffab;\r\n  border-radius: 5px;\r\n  border: 1px solid #ffffffab;\r\n  margin-top: 20px;\r\n}\r\n\r\n.big_image_wrapper {\r\n  position: fixed;\r\n  top: 10%;\r\n  left: 10%;\r\n  width: 80%;\r\n  z-index: 100;\r\n  background-color: #ffffffd0;\r\n  /* background: linear-gradient(0deg, #f83e45, #14b1ff); */\r\n  border-radius: 15px;\r\n  padding-bottom: 15px;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n.big_image {\r\n  width: 100%;\r\n  border-radius: 15px;\r\n  transition: 0.5s all;\r\n  animation-name: appearcenter;\r\n  animation-duration: 1s;\r\n}\r\n\r\n@keyframes appearcenter {\r\n  from {\r\n    -webkit-transform: scale(0);\r\n    transform: scale(0);\r\n  }\r\n\r\n  to {\r\n    -webkit-transform: scale(1);\r\n    transform: scale(1);\r\n  }\r\n}\r\n\r\n.close_btn {\r\n  position: fixed;\r\n  top: 12%;\r\n  right: 13%;\r\n  border-radius: 50px;\r\n  background-color: #ff9797a4;\r\n  font-weight: 700;\r\n  display: block;\r\n  width: 20px;\r\n  height: 20px;\r\n  line-height: 20px;\r\n  cursor: pointer;\r\n}\r\n\r\n.big_image_interface {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\r\n  /* padding-top: 15px; */\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.messengers_wrapper {\r\n  margin-top: 15px;\r\n  display: flex;\r\n  width: 100%;\r\n  justify-content: space-around;\r\n}\r\n\r\n.fat_font {\r\n  font-weight: 700;\r\n}\r\n\r\n.order_form {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  z-index: 500;\r\n  position: fixed;\r\n  top: 10%;\r\n  left: 10%;\r\n  width: 80%;\r\n  /* background-color: #ffffffd0; */\r\n  background-color: #ff9e32;\r\n  border-radius: 15px;\r\n  padding: 10px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.order_by_form {\r\n  cursor: pointer;\r\n}\r\n\r\n.input_field {\r\n  border: none;\r\n  background-color: #14b1ff57;\r\n  width: 64%;\r\n  margin-top: 10px;\r\n}\r\n\r\n.input_label {\r\n  margin-top: 10px;\r\n  width: 34%;\r\n}\r\n\r\n.order_btn {\r\n  width: 125px;\r\n  background-color: #00cafc;\r\n  height: 25px;\r\n  line-height: 25px;\r\n  border-radius: 30px;\r\n  margin-top: 15px;\r\n  border: none;\r\n  font-size: 12px;\r\n  cursor: pointer;\r\n  /* margin-bottom: 20px; */\r\n}\r\n\r\n.order_phone {\r\n  display: none;\r\n  width: 300px;\r\n  height: 60px;\r\n  line-height: 60px;\r\n  font-size: 30px;\r\n  margin-top: 15px;\r\n}\r\n\r\n.phone_link {\r\n  display: block;\r\n}\r\n\r\n.order_link {\r\n  text-decoration: none;\r\n  color: #000000;\r\n}\r\n\r\n.radio_qestion {\r\n  width: 100%;\r\n  display: block;\r\n  text-align: center;\r\n}\r\n\r\n.radio_wrapper {\r\n  width: 100%;\r\n}\r\n\r\n.radio_label {\r\n  width: 55%;\r\n  font-size: 10px;\r\n}\r\n\r\n.header2 {\r\n  margin: 0;\r\n  margin-bottom: 15px;\r\n  color: #ffffff;\r\n}\r\n\r\n.main_footer {\r\n  display: block;\r\n  /* height: 50vh; */\r\n  width: 100%;\r\n  background: linear-gradient(0deg, #98deea, #00cafc);\r\n  overflow: hidden;\r\n}\r\n\r\n.footer_wrapper {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  width: 100%;\r\n  position: relative;\r\n}\r\n\r\n\r\n.footer_baloons_wrapper {\r\n  display: block;\r\n  width: 50%;\r\n}\r\n\r\n.footer_baloons {\r\n  width: 100%;\r\n}\r\n\r\n.footer_social {\r\n  width: 100%;\r\n}\r\n\r\n.phone {\r\n  /* width: 120px; */\r\n  /* background-image: url(\"./img/messengers.png\"); */\r\n  /* background-size: contain; */\r\n  /* background-repeat: no-repeat; */\r\n  /* background-position: center right; */\r\n  color: #ffffff;\r\n  z-index: 50;\r\n}\r\n\r\n.phone_text {\r\n  display: none;\r\n}\r\n\r\n.city {\r\n  color: #ffffff;\r\n  width: 100%;\r\n}\r\n\r\n/* .footer_baloons {\r\n  display: block;\r\n  width: 50%;\r\n} */\r\n\r\n.socials {\r\n  display: flex;\r\n  list-style-type: none;\r\n  padding-left: 0;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin-left: 5px;\r\n  margin-bottom: 0;\r\n  margin-top: 10px;\r\n}\r\n\r\n.socials_link {\r\n  width: 30px;\r\n  height: 30px;\r\n  background-repeat: no-repeat;\r\n  background-position: center center;\r\n  background-size: cover;\r\n  display: block;\r\n  border-radius: 5px;\r\n}\r\n\r\n.socials_item {\r\n  margin-right: 25px;\r\n}\r\n\r\n.socials_item:first-child {\r\n  margin-left: 30px;\r\n}\r\n\r\n.socials_item:hover {\r\n  opacity: 0.5;\r\n}\r\n\r\n.social_link_text {\r\n  position: absolute;\r\n  width: 1px;\r\n  height: 1px;\r\n  clip: rect(1px, 1px, 1px, 1px)\r\n}\r\n\r\n.socials_item:first-child {\r\n  margin-left: 10px;\r\n}\r\n.socials_item {\r\n  margin-right: 10px;\r\n}\r\n\r\n.socials_link_fb {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/fb100.png */ "./resources/js/img/fb100.png")) + ");\r\n}\r\n\r\n.socials_link_ok {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/ok100.jpg */ "./resources/js/img/ok100.jpg")) + ");\r\n\r\n}\r\n\r\n.socials_link_vk {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/vk100.jpg */ "./resources/js/img/vk100.jpg")) + ");\r\n}\r\n    \r\n.socials_link_instagram {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/inst100.jpg */ "./resources/js/img/inst100.jpg")) + ");\r\n}\r\n\r\n\r\n@media (min-width:641px) {\r\n\r\n  .mobile_menu {\r\n    width: 200px;\r\n  }\r\n\r\n  .mobile_menu_link {\r\n    font-size: 2.5vw;\r\n  }\r\n\r\n  .main_page_header {\r\n    height: 130vw;\r\n  }\r\n\r\n  .header_menu_logo {\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-bottom: 5px;\r\n    margin-top: 5px;\r\n  }\r\n\r\n  .header_background_baloons {\r\n    left: 10%;\r\n    width: 80%;\r\n  }\r\n\r\n  .header_background_confetti {\r\n    left: 10%;\r\n    width: 80%;\r\n  }\r\n\r\n  .head_menu {\r\n    font-size: 20px;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    padding-left: 20px;\r\n    padding-right: 20px;\r\n  }\r\n\r\n  .phone {\r\n    width: 220px;\r\n    font-size: 25px;\r\n  }\r\n\r\n  .header_name {\r\n    margin-top: 40%;\r\n  }\r\n\r\n  .header2 {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .service_list_text_wrapper {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .service_list_item_name {\r\n    left: -80px;\r\n    font-size: 20px;\r\n  }\r\n\r\n  .slider_navigation {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n  \r\n  .left_arrow::before {\r\n    left: 15px;\r\n    width: 20px;\r\n    height: 20px;\r\n    border-top: solid 4px #f83e45;\r\n    border-left: solid 4px #f83e45;\r\n  }\r\n  \r\n  .right_arrow::after {\r\n    right: -4px;\r\n    width: 20px;\r\n    height: 20px;\r\n    border-top: solid 4px #f83e45;\r\n    border-left: solid 4px #f83e45;\r\n  }\r\n  \r\n  .left_arrow {\r\n    top: 45%;\r\n    left: 5px;\r\n  }\r\n  \r\n  .right_arrow {\r\n    top: 45%;\r\n    right: 5px;\r\n  }\r\n\r\n  .service_list_link {\r\n    font-size: 18px;\r\n    width: 200px;\r\n  }\r\n\r\n  .name_item {\r\n    width: 40%;\r\n    height: 60px;\r\n    font-size: 25px;\r\n    line-height: 60px;\r\n  }\r\n\r\n  .name_item:last-child {\r\n    transform: rotate(-5deg);\r\n    margin-top: 5px;\r\n  }\r\n\r\n  .main_header {\r\n    font-size: 28px;\r\n    margin-top: 30vh;\r\n  }\r\n  \r\n  .advantage_list {\r\n    margin-left: 40px;\r\n  }\r\n  \r\n  .advantage_card {\r\n    min-height: 50px;\r\n    font-size: 20px;\r\n  }\r\n  \r\n  .advantage_card::after {\r\n    min-height: 50px;\r\n  }\r\n\r\n  .catalog_card {\r\n    width: 35%;\r\n    font-size: 22px;\r\n  }\r\n\r\n  .catalog_card_text_wrapper {\r\n    min-height: 120px;\r\n  }\r\n\r\n  .catalog_card_price {\r\n    min-height: 50px;\r\n    line-height: 50px;\r\n  }\r\n\r\n  .show_more_btn {\r\n    height: 40px;\r\n    min-width: 110px;\r\n    font-size: 20px;\r\n  }\r\n\r\n  .big_image_wrapper {\r\n    font-size: 25px;\r\n  }\r\n\r\n  .close_btn {\r\n    width: 40px;\r\n    height: 40px;\r\n    line-height: 40px;\r\n    font-size: 35px;\r\n  }\r\n\r\n  .order_btn {\r\n    width: 250px;\r\n    height: 50px;\r\n    line-height: 50px;\r\n    font-size: 25px;\r\n  }\r\n\r\n  .main_footer {\r\n    height: 300px;\r\n  }\r\n\r\n  .footer_social {\r\n    display: flex;\r\n    margin-top: 20px;\r\n    padding-left: 30px;\r\n    /* justify-content: flex-start; */\r\n  }\r\n\r\n  .footer_wrapper {\r\n    font-size: 25px;\r\n    justify-content: space-between;\r\n    position: relative;\r\n  }\r\n\r\n  /* .footer_social {\r\n    justify-content: flex-start;\r\n  } */\r\n\r\n  .city {\r\n    width: 55%;\r\n  }\r\n\r\n  .footer_baloons {\r\n    /* margin-left: 75%;\r\n    width: 35%; */\r\n    position: absolute;\r\n    top: 50px;\r\n    right: 100px;\r\n    /* height: 200px; */\r\n    width: 200px;\r\n  }\r\n\r\n  .footer_wrapper .phone {\r\n    margin-left: 25px;\r\n  }\r\n\r\n  .socials_link {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n\r\n  .socials_link_fb {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/fb200.png */ "./resources/js/img/fb200.png")) + ");\r\n  }\r\n  \r\n  .socials_link_ok {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/ok200.jpg */ "./resources/js/img/ok200.jpg")) + ");\r\n  }\r\n  \r\n  .socials_link_vk {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/vk200.jpg */ "./resources/js/img/vk200.jpg")) + ");\r\n  }\r\n      \r\n  .socials_link_instagram {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/inst200.jpg */ "./resources/js/img/inst200.jpg")) + ");\r\n  }\r\n\r\n\r\n}\r\n\r\n\r\n@media (min-width:961px) {\r\n\r\n  .head_menu {\r\n    flex-wrap: wrap;\r\n    justify-content: flex-end;\r\n    padding-left: 30px;\r\n    padding-right: 30px;\r\n    padding-bottom: 5px;\r\n    box-sizing: border-box;\r\n  }\r\n\r\n  .header_menu {\r\n    display: block;\r\n    width: 100%;\r\n  }\r\n\r\n  .header_menu_list {\r\n    margin: 0;\r\n  }\r\n\r\n  .header_menu_list_point .link{\r\n    color: black;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n  }\r\n\r\n  .header_menu_list_point .link:hover{\r\n    color: #f83e45;\r\n  }\r\n\r\n  .header_menu_logo {\r\n    display: none;\r\n  }\r\n\r\n  .mobile_menu_wrapper {\r\n    display: none;\r\n  }\r\n\r\n  .phone {\r\n    width: 200px;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n  }\r\n\r\n  .phone.phone_text {\r\n    display: block;\r\n  }\r\n\r\n  .phone.phone_link {\r\n    display: none;\r\n  }\r\n\r\n  .main_page_header {\r\n    height: 550px;\r\n  }\r\n\r\n  .header_name {\r\n    width: 50%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 150px;\r\n  }\r\n\r\n  .name_item {\r\n    height: 70px;\r\n    font-size: 35px;\r\n    line-height: 70px;\r\n    width: 50%;\r\n  }\r\n\r\n  .name_item:last-child {\r\n    transform: rotate(-5deg);\r\n    margin-top: 5px;\r\n  }\r\n\r\n  .header_background_baloons {\r\n    top: 10%;\r\n    left: 30%;\r\n    width: 40%;\r\n  }\r\n\r\n  .header_background_confetti {\r\n    top: 0;\r\n    left: 25%;\r\n    width: 50%;\r\n  }\r\n\r\n  .main_header {\r\n    font-size: 30px;\r\n    z-index: 50;\r\n    color: #ffffff;\r\n    width: 90%;\r\n    margin-top: 120px;\r\n  }\r\n\r\n  .header2{\r\n    font-size: 35px;\r\n  }\r\n\r\n  .service_list_text {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .service_list_link {\r\n    font-size: 22px;\r\n    width: 250px;\r\n  }\r\n\r\n  .right_arrow {\r\n    right: 10px;\r\n  }\r\n\r\n  .left_arrow {\r\n    left: 10px;\r\n  }\r\n\r\n  .slider_navigation {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n\r\n  .right_arrow::after {\r\n    right: -5px;\r\n    width: 20px;\r\n    height: 20px;\r\n    border-top: solid 4px;\r\n    border-left: solid 4px;\r\n    border-color: #f83e45;\r\n}\r\n\r\n  .left_arrow::before {\r\n    left: 15px;\r\n    width: 20px;\r\n    height: 20px;\r\n    border-top: solid 4px;\r\n    border-left: solid 4px;\r\n    border-color: #f83e45;\r\n  }\r\n\r\n  .advantage_wrapper {\r\n    display: flex;\r\n    justify-content: center;\r\n  }\r\n\r\n  .advantage_list {\r\n    margin-left: 0;\r\n    width: 70%;\r\n  }\r\n  \r\n  .advantage_card {\r\n    min-height: 70px;\r\n    font-size: 30px;\r\n    width: 90%;\r\n  }\r\n  \r\n  .advantage_card::after {\r\n    min-height: 70px;\r\n  }\r\n\r\n  .catalog_list_wrapper {\r\n    padding-top: 100px;\r\n  }\r\n\r\n  .catalog_card {\r\n    width: 350px;\r\n    font-size: 30px;\r\n    margin-left: 50px;\r\n    margin-right: 50px;\r\n  }\r\n\r\n  .catalog_card_text_wrapper {\r\n    min-height: 150px;\r\n  }\r\n\r\n  .catalog_card_price {\r\n    min-height: 65px;\r\n    line-height: 65px;\r\n  }\r\n\r\n  .catalog_card::after {\r\n    width: 70px;\r\n    height: 100px;\r\n    top: -90px;\r\n  }\r\n\r\n  .catalog_card::before {\r\n    width: 70px;\r\n    height: 100px;\r\n    top: -90px;\r\n  }\r\n\r\n  .catalog_card:nth-child(odd) {\r\n    margin-top: 95px;\r\n  }\r\n  \r\n  .catalog_card:nth-child(even) {\r\n    margin-bottom: 95px;\r\n  }\r\n\r\n  /* .show_more_btn {\r\n    height: 40px;\r\n    min-width: 110px;\r\n    font-size: 20px;\r\n  } */\r\n\r\n  .big_image_wrapper {\r\n    font-size: 35px;\r\n    width: 70%;\r\n    left: 15%;\r\n  }\r\n\r\n  .bi_image{\r\n    width: 100%;\r\n  }\r\n\r\n  .close_btn {\r\n    width: 50px;\r\n    height: 50px;\r\n    right: 17%;\r\n    line-height: 50px;\r\n    font-size: 40px;\r\n  }\r\n\r\n  .order_btn {\r\n    width: 300px;\r\n    height: 60px;\r\n    line-height: 60px;\r\n    font-size: 30px;\r\n  }\r\n\r\n  .radio_label {\r\n    font-size: 20px;\r\n  }\r\n\r\n  .order_form {\r\n    position: relative;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n  }\r\n  \r\n\r\n  .input_field {\r\n    font-size: 20px;\r\n  }\r\n\r\n  .phone_link {\r\n    display: none;\r\n  }\r\n\r\n  .order_phone {\r\n    display: block;\r\n  }\r\n\r\n  .main_footer {\r\n    height: 300px;\r\n  }\r\n\r\n  .footer_social {\r\n    display: flex;\r\n    margin-top: 20px;\r\n    padding-left: 30px;\r\n    /* justify-content: flex-start; */\r\n  }\r\n\r\n  .footer_wrapper {\r\n    font-size: 35px;\r\n    justify-content: space-between;\r\n    position: relative;\r\n  }\r\n\r\n  /* .footer_social {\r\n    justify-content: flex-start;\r\n  } */\r\n\r\n  .city {\r\n    width: 55%;\r\n  }\r\n\r\n  .footer_baloons {\r\n    /* margin-left: 75%;\r\n    width: 35%; */\r\n    position: absolute;\r\n    top: 50px;\r\n    right: 100px;\r\n    /* height: 200px; */\r\n    width: 200px;\r\n  }\r\n\r\n  .footer_wrapper .phone {\r\n    margin-left: 25px;\r\n    font-size: 35px;\r\n    width: 300px;\r\n  }\r\n\r\n  .socials_link {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n\r\n  .socials_link_fb {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/fb400.png */ "./resources/js/img/fb400.png")) + ");\r\n  }\r\n  \r\n  .socials_link_ok {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/ok400.jpg */ "./resources/js/img/ok400.jpg")) + ");\r\n  }\r\n  \r\n  .socials_link_vk {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/vk400.jpg */ "./resources/js/img/vk400.jpg")) + ");\r\n  }\r\n      \r\n  .socials_link_instagram {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/inst400.jpg */ "./resources/js/img/inst400.jpg")) + ");\r\n  }\r\n\r\n}\r\n\r\n@media (min-width:1301px) {\r\n  .head_menu {\r\n    flex-wrap: wrap;\r\n    justify-content: flex-end;\r\n    padding-left: 30px;\r\n    padding-right: 30px;\r\n    padding-bottom: 5px;\r\n    box-sizing: border-box;\r\n  }\r\n\r\n  .header_menu {\r\n    display: block;\r\n    width: 100%;\r\n  }\r\n\r\n  .header_menu_list {\r\n    margin: 0;\r\n    width: 100%;\r\n    justify-content: space-around;\r\n  }\r\n\r\n  .header_menu_list_point .link{\r\n    color: black;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n  }\r\n\r\n  .header_menu_list_point .link:hover{\r\n    color: #f83e45;\r\n  }\r\n\r\n  .mobile_menu_wrapper {\r\n    display: none;\r\n  }\r\n\r\n  .phone {\r\n    /* display: block; */\r\n    width: 200px;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n  }\r\n\r\n  .phone.phone_text {\r\n    display: block;\r\n  }\r\n\r\n  .phone.phone_link {\r\n    display: none;\r\n  }\r\n  \r\n  .main_page_header {\r\n    height: 50vh;\r\n    flex-wrap: nowrap;\r\n    flex-direction: row-reverse;\r\n    justify-content: space-around;\r\n  }\r\n\r\n  .image_hero {\r\n    width: 40%;\r\n  }\r\n\r\n  .header_name {\r\n    width: 50%;\r\n    margin-top: 150px;\r\n    margin-left: 25%;\r\n  }\r\n\r\n  .name_item {\r\n    height: 40px;\r\n    font-size: 30px;\r\n    line-height: 40px;\r\n    width: 60%;\r\n  }\r\n\r\n  .header_background_baloons {\r\n    left: 25%;\r\n    width: 50%;\r\n  }\r\n\r\n  .header_background_confetti {\r\n    top: 10%;\r\n    left: 25%;\r\n    width: 50%;\r\n  }\r\n\r\n  .main_header {\r\n    font-size: 30px;\r\n    width: 35%;\r\n    margin-top: 135px;\r\n    margin-left: 200px;\r\n    line-height: 45px;\r\n  }\r\n\r\n  .service_list_slider {\r\n    width: 60%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n  }\r\n\r\n  .service_list_text {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .service_list_link {\r\n    font-size: 20px;\r\n    width: 250px;\r\n  }\r\n\r\n  .catalog_list_wrapper {\r\n    padding-left: 10%;\r\n    padding-right: 10%;\r\n    box-sizing: border-box;\r\n    justify-content: center;\r\n  }\r\n\r\n  .catalog_card:nth-child(odd) {\r\n    margin-top: 0;\r\n  }\r\n  \r\n  .catalog_card:nth-child(even) {\r\n    margin-bottom: 100px;\r\n  }\r\n\r\n  .catalog_card {\r\n    width: 250px;\r\n    font-size: 25px;\r\n    margin-left: 50px;\r\n    margin-right: 50px;\r\n    margin-bottom: 100px;\r\n  }\r\n\r\n  .catalog_card_text_wrapper {\r\n    min-height: 140px;\r\n  }\r\n\r\n  .catalog_card_price {\r\n    min-height: 60px;\r\n    line-height: 60px;\r\n  }\r\n\r\n  .catalog_card:nth-child(odd) {\r\n    margin-top: 0;\r\n  }\r\n\r\n  .catalog_img_wrapper {\r\n    cursor: pointer;\r\n  }\r\n\r\n  .big_image_wrapper {\r\n    font-size: 35px;\r\n    width: 70%;\r\n    left: 10%;\r\n    /* flex-wrap: nowrap; */\r\n  }\r\n\r\n  .bi_image{\r\n    width: 40%;\r\n  }\r\n\r\n  .bi_interface {\r\n    width: 60%;\r\n  }\r\n\r\n  .big_image_wrapper {\r\n    padding-bottom: 0;\r\n  }\r\n\r\n  .close_btn {\r\n    width: 50px;\r\n    height: 50px;\r\n    left: 11%;\r\n    line-height: 50px;\r\n    font-size: 40px;\r\n  }\r\n\r\n  .order_btn {\r\n    width: 250px;\r\n    height: 60px;\r\n    line-height: 60px;\r\n    font-size: 30px;\r\n  }\r\n\r\n  .order_wsapp_btn {\r\n    display: none;\r\n  }\r\n\r\n  .order_form {\r\n    margin-bottom: 10px;\r\n  }\r\n\r\n  .radio_label {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .main_footer {\r\n    height: 300px;\r\n  }\r\n\r\n  .footer_social {\r\n    display: flex;\r\n    margin-top: 20px;\r\n    padding-left: 30px;\r\n    justify-content: center;\r\n  }\r\n\r\n  .footer_wrapper {\r\n    font-size: 35px;\r\n    justify-content: center;\r\n    position: relative;\r\n  }\r\n\r\n  /* .footer_social {\r\n    justify-content: flex-start;\r\n  } */\r\n\r\n  .city {\r\n    width: 500px;\r\n  }\r\n\r\n  .footer_baloons {\r\n    /* margin-left: 75%;\r\n    width: 35%; */\r\n    position: absolute;\r\n    top: 50px;\r\n    right: 100px;\r\n    /* height: 200px; */\r\n    width: 200px;\r\n  }\r\n\r\n  .footer_wrapper .phone {\r\n    margin-left: 25px;\r\n    font-size: 35px;\r\n    width: 300px;\r\n  }\r\n\r\n  .socials_link {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".App {\r\n  text-align: center;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.header_menu {\r\n  display: none;\r\n}\r\n\r\n.mobile_menu_wrapper {\r\n  display: block;\r\n  width: 50px;\r\n  background-color: transparent;\r\n  position: relative;\r\n  color: white;\r\n  text-align: center;\r\n  height: 40px;\r\n  z-index: 250;\r\n}\r\n\r\n.burger_line {\r\n  position: absolute;\r\n  top: 8px;\r\n  right: 10px;\r\n  width: 35px;\r\n  height: 2px;\r\n  background-color: #fff;\r\n  display: block;\r\n}\r\n\r\n.second, .third {\r\n  top: 18px;\r\n}\r\n\r\n.fourth {\r\n  top: 28px;\r\n}\r\n\r\n.mobile_menu_active > .mobile_menu {\r\n  max-height: 500px;\r\n  font-size: 16px;\r\n}\r\n\r\n.mobile_menu_active > .first {\r\n  display: none;\r\n}\r\n\r\n.mobile_menu_active > .second {\r\n  transform: rotate(45deg);\r\n}\r\n\r\n.mobile_menu_active > .third {\r\n  transform: rotate(-45deg);\r\n}\r\n\r\n.mobile_menu_active > .fourth {\r\n  display: none;\r\n}\r\n\r\n.mobile_menu_link {\r\n  display: block;\r\n  width: 100%;\r\n  padding: 10px;\r\n  color: white;\r\n  text-decoration: none;\r\n  border-top: 1px solid rgba(255,255,255,.3);\r\n  text-align: center;\r\n  box-sizing: border-box;\r\n  font-size: 3.5vw;\r\n  opacity: 1;\r\n}\r\n\r\n.mobile_menu_link:nth-child(1) {\r\n  background-color: #4dcbc6;\r\n}\r\n\r\n.mobile_menu_link:nth-child(2) {\r\n  background-color: #589fd1;\r\n}\r\n\r\n.mobile_menu_link:nth-child(3) {\r\n  background-color: #597db0;\r\n}\r\n\r\n.mobile_menu_link:nth-child(4) {\r\n  background-color: #685f90;\r\n}\r\n\r\n.mobile_menu_link:nth-child(5) {\r\n  background-color: #5e426e;\r\n}\r\n\r\n.mobile_menu_link:nth-child(6) {\r\n  background-color: #703b69;\r\n}\r\n\r\n.mobile_menu {\r\n  display: block;\r\n  position: absolute;\r\n  width: 150px;\r\n  bottom: 0;\r\n  left: 0;\r\n  transform: translateY(100%);\r\n  max-height: 0;\r\n  font-size: 0;\r\n  overflow: hidden;\r\n  transition: .5s all;\r\n}\r\n\r\n.head_menu {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  position: fixed;\r\n  width: 100%;\r\n  z-index: 250;\r\n  text-transform: uppercase;\r\n  padding-left: 5px;\r\n  padding-right: 5px;\r\n}\r\n\r\n.head_menu::after {\r\n  content: \"\";\r\n  background-color: #0734ffee;\r\n  opacity: 0.2;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n}\r\n\r\n.header_menu_list {\r\n  display: flex;\r\n  padding: 0;\r\n}\r\n\r\n.header_menu {\r\n  z-index: 1;\r\n}\r\n\r\n.header_menu_list_point {\r\n  list-style-type: none;\r\n  margin-top: 1rem;\r\n  margin-bottom: 1rem;\r\n  color: #ffffff;\r\n  margin-left: 0.8rem;\r\n  margin-right: 0.8rem;\r\n}\r\n\r\n.phone_link {\r\n  text-decoration: none;\r\n}\r\n\r\n.header_menu_logo {\r\n  width: 30px;\r\n  height: 30px;\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  z-index: 50;\r\n}\r\n\r\n.whatsapp_logo {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/whats_logo.png */ "./resources/js/img/whats_logo.png")) + ");\r\n}\r\n\r\n.telegram_logo {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/logo_tel.svg */ "./resources/js/img/logo_tel.svg")) + ");\r\n}\r\n\r\n.viber_logo {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/logo_viber.svg */ "./resources/js/img/logo_viber.svg")) + ");\r\n}\r\n\r\n.header_background_baloons {\r\n  position: absolute;\r\n  top: 10%;\r\n  left: 0;\r\n  z-index: 1;\r\n  width: 100%;\r\n}\r\n\r\n@keyframes confetti {\r\n  from {\r\n    -webkit-transform: scale(0.4);\r\n    transform: scale(0.4);\r\n  }\r\n\r\n  to {\r\n    -webkit-transform: scale(1);\r\n    transform: scale(1);\r\n  }\r\n}\r\n\r\n.header_background_confetti {\r\n  position: absolute;\r\n  top: 10%;\r\n  left: 0;\r\n  z-index: 2;\r\n  width: 100%;\r\n  animation-duration: 20s;\r\n  animation-name: confetti;\r\n}\r\n\r\n.main_page_header {\r\n  width: 100%;\r\n  height: 170vw;\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-wrap: wrap;\r\n  background: linear-gradient(0deg, #00cafc, #98deea);\r\n  align-content: flex-start;\r\n  padding-top: 30px;\r\n  overflow: hidden;\r\n}\r\n\r\n.image_hero {\r\n  position: relative;\r\n  width: 100%;\r\n}\r\n\r\n.header_name {\r\n  width: 80%;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 50%;\r\n}\r\n\r\n.name_item {\r\n  display: block;\r\n  width: 60%;\r\n  height: 40px;\r\n  position: relative;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  background-color: #ffffff;\r\n  z-index: 20;\r\n  text-transform: uppercase;\r\n  font-weight: 700;\r\n  font-size: 20px;\r\n  line-height: 40px;\r\n}\r\n\r\n.name_item:last-child {\r\n  transform: rotate(-3deg);\r\n  background-color: #eeeaea;\r\n  z-index: 10;\r\n}\r\n\r\n.main_header {\r\n  font-size: 18px;\r\n  margin-top: 40vw;\r\n  z-index: 50;\r\n  color: #ffffff;\r\n  width: 90%;\r\n}\r\n\r\n.service_list_wrapper {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  width: 100%;\r\n  margin-bottom: 0;\r\n  background-color: #00cafc;\r\n}\r\n\r\n.service_list_slider_wrapper {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n.service_list_slider {\r\n  width: 100%;\r\n  position: relative;\r\n}\r\n\r\n.service_list_img_wrapper {\r\n  width: 100%;\r\n  background-color: #ff9e32;\r\n}\r\n\r\n.service_list_img {\r\n  width: 85%;\r\n  display: none;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.appear_img {\r\n  animation-duration: 0.5s;\r\n  animation-name: imgappear;\r\n  display: block;\r\n}\r\n\r\n@keyframes imgappear {\r\n  from {\r\n    -webkit-transform: translateX(-100px);\r\n    transform: translateX(-100px);\r\n  }\r\n\r\n  to {\r\n    -webkit-transform: translateX(0);\r\n    transform: translateX(0);\r\n  }\r\n}\r\n\r\n.service_list_link {\r\n  display: block;\r\n  height: 40px;\r\n  width: 150px;\r\n  background-color: #0e64ff;\r\n  border-radius: 35px;\r\n  font-size: 13px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  line-height: 40px;\r\n  text-decoration: none;\r\n  color: #ffffff;\r\n  margin-bottom: 20px;\r\n  margin-top: 10px;\r\n}\r\n\r\n.slider_navigation {\r\n  position: absolute;\r\n  background-color: #00cafc;\r\n  opacity: 0.5;\r\n  display: block;\r\n  border-radius: 30px;\r\n  width: 30px;\r\n  height: 30px;\r\n  cursor: pointer;\r\n}\r\n\r\n.display_none {\r\n  display: none;\r\n}\r\n\r\n.left_arrow::before {\r\n  left: 10px;\r\n  transform: rotate(-45deg);\r\n  content: '';\r\n  position: absolute;\r\n  width: 10px;\r\n  height: 10px;\r\n  top: 50%;\r\n  border-top: solid 2px;\r\n  border-left: solid 2px;\r\n  border-color: #f83e45;\r\n  transform-origin: 0 0;\r\n}\r\n\r\n.right_arrow::after {\r\n  right: -2px;\r\n  transform: rotate(135deg);\r\n  content: '';\r\n  position: absolute;\r\n  width: 10px;\r\n  height: 10px;\r\n  top: 50%;\r\n  border-top: solid 2px;\r\n  border-left: solid 2px;\r\n  transform-origin: 0 0;\r\n  border-color: #f83e45;\r\n}\r\n\r\n.left_arrow {\r\n  top: 45%;\r\n  left: 5px;\r\n}\r\n\r\n.right_arrow {\r\n  top: 45%;\r\n  right: 5px;\r\n}\r\n\r\n.service_list_item_name {\r\n  display: none;\r\n  top: 45%;\r\n  left: -35px;\r\n  pointer-events: none;\r\n  width: 200%;\r\n  font-size: 10px;\r\n}\r\n\r\n.service_list_text_wrapper {\r\n  width: 100%;\r\n  background-color: #14b1ff;\r\n  border-top: solid 3px;\r\n  border-color: #ff9e32;\r\n  z-index: 5;\r\n  overflow: hidden;\r\n  min-height: 50px;\r\n}\r\n\r\n.service_list_text {\r\n  color: #ffffff;\r\n  display: none;\r\n}\r\n\r\n.appear_left {\r\n  animation-duration: 1s;\r\n  animation-name: textappear;\r\n  display: block;\r\n}\r\n\r\n@keyframes textappear {\r\n  from {\r\n    -webkit-transform: scale(3) translateX(-100px);\r\n    transform: scale(3) translateX(-100px);\r\n  }\r\n\r\n  to {\r\n    -webkit-transform: scale(1) translateX(0);\r\n    transform: scale(1) translateX(0);\r\n  }\r\n}\r\n\r\n.advantage_wrapper {\r\n  width: 100%;\r\n  background-color: #00cafc;\r\n  padding-bottom: 10px;\r\n}\r\n\r\n.advantage_list {\r\n  overflow: hidden;\r\n  flex-wrap: wrap;\r\n  justify-content: flex-start;\r\n  display: flex;\r\n  margin-left: 35px;\r\n}\r\n\r\n.advantage_card {\r\n  display: block;\r\n  width: 75%;\r\n  position: relative;\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n  padding: 5px;\r\n  min-height: 60px;\r\n  /* background: linear-gradient(45.9deg, #ff9e32 0%, #f83e45 100%); */\r\n}\r\n\r\n.advantage_card::after {\r\n  content: '';\r\n  background-color: #ffffff;\r\n  transform: skewX(-15deg);\r\n  width: calc(100% + 45px);\r\n  height: 100%;\r\n  left: -30px;\r\n  top: 0;\r\n  position: absolute;\r\n  z-index: 0;\r\n  opacity: 0.4;\r\n  min-height: 60px;\r\n}\r\n\r\n.advantage_text {\r\n  z-index: 15;\r\n  position: relative;\r\n}\r\n\r\n\r\n/* .advantage_card::before {\r\n  content: '';\r\n  background: linear-gradient(45.9deg, rgba(0, 0, 0, 0.69) 0%, rgba(248, 248, 248, 0) 100%);\r\n  background-color: #0070C0;\r\n  height: 58px;\r\n  width: calc(100% + 45px);\r\n  position: absolute;\r\n  left: -30px;\r\n  top: 0;\r\n  transform: skewX(-15deg);\r\n  z-index: 0;\r\n} */\r\n\r\n.catalog_card {\r\n  width: 40%;\r\n  background-color: #ffffff73;\r\n  border-radius: 15px;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-content: space-between;\r\n  position: relative;\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n}\r\n\r\n/* .iphone {\r\n  font-size: 1rem;\r\n}\r\n\r\n.iphone_px {\r\n  font-size: 16px;\r\n} */\r\n\r\n.catalog_card::before {\r\n  content: '';\r\n  display: block;\r\n  width: 50px;\r\n  height: 70px;\r\n  top: -55px;\r\n  left: 0;\r\n  position: absolute;\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/baloons.png */ "./resources/js/img/baloons.png")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  /* z-index: 1; */\r\n}\r\n\r\n.catalog_card::after {\r\n  content: '';\r\n  display: block;\r\n  width: 50px;\r\n  height: 70px;\r\n  top: -50px;\r\n  right: 0;\r\n  position: absolute;\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/baloons.png */ "./resources/js/img/baloons.png")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.catalog_card:nth-child(odd) {\r\n  margin-top: 60px;\r\n}\r\n\r\n.catalog_card:nth-child(even) {\r\n  margin-bottom: 60px;\r\n}\r\n\r\n.catalog_wrapper {\r\n  background-color: #00cafc;\r\n  padding-bottom: 30px;\r\n}\r\n\r\n.catalog_list_wrapper {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\r\n  align-content: flex-start;\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/cloud.png */ "./resources/js/img/cloud.png")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: contain;\r\n  background-attachment: fixed;\r\n  padding-top: 55px;\r\n}\r\n\r\n.catalog_img_wrapper {\r\n  width: 100%;\r\n  overflow: hidden;\r\n  border-radius: 15px 15px 0 0;\r\n}\r\n\r\n.catalog_card_img {\r\n  width: 100%;\r\n}\r\n\r\n.catalog_card_text_wrapper {\r\n  width: 100%;\r\n  min-height: 50px;\r\n  padding: 10px;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.catalog_card_price {\r\n  display: block;\r\n  width: 100%;\r\n  text-align: center;\r\n  min-height: 25px;\r\n  line-height: 25px;\r\n  border-radius: 0 0 15px 15px;\r\n}\r\n\r\n.catalog_card:nth-child(odd) .catalog_card_price {\r\n  background-color: #ff9e32;\r\n}\r\n\r\n.catalog_card:nth-child(even) .catalog_card_price {\r\n  background-color: #f83e45;\r\n}\r\n\r\n.catalog_card:nth-child(3n+2) .catalog_card_price {\r\n  background-color: #14b1ff;\r\n}\r\n\r\n.show_more_btn {\r\n  height: 30px;\r\n  min-width: 90px;\r\n  background-color: #ffffffab;\r\n  border-radius: 5px;\r\n  border: 1px solid #ffffffab;\r\n  margin-top: 20px;\r\n}\r\n\r\n.big_image_wrapper {\r\n  position: fixed;\r\n  top: 10%;\r\n  left: 10%;\r\n  width: 80%;\r\n  z-index: 100;\r\n  background-color: #ffffffd0;\r\n  /* background: linear-gradient(0deg, #f83e45, #14b1ff); */\r\n  border-radius: 15px;\r\n  padding-bottom: 15px;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n.big_image {\r\n  width: 100%;\r\n  border-radius: 15px;\r\n  transition: 0.5s all;\r\n  animation-name: appearcenter;\r\n  animation-duration: 1s;\r\n}\r\n\r\n@keyframes appearcenter {\r\n  from {\r\n    -webkit-transform: scale(0);\r\n    transform: scale(0);\r\n  }\r\n\r\n  to {\r\n    -webkit-transform: scale(1);\r\n    transform: scale(1);\r\n  }\r\n}\r\n\r\n.close_btn {\r\n  position: fixed;\r\n  top: 12%;\r\n  right: 13%;\r\n  border-radius: 50px;\r\n  background-color: #ff9797a4;\r\n  font-weight: 700;\r\n  display: block;\r\n  width: 20px;\r\n  height: 20px;\r\n  line-height: 20px;\r\n  cursor: pointer;\r\n}\r\n\r\n.big_image_interface {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\r\n  /* padding-top: 15px; */\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.messengers_wrapper {\r\n  margin-top: 15px;\r\n  display: flex;\r\n  width: 100%;\r\n  justify-content: space-around;\r\n}\r\n\r\n.fat_font {\r\n  font-weight: 700;\r\n}\r\n\r\n.order_form {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  z-index: 500;\r\n  position: fixed;\r\n  top: 10%;\r\n  left: 10%;\r\n  width: 80%;\r\n  /* background-color: #ffffffd0; */\r\n  background-color: #ff9e32;\r\n  border-radius: 15px;\r\n  padding: 10px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.order_by_form {\r\n  cursor: pointer;\r\n}\r\n\r\n.input_field {\r\n  border: none;\r\n  background-color: #14b1ff57;\r\n  width: 64%;\r\n  margin-top: 10px;\r\n}\r\n\r\n.input_label {\r\n  margin-top: 10px;\r\n  width: 34%;\r\n}\r\n\r\n.order_btn {\r\n  width: 125px;\r\n  background-color: #00cafc;\r\n  height: 25px;\r\n  line-height: 25px;\r\n  border-radius: 30px;\r\n  margin-top: 15px;\r\n  border: none;\r\n  font-size: 12px;\r\n  cursor: pointer;\r\n  /* margin-bottom: 20px; */\r\n}\r\n\r\n.order_phone {\r\n  display: none;\r\n  width: 300px;\r\n  height: 60px;\r\n  line-height: 60px;\r\n  font-size: 30px;\r\n  margin-top: 15px;\r\n}\r\n\r\n.phone_link {\r\n  display: block;\r\n}\r\n\r\n.order_link {\r\n  text-decoration: none;\r\n  color: #000000;\r\n}\r\n\r\n.radio_qestion {\r\n  width: 100%;\r\n  display: block;\r\n  text-align: center;\r\n}\r\n\r\n.radio_wrapper {\r\n  width: 100%;\r\n}\r\n\r\n.radio_label {\r\n  width: 55%;\r\n  font-size: 10px;\r\n}\r\n\r\n.header2 {\r\n  margin: 0;\r\n  margin-bottom: 15px;\r\n  color: #ffffff;\r\n}\r\n\r\n.main_footer {\r\n  display: block;\r\n  /* height: 50vh; */\r\n  width: 100%;\r\n  background: linear-gradient(0deg, #98deea, #00cafc);\r\n  overflow: hidden;\r\n}\r\n\r\n.footer_wrapper {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  width: 100%;\r\n  position: relative;\r\n}\r\n\r\n\r\n.footer_baloons_wrapper {\r\n  display: block;\r\n  width: 50%;\r\n}\r\n\r\n.footer_baloons {\r\n  width: 100%;\r\n}\r\n\r\n.footer_social {\r\n  width: 100%;\r\n}\r\n\r\n.phone {\r\n  /* width: 120px; */\r\n  /* background-image: url(\"./img/messengers.png\"); */\r\n  /* background-size: contain; */\r\n  /* background-repeat: no-repeat; */\r\n  /* background-position: center right; */\r\n  color: #ffffff;\r\n  z-index: 50;\r\n}\r\n\r\n.phone_text {\r\n  display: none;\r\n}\r\n\r\n.email_footer {\r\n  width: 100%;\r\n  color: #ffffff;\r\n  text-decoration: none;\r\n}\r\n\r\n.city {\r\n  color: #ffffff;\r\n  width: 100%;\r\n}\r\n\r\n/* .footer_baloons {\r\n  display: block;\r\n  width: 50%;\r\n} */\r\n\r\n.socials {\r\n  display: flex;\r\n  list-style-type: none;\r\n  padding-left: 0;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin-left: 5px;\r\n  margin-bottom: 0;\r\n  margin-top: 10px;\r\n}\r\n\r\n.socials_link {\r\n  width: 30px;\r\n  height: 30px;\r\n  background-repeat: no-repeat;\r\n  background-position: center center;\r\n  background-size: cover;\r\n  display: block;\r\n  border-radius: 5px;\r\n}\r\n\r\n.socials_item {\r\n  margin-right: 25px;\r\n}\r\n\r\n.socials_item:first-child {\r\n  margin-left: 30px;\r\n}\r\n\r\n.socials_item:hover {\r\n  opacity: 0.5;\r\n}\r\n\r\n.social_link_text {\r\n  position: absolute;\r\n  width: 1px;\r\n  height: 1px;\r\n  clip: rect(1px, 1px, 1px, 1px)\r\n}\r\n\r\n.socials_item:first-child {\r\n  margin-left: 10px;\r\n}\r\n.socials_item {\r\n  margin-right: 10px;\r\n}\r\n\r\n.socials_link_fb {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/fb100.png */ "./resources/js/img/fb100.png")) + ");\r\n}\r\n\r\n.socials_link_ok {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/ok100.jpg */ "./resources/js/img/ok100.jpg")) + ");\r\n\r\n}\r\n\r\n.socials_link_vk {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/vk100.jpg */ "./resources/js/img/vk100.jpg")) + ");\r\n}\r\n    \r\n.socials_link_instagram {\r\n  background-image: url(" + escape(__webpack_require__(/*! ./img/inst100.jpg */ "./resources/js/img/inst100.jpg")) + ");\r\n}\r\n\r\n.page404 {\r\n  width: 100%;\r\n  height: 400px;\r\n  background: #00cafc;\r\n}\r\n\r\n.page404_text {\r\n  font-size: 20px;\r\n  display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  width: 75%;\r\n  color: #ffffff;\r\n}\r\n\r\n.circle {\r\n  width: 100px;\r\n  height: 100px;\r\n  border-radius: 200px;\r\n  border: 16px solid #ffffff;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-top: 20px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.circle_text {\r\n  display: block;\r\n  width: 85px;\r\n  height: 16px;\r\n  background-color: #ffffff;\r\n  font-size: 8px;\r\n  line-height: 16px;\r\n  text-align: center;\r\n  margin-top: 24px;\r\n  color: #000000;\r\n  transform: rotate(-30deg) translate(-5px);;\r\n}\r\n\r\n@media (min-width:641px) {\r\n\r\n  .mobile_menu {\r\n    width: 200px;\r\n  }\r\n\r\n  .mobile_menu_link {\r\n    font-size: 2.5vw;\r\n  }\r\n\r\n  .main_page_header {\r\n    height: 130vw;\r\n  }\r\n\r\n  .header_menu_logo {\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-bottom: 5px;\r\n    margin-top: 5px;\r\n  }\r\n\r\n  .header_background_baloons {\r\n    left: 10%;\r\n    width: 80%;\r\n  }\r\n\r\n  .header_background_confetti {\r\n    left: 10%;\r\n    width: 80%;\r\n  }\r\n\r\n  .head_menu {\r\n    font-size: 20px;\r\n    justify-content: space-between;\r\n    box-sizing: border-box;\r\n    padding-left: 20px;\r\n    padding-right: 20px;\r\n  }\r\n\r\n  .phone {\r\n    width: 220px;\r\n    font-size: 25px;\r\n  }\r\n\r\n  .header_name {\r\n    margin-top: 40%;\r\n  }\r\n\r\n  .header2 {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .service_list_text_wrapper {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .service_list_item_name {\r\n    left: -80px;\r\n    font-size: 20px;\r\n  }\r\n\r\n  .slider_navigation {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n  \r\n  .left_arrow::before {\r\n    left: 15px;\r\n    width: 20px;\r\n    height: 20px;\r\n    border-top: solid 4px #f83e45;\r\n    border-left: solid 4px #f83e45;\r\n  }\r\n  \r\n  .right_arrow::after {\r\n    right: -4px;\r\n    width: 20px;\r\n    height: 20px;\r\n    border-top: solid 4px #f83e45;\r\n    border-left: solid 4px #f83e45;\r\n  }\r\n  \r\n  .left_arrow {\r\n    top: 45%;\r\n    left: 5px;\r\n  }\r\n  \r\n  .right_arrow {\r\n    top: 45%;\r\n    right: 5px;\r\n  }\r\n\r\n  .service_list_link {\r\n    font-size: 18px;\r\n    width: 200px;\r\n  }\r\n\r\n  .name_item {\r\n    width: 40%;\r\n    height: 60px;\r\n    font-size: 25px;\r\n    line-height: 60px;\r\n  }\r\n\r\n  .name_item:last-child {\r\n    transform: rotate(-5deg);\r\n    margin-top: 5px;\r\n  }\r\n\r\n  .main_header {\r\n    font-size: 28px;\r\n    margin-top: 30vh;\r\n  }\r\n  \r\n  .advantage_list {\r\n    margin-left: 40px;\r\n  }\r\n  \r\n  .advantage_card {\r\n    min-height: 50px;\r\n    font-size: 20px;\r\n  }\r\n  \r\n  .advantage_card::after {\r\n    min-height: 50px;\r\n  }\r\n\r\n  .catalog_card {\r\n    width: 35%;\r\n    font-size: 22px;\r\n  }\r\n\r\n  .catalog_card_text_wrapper {\r\n    min-height: 120px;\r\n  }\r\n\r\n  .catalog_card_price {\r\n    min-height: 50px;\r\n    line-height: 50px;\r\n  }\r\n\r\n  .show_more_btn {\r\n    height: 40px;\r\n    min-width: 110px;\r\n    font-size: 20px;\r\n  }\r\n\r\n  .big_image_wrapper {\r\n    font-size: 25px;\r\n  }\r\n\r\n  .close_btn {\r\n    width: 40px;\r\n    height: 40px;\r\n    line-height: 40px;\r\n    font-size: 35px;\r\n  }\r\n\r\n  .order_btn {\r\n    width: 250px;\r\n    height: 50px;\r\n    line-height: 50px;\r\n    font-size: 25px;\r\n  }\r\n\r\n  .main_footer {\r\n    height: 300px;\r\n  }\r\n\r\n  .footer_social {\r\n    display: flex;\r\n    margin-top: 20px;\r\n    padding-left: 30px;\r\n    /* justify-content: flex-start; */\r\n  }\r\n\r\n  .footer_wrapper {\r\n    font-size: 25px;\r\n    justify-content: space-between;\r\n    position: relative;\r\n  }\r\n\r\n  /* .footer_social {\r\n    justify-content: flex-start;\r\n  } */\r\n\r\n  .email_footer {\r\n    width: 200px;\r\n  }\r\n\r\n  .city {\r\n    width: 300px;\r\n  }\r\n\r\n  .footer_baloons {\r\n    /* margin-left: 75%;\r\n    width: 35%; */\r\n    position: absolute;\r\n    top: 50px;\r\n    right: 100px;\r\n    /* height: 200px; */\r\n    width: 200px;\r\n  }\r\n\r\n  .footer_wrapper .phone {\r\n    margin-left: 25px;\r\n  }\r\n\r\n  .socials_link {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n\r\n  .socials_link_fb {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/fb200.png */ "./resources/js/img/fb200.png")) + ");\r\n  }\r\n  \r\n  .socials_link_ok {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/ok200.jpg */ "./resources/js/img/ok200.jpg")) + ");\r\n  }\r\n  \r\n  .socials_link_vk {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/vk200.jpg */ "./resources/js/img/vk200.jpg")) + ");\r\n  }\r\n      \r\n  .socials_link_instagram {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/inst200.jpg */ "./resources/js/img/inst200.jpg")) + ");\r\n  }\r\n\r\n\r\n}\r\n\r\n\r\n@media (min-width:961px) {\r\n\r\n  .head_menu {\r\n    flex-wrap: wrap;\r\n    justify-content: flex-end;\r\n    padding-left: 30px;\r\n    padding-right: 30px;\r\n    padding-bottom: 5px;\r\n    box-sizing: border-box;\r\n  }\r\n\r\n  .header_menu {\r\n    display: block;\r\n    width: 100%;\r\n  }\r\n\r\n  .header_menu_list {\r\n    margin: 0;\r\n  }\r\n\r\n  .header_menu_list_point .link{\r\n    color: black;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n  }\r\n\r\n  .header_menu_list_point .link:hover{\r\n    color: #f83e45;\r\n  }\r\n\r\n  .header_menu_logo {\r\n    display: none;\r\n  }\r\n\r\n  .mobile_menu_wrapper {\r\n    display: none;\r\n  }\r\n\r\n  .phone {\r\n    width: 200px;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n  }\r\n\r\n  .phone.phone_text {\r\n    display: block;\r\n  }\r\n\r\n  .phone.phone_link {\r\n    display: none;\r\n  }\r\n\r\n  .main_page_header {\r\n    height: 650px;\r\n  }\r\n\r\n  .header_name {\r\n    width: 50%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 200px;\r\n  }\r\n\r\n  .name_item {\r\n    height: 70px;\r\n    font-size: 35px;\r\n    line-height: 70px;\r\n    width: 50%;\r\n  }\r\n\r\n  .name_item:last-child {\r\n    transform: rotate(-5deg);\r\n    margin-top: 5px;\r\n  }\r\n\r\n  .header_background_baloons {\r\n    top: 10%;\r\n    left: 17.5%;\r\n    width: 65%;\r\n  }\r\n\r\n  .header_background_confetti {\r\n    top: 10%;\r\n    left: 17.5%;\r\n    width: 65%;\r\n  }\r\n\r\n  .main_header {\r\n    font-size: 30px;\r\n    z-index: 50;\r\n    color: #ffffff;\r\n    width: 90%;\r\n    margin-top: 120px;\r\n  }\r\n\r\n  .header2{\r\n    font-size: 35px;\r\n  }\r\n\r\n  .service_list_text {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .service_list_link {\r\n    font-size: 22px;\r\n    width: 250px;\r\n  }\r\n\r\n  .right_arrow {\r\n    right: 10px;\r\n  }\r\n\r\n  .left_arrow {\r\n    left: 10px;\r\n  }\r\n\r\n  .slider_navigation {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n\r\n  .right_arrow::after {\r\n    right: -5px;\r\n    width: 20px;\r\n    height: 20px;\r\n    border-top: solid 4px;\r\n    border-left: solid 4px;\r\n    border-color: #f83e45;\r\n}\r\n\r\n  .left_arrow::before {\r\n    left: 15px;\r\n    width: 20px;\r\n    height: 20px;\r\n    border-top: solid 4px;\r\n    border-left: solid 4px;\r\n    border-color: #f83e45;\r\n  }\r\n\r\n  .advantage_wrapper {\r\n    display: flex;\r\n    justify-content: center;\r\n  }\r\n\r\n  .advantage_list {\r\n    margin-left: 0;\r\n    width: 70%;\r\n  }\r\n  \r\n  .advantage_card {\r\n    min-height: 70px;\r\n    font-size: 30px;\r\n    width: 90%;\r\n  }\r\n  \r\n  .advantage_card::after {\r\n    min-height: 70px;\r\n  }\r\n\r\n  .catalog_list_wrapper {\r\n    padding-top: 100px;\r\n  }\r\n\r\n  .catalog_card {\r\n    width: 350px;\r\n    font-size: 30px;\r\n    margin-left: 50px;\r\n    margin-right: 50px;\r\n  }\r\n\r\n  .catalog_card_text_wrapper {\r\n    min-height: 150px;\r\n  }\r\n\r\n  .catalog_card_price {\r\n    min-height: 65px;\r\n    line-height: 65px;\r\n  }\r\n\r\n  .catalog_card::after {\r\n    width: 70px;\r\n    height: 100px;\r\n    top: -90px;\r\n  }\r\n\r\n  .catalog_card::before {\r\n    width: 70px;\r\n    height: 100px;\r\n    top: -90px;\r\n  }\r\n\r\n  .catalog_card:nth-child(odd) {\r\n    margin-top: 95px;\r\n  }\r\n  \r\n  .catalog_card:nth-child(even) {\r\n    margin-bottom: 95px;\r\n  }\r\n\r\n  /* .show_more_btn {\r\n    height: 40px;\r\n    min-width: 110px;\r\n    font-size: 20px;\r\n  } */\r\n\r\n  .big_image_wrapper {\r\n    font-size: 35px;\r\n    width: 70%;\r\n    left: 15%;\r\n  }\r\n\r\n  .bi_interface {\r\n    width: 100%;\r\n  }\r\n\r\n  .bi_image{\r\n    width: 100%;\r\n  }\r\n\r\n  .close_btn {\r\n    width: 50px;\r\n    height: 50px;\r\n    right: 17%;\r\n    line-height: 50px;\r\n    font-size: 40px;\r\n  }\r\n\r\n  .order_btn {\r\n    width: 300px;\r\n    height: 60px;\r\n    line-height: 60px;\r\n    font-size: 30px;\r\n  }\r\n\r\n  .radio_label {\r\n    font-size: 20px;\r\n  }\r\n\r\n  .order_form {\r\n    position: relative;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n  }\r\n  \r\n\r\n  .input_field {\r\n    font-size: 20px;\r\n  }\r\n\r\n  .phone_link {\r\n    display: none;\r\n  }\r\n\r\n  .order_phone {\r\n    display: block;\r\n  }\r\n\r\n  .main_footer {\r\n    height: 300px;\r\n  }\r\n\r\n  .footer_social {\r\n    display: flex;\r\n    margin-top: 20px;\r\n    padding-left: 30px;\r\n    /* justify-content: flex-start; */\r\n  }\r\n\r\n  .footer_wrapper {\r\n    font-size: 35px;\r\n    justify-content: space-between;\r\n    position: relative;\r\n  }\r\n\r\n  /* .footer_social {\r\n    justify-content: flex-start;\r\n  } */\r\n\r\n  .city {\r\n    width: 55%;\r\n  }\r\n\r\n  .footer_baloons {\r\n    /* margin-left: 75%;\r\n    width: 35%; */\r\n    position: absolute;\r\n    top: 50px;\r\n    right: 100px;\r\n    /* height: 200px; */\r\n    width: 200px;\r\n  }\r\n\r\n  .footer_wrapper .phone {\r\n    margin-left: 25px;\r\n    font-size: 35px;\r\n    width: 300px;\r\n  }\r\n\r\n  .socials_link {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n\r\n  .socials_link_fb {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/fb400.png */ "./resources/js/img/fb400.png")) + ");\r\n  }\r\n  \r\n  .socials_link_ok {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/ok400.jpg */ "./resources/js/img/ok400.jpg")) + ");\r\n  }\r\n  \r\n  .socials_link_vk {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/vk400.jpg */ "./resources/js/img/vk400.jpg")) + ");\r\n  }\r\n      \r\n  .socials_link_instagram {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./img/inst400.jpg */ "./resources/js/img/inst400.jpg")) + ");\r\n  }\r\n\r\n}\r\n\r\n@media (min-width:1301px) {\r\n  .head_menu {\r\n    flex-wrap: wrap;\r\n    justify-content: flex-end;\r\n    padding-left: 30px;\r\n    padding-right: 30px;\r\n    padding-bottom: 5px;\r\n    box-sizing: border-box;\r\n  }\r\n\r\n  .header_menu {\r\n    display: block;\r\n    width: 100%;\r\n  }\r\n\r\n  .header_menu_list {\r\n    margin: 0;\r\n    width: 100%;\r\n    justify-content: space-around;\r\n  }\r\n\r\n  .header_menu_list_point .link{\r\n    color: black;\r\n    font-size: 18px;\r\n    text-decoration: none;\r\n  }\r\n\r\n  .header_menu_list_point .link:hover{\r\n    color: #f83e45;\r\n  }\r\n\r\n  .mobile_menu_wrapper {\r\n    display: none;\r\n  }\r\n\r\n  .phone {\r\n    /* display: block; */\r\n    width: 200px;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n  }\r\n\r\n  .phone.phone_text {\r\n    display: block;\r\n  }\r\n\r\n  .phone.phone_link {\r\n    display: none;\r\n  }\r\n  \r\n  .main_page_header {\r\n    height: 50vh;\r\n    flex-wrap: nowrap;\r\n    flex-direction: row-reverse;\r\n    justify-content: space-around;\r\n  }\r\n\r\n  .image_hero {\r\n    width: 40%;\r\n  }\r\n\r\n  .header_name {\r\n    width: 60%;\r\n    margin-top: 20%;\r\n    margin-left: 20%;\r\n  }\r\n\r\n  .name_item {\r\n    height: 40px;\r\n    font-size: 25px;\r\n    line-height: 40px;\r\n    width: 55%;\r\n  }\r\n\r\n  .header_background_baloons {\r\n    top: 15%;\r\n    left: 20%;\r\n    width: 60%;\r\n  }\r\n\r\n  .header_background_confetti {\r\n    top: 15%;\r\n    left: 20%;\r\n    width: 60%;\r\n  }\r\n\r\n  .main_header {\r\n    font-size: 30px;\r\n    width: 35%;\r\n    margin-top: 135px;\r\n    margin-left: 200px;\r\n    line-height: 45px;\r\n  }\r\n\r\n  .service_list_slider {\r\n    width: 60%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n  }\r\n\r\n  .service_list_text {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .service_list_link {\r\n    font-size: 20px;\r\n    width: 250px;\r\n  }\r\n\r\n  .catalog_list_wrapper {\r\n    padding-left: 10%;\r\n    padding-right: 10%;\r\n    box-sizing: border-box;\r\n    justify-content: center;\r\n  }\r\n\r\n  .catalog_card:nth-child(odd) {\r\n    margin-top: 0;\r\n  }\r\n  \r\n  .catalog_card:nth-child(even) {\r\n    margin-bottom: 125px;\r\n  }\r\n\r\n  .catalog_card {\r\n    width: 250px;\r\n    font-size: 25px;\r\n    margin-left: 50px;\r\n    margin-right: 50px;\r\n    margin-bottom: 125px;\r\n  }\r\n\r\n  .catalog_card:hover {\r\n    background-color: #ffffff;\r\n    transform: scale(1.1);\r\n    transition: all 2s;\r\n  }\r\n\r\n  .catalog_card_text_wrapper {\r\n    min-height: 140px;\r\n  }\r\n\r\n  .catalog_card_price {\r\n    min-height: 60px;\r\n    line-height: 60px;\r\n  }\r\n\r\n  .catalog_card:nth-child(odd) {\r\n    margin-top: 0;\r\n  }\r\n\r\n  .catalog_img_wrapper {\r\n    cursor: pointer;\r\n  }\r\n\r\n  .big_image_wrapper {\r\n    font-size: 35px;\r\n    width: 70%;\r\n    left: 10%;\r\n    /* flex-wrap: nowrap; */\r\n  }\r\n\r\n  .bi_image{\r\n    width: 40%;\r\n  }\r\n\r\n  .bi_interface {\r\n    width: 60%;\r\n  }\r\n\r\n  .big_image_wrapper {\r\n    padding-bottom: 0;\r\n  }\r\n\r\n  .close_btn {\r\n    width: 50px;\r\n    height: 50px;\r\n    left: 11%;\r\n    line-height: 50px;\r\n    font-size: 40px;\r\n  }\r\n\r\n  .order_btn {\r\n    width: 250px;\r\n    height: 60px;\r\n    line-height: 60px;\r\n    font-size: 30px;\r\n  }\r\n\r\n  .order_wsapp_btn {\r\n    display: none;\r\n  }\r\n\r\n  .order_form {\r\n    margin-bottom: 10px;\r\n  }\r\n\r\n  .radio_label {\r\n    font-size: 30px;\r\n  }\r\n\r\n  .main_footer {\r\n    height: 300px;\r\n  }\r\n\r\n  .footer_social {\r\n    display: flex;\r\n    margin-top: 20px;\r\n    padding-left: 30px;\r\n    justify-content: center;\r\n  }\r\n\r\n  .footer_wrapper {\r\n    font-size: 35px;\r\n    justify-content: center;\r\n    position: relative;\r\n  }\r\n\r\n  /* .footer_social {\r\n    justify-content: flex-start;\r\n  } */\r\n\r\n  .city {\r\n    width: 400px;\r\n  }\r\n\r\n  .footer_baloons {\r\n    /* margin-left: 75%;\r\n    width: 35%; */\r\n    position: absolute;\r\n    top: 50px;\r\n    right: 100px;\r\n    /* height: 200px; */\r\n    width: 200px;\r\n  }\r\n\r\n  .footer_wrapper .phone {\r\n    margin-left: 25px;\r\n    font-size: 35px;\r\n    width: 300px;\r\n  }\r\n\r\n  .socials_link {\r\n    width: 60px;\r\n    height: 60px;\r\n  }\r\n\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -57440,8 +57440,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Footer */ "./resources/js/components/Footer.jsx");
 /* harmony import */ var _components_Location__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Location */ "./resources/js/components/Location.jsx");
 /* harmony import */ var _components_Advantage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Advantage */ "./resources/js/components/Advantage.jsx");
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./App.css */ "./resources/js/App.css");
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_Page404__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Page404 */ "./resources/js/components/Page404.jsx");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./App.css */ "./resources/js/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_12__);
+
 
 
 
@@ -57510,6 +57512,13 @@ function Application() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Catalog__WEBPACK_IMPORTED_MODULE_7__["default"], {
     category: "bouqet",
     header: "\u0414\u043E\u0441\u0442\u0430\u0432\u043A\u0430 \u0431\u0443\u043A\u0435\u0442\u043E\u0432 \u0438\u0437 \u0448\u0430\u0440\u043E\u0432"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+    path: "/404",
+    exact: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page404__WEBPACK_IMPORTED_MODULE_11__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+    path: "*"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
+    to: "/404"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
 }
 
@@ -57537,8 +57546,7 @@ var API = /*#__PURE__*/function () {
   function API() {
     _classCallCheck(this, API);
 
-    // this.server = 'http://localhost:8000/api';
-    this.server = 'https://lit-sierra-16668.herokuapp.com/api';
+    this.server = 'http://localhost:8000/api'; // this.server = 'https://lit-sierra-16668.herokuapp.com/api';
   }
 
   _createClass(API, [{
@@ -57698,7 +57706,10 @@ if (token) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/index.js");
+
 
 
 
@@ -57712,7 +57723,7 @@ function AdvantageCard(props) {
   }, dataText.map(function (textString) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "advantage_card",
-      key: Object(uuid__WEBPACK_IMPORTED_MODULE_1__["v4"])()
+      key: Object(uuid__WEBPACK_IMPORTED_MODULE_2__["v4"])()
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "advantage_text"
     }, textString));
@@ -57720,6 +57731,12 @@ function AdvantageCard(props) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (AdvantageCard);
+AdvantageCard.propTypes = {
+  dataText: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string)
+};
+AdvantageCard.defaultProps = {
+  dataText: null
+};
 
 /***/ }),
 
@@ -57737,8 +57754,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-ga */ "./node_modules/react-ga/dist/esm/index.js");
-/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-yandex-metrika */ "./node_modules/react-yandex-metrika/lib/index.js");
-/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_yandex_metrika__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-yandex-metrika */ "./node_modules/react-yandex-metrika/lib/index.js");
+/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_yandex_metrika__WEBPACK_IMPORTED_MODULE_4__);
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -57762,6 +57781,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -57793,8 +57813,9 @@ function BigImage(props) {
       resultText = _useState10[0],
       setResultText = _useState10[1];
 
-  var setImage = props.setter;
-  var API = props.api; // const screenWidth = props.screen;
+  var setter = props.setter,
+      api = props.api,
+      img = props.img; // const screenWidth = props.screen;
 
   var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
       _useState12 = _slicedToArray(_useState11, 2),
@@ -57811,6 +57832,10 @@ function BigImage(props) {
 
   var handleRadio = function handleRadio(e) {
     setMessenger(e.target.value); // console.log(e.target.value);
+  };
+
+  var handleFormClick = function handleFormClick() {
+    isActive ? setIsActive(false) : setIsActive(true);
   };
 
   var handleSubmit = /*#__PURE__*/function () {
@@ -57844,7 +57869,7 @@ function BigImage(props) {
               return _context.abrupt("return");
 
             case 11:
-              if (!(clientName.search(/^[A-ЯЁ\s][а-яё\s]+/) == -1)) {
+              if (!(clientName.search(/^[A-ЯЁ\s][а-яё\s]+/) === -1)) {
                 _context.next = 15;
                 break;
               }
@@ -57865,7 +57890,7 @@ function BigImage(props) {
               }
 
               _context.next = 19;
-              return API.sendOrder(clientName, clientPhone, messenger);
+              return api.sendOrder(clientName, clientPhone, messenger);
 
             case 19:
               order = _context.sent;
@@ -57919,39 +57944,36 @@ function BigImage(props) {
     });
   };
 
-  var handleFormClick = function handleFormClick() {
-    isActive ? setIsActive(false) : setIsActive(true);
-  };
-
   var clearImage = function clearImage() {
-    setImage('');
+    setter('');
   };
 
   var sendActionGAandYM = function sendActionGAandYM(category, actionName, label, value, yandexMetrics) {
     react_ga__WEBPACK_IMPORTED_MODULE_2__["default"].event({
-      category: 'Messenger',
+      category: category,
       action: actionName,
-      label: 'WhatsApp',
-      value: 50
+      label: label,
+      value: value
     });
-    react_yandex_metrika__WEBPACK_IMPORTED_MODULE_3___default()('reachGoal', 'ymTest'); // ym('reachGoal', 'testGoal');
-    // window.ym(73558078,'reachGoal','testWindow');
-    // ym(73558078,'reachGoal','ymTest');
-    // window.ym(73558078, 'reachGoal', actionName);
-    // ym(73558078,'reachGoal','testGoal');
+    react_yandex_metrika__WEBPACK_IMPORTED_MODULE_4___default()('reachGoal', yandexMetrics);
   };
 
-  return props.img !== '' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  return img !== '' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "big_image_wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "bi_image"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     className: "big_image",
-    src: props.img,
+    src: img,
     alt: "\u041F\u0440\u0438\u043C\u0435\u0440"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "close_btn",
-    onClick: clearImage
+    role: "button",
+    onClick: clearImage,
+    tabIndex: 0,
+    onKeyPress: function onKeyPress(e) {
+      if (e.key === 'Enter') clearImage();
+    }
   }, "\u2718")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "bi_interface"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
@@ -57965,36 +57987,45 @@ function BigImage(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "https://wa.me/79521381601",
     target: "_blank",
-    rel: "noreferrer" // onClick={() => {
-    //   sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymTest');
-    // }}
-    ,
+    rel: "noreferrer",
+    onClick: function onClick() {
+      sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymWhatsapp');
+      sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
+    },
     className: "header_menu_logo whatsapp_logo"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "https://t.me/RomanSuvorkov",
     target: "_blank",
-    rel: "noreferrer" // onClick={() => {
-    //   sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymTest');
-    // }}
-    ,
+    rel: "noreferrer",
+    onClick: function onClick() {
+      sendActionGAandYM('Messenger', 'Переход Telegram', 'Telegram', 50, 'ymTelegram');
+      sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
+    },
     className: "header_menu_logo telegram_logo"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "viber://add?number=79521381601",
     target: "_blank",
-    rel: "noreferrer" // onClick={() => {
-    //   sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymTest');
-    // }}
-    ,
+    rel: "noreferrer",
+    onClick: function onClick() {
+      sendActionGAandYM('Messenger', 'Переход Viber', 'Viber', 50, 'ymViber');
+      sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
+    },
     className: "header_menu_logo viber_logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     className: "order_mail_btn order_btn order_link",
     href: "mailto:centr_ug@mail.ru?subject=\u0417\u0430\u043A\u0430\u0437 \u043D\u0430 \u0448\u0430\u0440\u0438\u043A\u0438 &body=\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435!%0A\u041F\u0440\u043E\u0448\u0443 \u0441\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F \u0441\u043E \u043C\u043D\u043E\u0439.%0A%0A%0A\u0423\u041A\u0410\u0416\u0418\u0422\u0415 \u041F\u041E\u0416\u0410\u041B\u0423\u0419\u0421\u0422\u0410 \u0412\u0410\u0428\u0418 \u041A\u041E\u041D\u0422\u0410\u041A\u0422\u041D\u042B\u0415 \u0414\u0410\u041D\u041D\u042B\u0415",
-    target: "_blank"
+    target: "_blank",
+    onClick: function onClick() {
+      sendActionGAandYM('Email', 'emailClick', 'emailClick', 50, 'ymEmail');
+    }
   }, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "order_phone"
   }, "888888888"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     className: "order_btn phone_link order_link",
-    href: "tel:+79521381601"
+    href: "tel:+79521381601",
+    onClick: function onClick() {
+      sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
+    }
   }, "+79521381601"), showResult && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, resultText)), isActive && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
     className: "order_form",
     method: "POST",
@@ -58063,7 +58094,7 @@ function BigImage(props) {
     htmlFor: "messengersChoice3"
   }, "Viber")), isError && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, errorText), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     className: "order_btn",
-    type: "reset",
+    type: "button",
     onClick: handleFormClick
   }, "\u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"), !isError && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     className: "order_btn",
@@ -58072,6 +58103,16 @@ function BigImage(props) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (BigImage);
+BigImage.propTypes = {
+  setter: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func,
+  img: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+  api: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func
+};
+BigImage.defaultProps = {
+  setter: function setter() {},
+  api: function api() {},
+  img: null
+};
 
 /***/ }),
 
@@ -58179,8 +58220,6 @@ function Catalog(props) {
 
             case 2:
               loadedItems = _context.sent;
-              console.log(loadedItems);
-              console.log(lastItem);
 
               if (loadedItems.length < 5) {
                 setShowButtonActive(false);
@@ -58200,7 +58239,7 @@ function Catalog(props) {
               // });
 
 
-            case 7:
+            case 5:
             case "end":
               return _context.stop();
           }
@@ -58227,7 +58266,6 @@ function Catalog(props) {
     });
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_BigImage__WEBPACK_IMPORTED_MODULE_3__["default"], {
     setter: setActiveImage,
-    screen: screenWidth,
     img: activeImage,
     api: API
   })), showButtonActive && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
@@ -58306,12 +58344,27 @@ function CatalogCard(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_baloons_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/baloons.png */ "./resources/js/img/baloons.png");
-/* harmony import */ var _img_baloons_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_baloons_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-ga */ "./node_modules/react-ga/dist/esm/index.js");
+/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-yandex-metrika */ "./node_modules/react-yandex-metrika/lib/index.js");
+/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_yandex_metrika__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _img_baloons_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/baloons.png */ "./resources/js/img/baloons.png");
+/* harmony import */ var _img_baloons_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_baloons_png__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 
 function Footer() {
+  var sendActionGAandYM = function sendActionGAandYM(category, actionName, label, value, yandexMetrics) {
+    react_ga__WEBPACK_IMPORTED_MODULE_1__["default"].event({
+      category: category,
+      action: actionName,
+      label: label,
+      value: value
+    });
+    react_yandex_metrika__WEBPACK_IMPORTED_MODULE_2___default()('reachGoal', yandexMetrics);
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
     className: "main_footer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
@@ -58322,8 +58375,19 @@ function Footer() {
     className: "phone phone_text"
   }, "+79521381601"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "phone phone_link",
-    href: "tel:+79521381601"
-  }, "+79521381601"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    href: "tel:+79521381601",
+    onClick: function onClick() {
+      sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
+      sendActionGAandYM('Footer', 'Footer', 'FooterClick', 50, 'ymFooter');
+    }
+  }, "+79521381601"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "email_footer",
+    href: "mailto:centr_ug@mail.ru?subject=\u0417\u0430\u043A\u0430\u0437 \u043D\u0430 \u0448\u0430\u0440\u0438\u043A\u0438 &body=\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435!%0A\u041F\u0440\u043E\u0448\u0443 \u0441\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F \u0441\u043E \u043C\u043D\u043E\u0439.%0A%0A%0A\u0423\u041A\u0410\u0416\u0418\u0422\u0415 \u041F\u041E\u0416\u0410\u041B\u0423\u0419\u0421\u0422\u0410 \u0412\u0410\u0428\u0418 \u041A\u041E\u041D\u0422\u0410\u041A\u0422\u041D\u042B\u0415 \u0414\u0410\u041D\u041D\u042B\u0415",
+    onClick: function onClick() {
+      sendActionGAandYM('Email', 'emailClick', 'emailClick', 50, 'ymEmail');
+      sendActionGAandYM('Footer', 'Footer', 'FooterClick', 50, 'ymFooter');
+    }
+  }, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "city"
   }, "\u0433. \u041A\u0430\u043C\u0435\u043D\u0441\u043A-\u0423\u0440\u0430\u043B\u044C\u0441\u043A\u0438\u0439"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer_social"
@@ -58335,7 +58399,10 @@ function Footer() {
     href: "https://wa.me/79521381601?text=\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439+\u0442\u0435\u043A\u0441\u0442",
     target: "_blank",
     rel: "noreferrer",
-    className: "socials_link socials_link_fb"
+    className: "socials_link socials_link_fb",
+    onClick: function onClick() {
+      sendActionGAandYM('socialLink', 'facebookLink', 'facebookLink', 50, 'ymFacebook');
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "social_link_text"
   }, "Facebook"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
@@ -58344,7 +58411,10 @@ function Footer() {
     href: "https://ok.ru/profile/570837118023/statuses",
     target: "_blank",
     rel: "noreferrer",
-    className: "socials_link socials_link_ok"
+    className: "socials_link socials_link_ok",
+    onClick: function onClick() {
+      sendActionGAandYM('socialLink', 'okLink', 'okLink', 50, 'ymOK');
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "social_link_text"
   }, "\u041E\u0434\u043D\u043E\u043A\u043B\u0430\u0441\u0441\u043D\u0438\u043A\u0438"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
@@ -58353,7 +58423,10 @@ function Footer() {
     href: "https://vk.com/uralgraf395355",
     target: "_blank",
     rel: "noreferrer",
-    className: "socials_link socials_link_vk"
+    className: "socials_link socials_link_vk",
+    onClick: function onClick() {
+      sendActionGAandYM('socialLink', 'vkLink', 'vkLink', 50, 'ymVK');
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "social_link_text"
   }, "\u0412\u043A\u043E\u043D\u0442\u0430\u043A\u0442\u0435"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
@@ -58362,14 +58435,17 @@ function Footer() {
     href: "https://www.instagram.com/uralgraf.ru/",
     target: "_blank",
     rel: "noreferrer",
-    className: "socials_link socials_link_instagram"
+    className: "socials_link socials_link_instagram",
+    onClick: function onClick() {
+      sendActionGAandYM('socialLink', 'instagramLink', 'instagramLink', 50, 'ymInstagram');
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "social_link_text"
-  }, "instagram"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Instagram"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer_baloons_wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "footer_baloons",
-    src: _img_baloons_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    src: _img_baloons_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     alt: "\u0428\u0430\u0440\u0438\u043A\u0438 \u0434\u043B\u044F \u0444\u043E\u043D\u0430"
   }))));
 }
@@ -58389,10 +58465,15 @@ function Footer() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_baloons_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/baloons.png */ "./resources/js/img/baloons.png");
-/* harmony import */ var _img_baloons_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_baloons_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _img_confetti_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/confetti.png */ "./resources/js/img/confetti.png");
-/* harmony import */ var _img_confetti_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_confetti_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-ga */ "./node_modules/react-ga/dist/esm/index.js");
+/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-yandex-metrika */ "./node_modules/react-yandex-metrika/lib/index.js");
+/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_yandex_metrika__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _img_baloons_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/baloons.png */ "./resources/js/img/baloons.png");
+/* harmony import */ var _img_baloons_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_baloons_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _img_confetti_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/confetti.png */ "./resources/js/img/confetti.png");
+/* harmony import */ var _img_confetti_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_confetti_png__WEBPACK_IMPORTED_MODULE_4__);
+
+
 
 
 
@@ -58405,34 +58486,34 @@ function Header() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", {
     className: "header_background_baloons"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: "".concat(_img_baloons_png__WEBPACK_IMPORTED_MODULE_1___default.a, " 1x, images/baloons.png 2x"),
+    srcSet: "".concat(_img_baloons_png__WEBPACK_IMPORTED_MODULE_3___default.a, " 1x, images/baloons.png 2x"),
     media: "(max-width: 640px)"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: "".concat(_img_baloons_png__WEBPACK_IMPORTED_MODULE_1___default.a, " 1x, images/baloons.png 2x"),
+    srcSet: "".concat(_img_baloons_png__WEBPACK_IMPORTED_MODULE_3___default.a, " 1x, images/baloons.png 2x"),
     media: "(min-width: 641px)  and (max-width: 960px)"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: _img_baloons_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    srcSet: _img_baloons_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     media: "(min-width: 961px)"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "header_background_baloons",
-    src: _img_baloons_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    srcSet: "".concat(_img_baloons_png__WEBPACK_IMPORTED_MODULE_1___default.a, " 1x, images/baloons.png 2x"),
+    src: _img_baloons_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    srcSet: "".concat(_img_baloons_png__WEBPACK_IMPORTED_MODULE_3___default.a, " 1x, images/baloons.png 2x"),
     alt: "\u0428\u0430\u0440\u0438\u043A\u0438 \u0434\u043B\u044F \u0444\u043E\u043D\u0430"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", {
     className: "header_background_confetti"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: "".concat(_img_confetti_png__WEBPACK_IMPORTED_MODULE_2___default.a, " 1x, images/confetti.png 2x"),
+    srcSet: "".concat(_img_confetti_png__WEBPACK_IMPORTED_MODULE_4___default.a, " 1x, images/confetti.png 2x"),
     media: "(max-width: 640px)"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: "".concat(_img_confetti_png__WEBPACK_IMPORTED_MODULE_2___default.a, " 1x, images/confetti.png 2x"),
+    srcSet: "".concat(_img_confetti_png__WEBPACK_IMPORTED_MODULE_4___default.a, " 1x, images/confetti.png 2x"),
     media: "(min-width: 641px)  and (max-width: 960px)"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-    srcSet: _img_confetti_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    srcSet: _img_confetti_png__WEBPACK_IMPORTED_MODULE_4___default.a,
     media: "(min-width: 961px)"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "header_background_confetti",
-    src: _img_confetti_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    srcSet: "".concat(_img_confetti_png__WEBPACK_IMPORTED_MODULE_2___default.a, " 1x, images/confetti.png 2x"),
+    src: _img_confetti_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    srcSet: "".concat(_img_confetti_png__WEBPACK_IMPORTED_MODULE_4___default.a, " 1x, images/confetti.png 2x"),
     alt: "\u041A\u043E\u043D\u0444\u0435\u0442\u0442\u0438 \u0434\u043B\u044F \u0444\u043E\u043D\u0430"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "header_name"
@@ -58462,6 +58543,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-hash-link */ "./node_modules/react-router-hash-link/lib/index.js");
 /* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_hash_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-ga */ "./node_modules/react-ga/dist/esm/index.js");
+/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-yandex-metrika */ "./node_modules/react-yandex-metrika/lib/index.js");
+/* harmony import */ var react_yandex_metrika__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_yandex_metrika__WEBPACK_IMPORTED_MODULE_3__);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -58479,6 +58563,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 function HeaderMenu() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState2 = _slicedToArray(_useState, 2),
@@ -58491,6 +58577,16 @@ function HeaderMenu() {
     } else {
       setMobMenuActive(true);
     }
+  };
+
+  var sendActionGAandYM = function sendActionGAandYM(category, actionName, label, value, yandexMetrics) {
+    react_ga__WEBPACK_IMPORTED_MODULE_2__["default"].event({
+      category: category,
+      action: actionName,
+      label: label,
+      value: value
+    });
+    react_yandex_metrika__WEBPACK_IMPORTED_MODULE_3___default()('reachGoal', yandexMetrics);
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
@@ -58571,22 +58667,38 @@ function HeaderMenu() {
     href: "https://wa.me/79521381601",
     target: "_blank",
     rel: "noreferrer",
-    className: "header_menu_logo whatsapp_logo"
+    className: "header_menu_logo whatsapp_logo",
+    onClick: function onClick() {
+      sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymWhatsapp');
+      sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://wa.me/79521381601",
+    href: "https://t.me/RomanSuvorkov",
     target: "_blank",
     rel: "noreferrer",
-    className: "header_menu_logo telegram_logo"
+    className: "header_menu_logo telegram_logo",
+    onClick: function onClick() {
+      sendActionGAandYM('Messenger', 'Переход Telegram', 'Telegram', 50, 'ymTelegram');
+      sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://wa.me/79521381601",
+    href: "viber://add?number=79521381601",
     target: "_blank",
     rel: "noreferrer",
-    className: "header_menu_logo viber_logo"
+    className: "header_menu_logo viber_logo",
+    onClick: function onClick() {
+      sendActionGAandYM('Messenger', 'Переход Viber', 'Viber', 50, 'ymViber');
+      sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "phone phone_text"
   }, "+79521381601"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "phone phone_link",
-    href: "tel:+79521381601"
+    href: "tel:+79521381601",
+    onClick: function onClick() {
+      sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
+      sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+    }
   }, "+79521381601"));
 }
 
@@ -58633,6 +58745,35 @@ function Location() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Location);
+
+/***/ }),
+
+/***/ "./resources/js/components/Page404.jsx":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Page404.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function Page404() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "page404"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "page404_text"
+  }, "\u0418\u0437\u0432\u0438\u043D\u0438\u0442\u0435 \u0442\u0430\u043A\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u0443 \u043D\u0430\u0441 \u043D\u0435\u0442, \u043D\u043E \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043B\u044E\u0431\u0443\u044E \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443 \u0438\u0437 \u043C\u0435\u043D\u044E."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "circle"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "circle_text"
+  }, "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u043D\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442")));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Page404);
 
 /***/ }),
 
@@ -58739,11 +58880,21 @@ function ServicesList() {
     className: "left_arrow slider_navigation",
     onClick: function onClick() {
       return handleClick(-1);
+    },
+    role: "button",
+    tabIndex: 0,
+    onKeyPress: function onKeyPress(e) {
+      if (e.key === 'Enter') handleClick(-1);
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "right_arrow slider_navigation",
     onClick: function onClick() {
       return handleClick(1);
+    },
+    role: "button",
+    tabIndex: 0,
+    onKeyPress: function onKeyPress(e) {
+      if (e.key === 'Enter') handleClick(1);
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "service_list_info"
