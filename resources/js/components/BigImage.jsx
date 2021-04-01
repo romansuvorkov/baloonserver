@@ -100,10 +100,10 @@ function BigImage(props) {
 
   const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
     ReactGA.event({
-      category,
+      category: category,
       action: actionName,
-      label,
-      value,
+      label: label,
+      value: value,
     });
 
     ym('reachGoal', yandexMetrics);
