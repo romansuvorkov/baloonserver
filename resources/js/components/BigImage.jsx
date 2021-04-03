@@ -95,15 +95,21 @@ function BigImage(props) {
   };
 
   const clearImage = () => {
-    setter('');
+    setter(null);
   };
 
-  const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
+  const sendActionGAandYM = (
+    categoryInput,
+    actionNameInput,
+    labelInput,
+    valueInput,
+    yandexMetrics,
+  ) => {
     ReactGA.event({
-      category: category,
-      action: actionName,
-      label: label,
-      value: value,
+      category: categoryInput,
+      action: actionNameInput,
+      label: labelInput,
+      value: valueInput,
     });
 
     ym('reachGoal', yandexMetrics);
@@ -113,7 +119,17 @@ function BigImage(props) {
     img !== '' && (
       <div className="big_image_wrapper">
         <div className="bi_image">
-          <img className="big_image" src={img} alt="Пример" />
+          <picture className="big_image">
+            <source srcSet={`${img.img640} 1x, ${img.img1280} 2x`} media="(max-width: 640px)" />
+            <source srcSet={`${img.img1280} 1x, ${img.img1980} 2x`} media="(min-width: 641px)  and (max-width: 960px)" />
+            <source srcSet={img.img1980} media="(min-width: 961px)" />
+            <img
+              className="big_image"
+              src={img.img1980}
+              srcSet={`${img.img1280} 1x, ${img.img1980} 2x`}
+              alt="Пример"
+            />
+          </picture>
           <span
             className="close_btn"
             role="button"
@@ -169,6 +185,7 @@ function BigImage(props) {
               className="order_mail_btn order_btn order_link"
               href="mailto:centr_ug@mail.ru?subject=Заказ на шарики &body=Здравствуйте!%0AПрошу связаться со мной.%0A%0A%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШИ КОНТАКТНЫЕ ДАННЫЕ"
               target="_blank"
+              rel="noreferrer"
               onClick={() => {
                 sendActionGAandYM('Email', 'emailClick', 'emailClick', 50, 'ymEmail');
               }}
@@ -185,7 +202,6 @@ function BigImage(props) {
             >
               +79521381601
             </a>
-            {/* <span className="order_by_form order_btn" onClick={handleFormClick}>Заказать звонок</span> */}
             {showResult && <p>{resultText}</p>}
           </div>
           {isActive && (
@@ -211,7 +227,11 @@ function BigImage(props) {
               </div>
               {isError && <p>{errorText}</p>}
               {/* <label className="input_label" htmlFor="email_input">Email</label>
-               <input className="input_field" type="email" name="email_input" id="email_input" /> */}
+               <input
+                className="input_field"
+                type="email"
+                name="email_input"
+                id="email_input" /> */}
               <button className="order_btn" type="button" onClick={handleFormClick}>Отменить</button>
               {!isError && <button className="order_btn" type="submit">Отправить</button>}
             </form>
@@ -227,12 +247,22 @@ export default BigImage;
 
 BigImage.propTypes = {
   setter: PropTypes.func,
-  img: PropTypes.string,
-  api: PropTypes.func,
+  img: PropTypes.shape({
+    img640: PropTypes.string,
+    img1280: PropTypes.string,
+    img1980: PropTypes.string,
+    description: PropTypes.string,
+    price: PropTypes.number,
+  }),
+  api: PropTypes.shape({
+    getAllItems: PropTypes.func,
+    lazyload: PropTypes.func,
+    sendOrder: PropTypes.func,
+  }),
 };
 
 BigImage.defaultProps = {
   setter: () => {},
-  api: () => {},
+  api: {},
   img: null,
 };

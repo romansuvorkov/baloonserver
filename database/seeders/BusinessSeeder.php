@@ -15,39 +15,12 @@ class BusinessSeeder extends Seeder
     public function run()
     {
         DB::table('business')->insert([
-            'img' => 'images/business1.jpg',
+            'img640' => 'images/1business640.jpg',
+            'img1280' => 'images/1business1280.jpg',
+            'img1980' => 'images/1business1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
-        DB::table('business')->insert([
-            'img' => 'images/business2.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('business')->insert([
-            'img' => 'images/business3.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('business')->insert([
-            'img' => 'images/business4.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('business')->insert([
-            'img' => 'images/business5.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-        
-        DB::table('business')->insert([
-            'img' => 'images/business1.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
     }
 }

@@ -18,7 +18,9 @@ class Catalog extends JsonResource
             'id' => $this->id,
             'description' => $this->description,
             'price' => $this->price,
-            'img' => $this->img,
+            'img640' => $this->img640,
+            'img1280' => $this->img1280,
+            'img1980' => $this->img1980,
         ];
     }
 }

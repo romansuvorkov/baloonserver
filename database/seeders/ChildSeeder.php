@@ -15,33 +15,20 @@ class ChildSeeder extends Seeder
     public function run()
     {
         DB::table('child')->insert([
-            'img' => 'images/ch_ex1.jpg',
+            'img640' => 'images/1child640.jpg',
+            'img1280' => 'images/1child1280.jpg',
+            'img1980' => 'images/1child1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
         DB::table('child')->insert([
-            'img' => 'images/ch_ex2.jpg',
+            'img640' => 'images/2child640.jpg',
+            'img1280' => 'images/2child1280.jpg',
+            'img1980' => 'images/2child1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
-        DB::table('child')->insert([
-            'img' => 'images/ch_ex3.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('child')->insert([
-            'img' => 'images/ch_ex4.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('child')->insert([
-            'img' => 'images/ch_ex5.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
     }
 }

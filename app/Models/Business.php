@@ -13,7 +13,9 @@ class Business extends Model
         'id',
         'description',
         'price',
-        'img'
+        'img640',
+        'img1280',
+        'img1980'
     ];
 
     protected $table = 'business';

@@ -17,7 +17,9 @@ class CreateBirthdayTable extends Migration
             $table->id();
             $table->string('description');
             $table->unsignedBigInteger('price');
-            $table->string('img');
+            $table->string('img640');
+            $table->string('img1280');
+            $table->string('img1980');
         });
     }
 

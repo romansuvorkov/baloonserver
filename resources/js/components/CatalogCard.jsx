@@ -1,29 +1,40 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function CatalogCard(props) {
-  const setImage = props.setter;
+  const { setter, descr} = props;
 
   const handleClick = () => {
-    setImage(props.descr.img);
+      setter(descr);
   };
 
   return (
     <div className="catalog_card">
       <div className="catalog_img_wrapper">
-        <picture className="catalog_card_img" onClick={handleClick}>
-          <source srcSet={`${props.descr.img} 1x, images/ok200.jpg 2x`} media="(max-width: 640px)" />
-          <source srcSet={`${props.descr.img} 1x, images/ok200.jpg 2x`} media="(min-width: 641px)  and (max-width: 960px)" />
-          <source srcSet={props.descr.img} media="(min-width: 961px)" />
-          <img className="catalog_card_img" onClick={handleClick} src={props.descr.img} srcSet={`${props.descr.img} 1x, images/ok200.jpg 2x`} alt="Footballer picture" />
+        <picture
+          className="catalog_card_img"
+          onClick={handleClick}
+          onKeyPress={(e) => { if (e.key === 'Enter') handleClick(); }}
+        >
+          <source srcSet={`${descr.img640} 1x, ${descr.img1280} 2x`} media="(max-width: 640px)" />
+          <source srcSet={`${descr.img1280} 1x, ${descr.img1980} 2x`} media="(min-width: 641px)  and (max-width: 960px)" />
+          <source srcSet={descr.img1980} media="(min-width: 961px)" />
+          <img
+            className="catalog_card_img"
+            onClick={handleClick}
+            src={descr.img1980}
+            onKeyPress={(e) => { if (e.key === 'Enter') handleClick(); }}
+            srcSet={`${descr.img1280} 1x, ${descr.img1980} 2x`}
+            alt="Пример"
+          />
         </picture>
-        {/* <img className="catalog_card_img" onClick={handleClick} src={props.descr.img} alt="Пример" /> */}
       </div>
       <div className="catalog_card_text_wrapper">
-        <span className="catalog_card_text">{props.descr.description}</span>
+        <span className="catalog_card_text">{descr.description}</span>
       </div>
       <span className="catalog_card_price">
         Цена:
-        {props.descr.price}
+        {descr.price}
         {' '}
         руб.
       </span>
@@ -32,3 +43,21 @@ function CatalogCard(props) {
 }
 
 export default CatalogCard;
+
+CatalogCard.propTypes = {
+  setter: PropTypes.func,
+  descr: PropTypes.shape({
+    img640: PropTypes.string,
+    img1280: PropTypes.string,
+    img1980: PropTypes.string,
+    description: PropTypes.string,
+    price: PropTypes.number,
+  }),
+  screenWidth: PropTypes.number
+};
+
+CatalogCard.defaultProps = {
+  setter: () => {},
+  descr: {},
+  screenWidth: null
+};

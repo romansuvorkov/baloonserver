@@ -15,85 +15,20 @@ class BouqetSeeder extends Seeder
     public function run()
     {
         DB::table('bouqet')->insert([
-            'img' => 'images/bouqet1.jpg',
+            'img640' => 'images/1bouqet640.jpg',
+            'img1280' => 'images/1bouqet1280.jpg',
+            'img1980' => 'images/1bouqet1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
         DB::table('bouqet')->insert([
-            'img' => 'images/bouqet2.jpg',
+            'img640' => 'images/2bouqet640.jpg',
+            'img1280' => 'images/2bouqet1280.jpg',
+            'img1980' => 'images/2bouqet1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet3.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet4.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet5.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet1.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet2.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet3.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet4.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet5.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet1.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet2.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet3.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
-
-        DB::table('bouqet')->insert([
-            'img' => 'images/bouqet4.jpg',
-            'description' => 'Тестовое описание',
-            'price' => 1000,
-        ]);
     }
 }

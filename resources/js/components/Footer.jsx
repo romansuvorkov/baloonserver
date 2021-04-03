@@ -6,10 +6,10 @@ import baloons from '../img/baloons.png';
 function Footer() {
   const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
     ReactGA.event({
-      category: category,
+      category,
       action: actionName,
-      label: label,
-      value: value,
+      label,
+      value,
     });
 
     ym('reachGoal', yandexMetrics);

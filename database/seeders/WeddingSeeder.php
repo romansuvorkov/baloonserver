@@ -15,31 +15,41 @@ class WeddingSeeder extends Seeder
     public function run()
     {
         DB::table('wedding')->insert([
-            'img' => 'images/wedding1.jpg',
+            'img640' => 'images/1wedding640.jpg',
+            'img1280' => 'images/1wedding1280.jpg',
+            'img1980' => 'images/1wedding1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
         DB::table('wedding')->insert([
-            'img' => 'images/wedding2.jpg',
+            'img640' => 'images/2wedding640.jpg',
+            'img1280' => 'images/2wedding1280.jpg',
+            'img1980' => 'images/2wedding1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
         DB::table('wedding')->insert([
-            'img' => 'images/wedding3.jpg',
+            'img640' => 'images/3wedding640.jpg',
+            'img1280' => 'images/3wedding1280.jpg',
+            'img1980' => 'images/3wedding1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
         DB::table('wedding')->insert([
-            'img' => 'images/wedding4.jpg',
+            'img640' => 'images/4wedding640.jpg',
+            'img1280' => 'images/4wedding1280.jpg',
+            'img1980' => 'images/4wedding1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);
 
         DB::table('wedding')->insert([
-            'img' => 'images/wedding5.jpg',
+            'img640' => 'images/5wedding640.jpg',
+            'img1280' => 'images/5wedding1280.jpg',
+            'img1980' => 'images/5wedding1980.jpg',
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);

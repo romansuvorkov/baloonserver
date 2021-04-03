@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-// import whats_logo from '../img/whats_logo.png';
-// import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import ReactGA from 'react-ga';
 import ym from 'react-yandex-metrika';
@@ -18,10 +16,10 @@ function HeaderMenu() {
 
   const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
     ReactGA.event({
-      category: category,
+      category,
       action: actionName,
-      label: label,
-      value: value,
+      label,
+      value,
     });
 
     ym('reachGoal', yandexMetrics);
@@ -60,7 +58,7 @@ function HeaderMenu() {
         className="header_menu_logo whatsapp_logo"
         onClick={() => {
           sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymWhatsapp');
-          sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+          sendActionGAandYM('MessengerLink', 'messengerHeader', 'headerMessenger', 50, 'ymHeaderLink');
         }}
       />
       <a
@@ -70,7 +68,7 @@ function HeaderMenu() {
         className="header_menu_logo telegram_logo"
         onClick={() => {
           sendActionGAandYM('Messenger', 'Переход Telegram', 'Telegram', 50, 'ymTelegram');
-          sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+          sendActionGAandYM('MessengerLink', 'messengerHeader', 'headerMessenger', 50, 'ymHeaderLink');
         }}
       />
       <a
@@ -80,7 +78,7 @@ function HeaderMenu() {
         className="header_menu_logo viber_logo"
         onClick={() => {
           sendActionGAandYM('Messenger', 'Переход Viber', 'Viber', 50, 'ymViber');
-          sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+          sendActionGAandYM('MessengerLink', 'messengerHeader', 'headerMessenger', 50, 'ymHeaderLink');
         }}
       />
 
@@ -91,7 +89,7 @@ function HeaderMenu() {
         href="tel:+79521381601"
         onClick={() => {
           sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
-          sendActionGAandYM('MessengerLink', 'messengerHeader', 'messengerHeader', 50, 'ymHeaderLink');
+          sendActionGAandYM('MessengerLink', 'messengerHeader', 'headerMessenger', 50, 'ymHeaderLink');
         }}
       >
         +79521381601
