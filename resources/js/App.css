@@ -335,6 +335,11 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  outline: none;
+}
+
+.slider_navigation:focus {
+  border: 2px solid black;
 }
 
 .display_none {
@@ -650,6 +655,11 @@ body {
   height: 20px;
   line-height: 20px;
   cursor: pointer;
+  outline: none;
+}
+
+.close_btn:focus {
+  border: 2px solid black;
 }
 
 .big_image_interface {
@@ -713,7 +723,12 @@ body {
   border: none;
   font-size: 12px;
   cursor: pointer;
+  outline: none;
   /* margin-bottom: 20px; */
+}
+
+.order_btn:focus {
+  border: 2px solid black;
 }
 
 .order_phone {
@@ -1599,7 +1614,7 @@ body {
 
   .catalog_card {
     width: 250px;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 125px;
@@ -1608,7 +1623,7 @@ body {
   .catalog_card:hover {
     background-color: #ffffff;
     transform: scale(1.1);
-    transition: all 2s;
+    transition: all 1s;
   }
 
   .catalog_card_text_wrapper {

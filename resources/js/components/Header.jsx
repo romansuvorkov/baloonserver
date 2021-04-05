@@ -19,7 +19,6 @@ function Header() {
           <source srcSet={confetti} media="(min-width: 961px)" />
           <img className="header_background_confetti" src={confetti} srcSet={`${confetti} 1x, images/confetti.png 2x`} alt="Конфетти для фона" />
         </picture>
-        {/* <img className="header_background_confetti" src={confetti} alt="Конфетти для фона" /> */}
         <div className="header_name">
           <span className="name_item">Русский</span>
           <span className="name_item">Праздник</span>

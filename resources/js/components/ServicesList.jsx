@@ -47,6 +47,7 @@ function ServicesList() {
             onClick={() => handleClick(-1)}
             role="button"
             tabIndex={0}
+            aria-label="Предыдущая категория"
             onKeyPress={(e) => { if (e.key === 'Enter') handleClick(-1); }}
           />
           <span
@@ -54,6 +55,7 @@ function ServicesList() {
             onClick={() => handleClick(1)}
             role="button"
             tabIndex={0}
+            aria-label="Следующая категория"
             onKeyPress={(e) => { if (e.key === 'Enter') handleClick(1); }}
           />
         </div>

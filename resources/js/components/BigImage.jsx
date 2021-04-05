@@ -154,12 +154,15 @@ function BigImage(props) {
                 href="https://wa.me/79521381601"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Открыть Whatsapp"
                 onClick={() => {
                   sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymWhatsapp');
                   sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
                 }}
                 className="header_menu_logo whatsapp_logo"
-              />
+              >
+                <span className="social_link_text">WhatsApp</span>
+              </a>
               <a
                 href="https://t.me/RomanSuvorkov"
                 target="_blank"
@@ -169,7 +172,9 @@ function BigImage(props) {
                   sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
                 }}
                 className="header_menu_logo telegram_logo"
-              />
+              >
+                <span className="social_link_text">Telegram</span>
+              </a>
               <a
                 href="viber://add?number=79521381601"
                 target="_blank"
@@ -179,7 +184,9 @@ function BigImage(props) {
                   sendActionGAandYM('MessengerLink', 'messengerCard', 'messengerCard', 50, 'ymMessengerCard');
                 }}
                 className="header_menu_logo viber_logo"
-              />
+              >
+                <span className="social_link_text">Viber</span>
+              </a>
             </div>
             <a
               className="order_mail_btn order_btn order_link"
@@ -206,18 +213,28 @@ function BigImage(props) {
           </div>
           {isActive && (
             <form className="order_form" method="POST" onSubmit={(e) => handleSubmit(e)}>
-              <label className="input_label" htmlFor="name">Ваше имя</label>
-              <input className="input_field" type="text" required name="name" onChange={(e) => handleChange(e)} />
-              <label className="input_label" htmlFor="phone">Телефон</label>
-              <input className="input_field" type="number" placeholder="8ХХХХХХХХХХ" required name="phone" onChange={(e) => handleChange(e)} />
+              <label className="input_label" htmlFor="name">
+                Ваше имя
+                <input className="input_field" type="text" required name="name" onChange={(e) => handleChange(e)} />
+              </label>
+              <label className="input_label" htmlFor="phone">
+                Телефон
+                <input className="input_field" type="number" placeholder="8ХХХХХХХХХХ" required name="phone" onChange={(e) => handleChange(e)} />
+              </label>
               <span className="radio_qestion">Связаться с Вами через мессенджер?</span>
               <div className="radio_wrapper">
-                <input type="radio" id="messengersChoice1" name="messengers" value="Telegramm" onClick={(e) => handleRadio(e)} />
-                <label className="radio_label" htmlFor="messengersChoice1">Telegramm</label>
-                <input type="radio" id="messengersChoice2" name="messengers" value="Whatsapp" onClick={(e) => handleRadio(e)} />
-                <label className="radio_label" htmlFor="messengersChoice2">Whatsapp</label>
-                <input type="radio" id="messengersChoice3" name="messengers" value="Viber" onClick={(e) => handleRadio(e)} />
-                <label className="radio_label" htmlFor="messengersChoice3">Viber</label>
+                <label className="radio_label" htmlFor="messengersChoice1">
+                  Telegramm
+                  <input type="radio" id="messengersChoice1" name="messengers" value="Telegramm" onClick={(e) => handleRadio(e)} />
+                </label>
+                <label className="radio_label" htmlFor="messengersChoice2">
+                  Whatsapp
+                  <input type="radio" id="messengersChoice2" name="messengers" value="Whatsapp" onClick={(e) => handleRadio(e)} />
+                </label>
+                <label className="radio_label" htmlFor="messengersChoice3">
+                  Viber
+                  <input type="radio" id="messengersChoice3" name="messengers" value="Viber" onClick={(e) => handleRadio(e)} />
+                </label>
                 {/* <input
                   type="radio"
                   name="messengers"

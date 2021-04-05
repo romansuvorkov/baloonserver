@@ -17,7 +17,15 @@ class BusinessSeeder extends Seeder
         DB::table('business')->insert([
             'img640' => 'images/1business640.jpg',
             'img1280' => 'images/1business1280.jpg',
-            'img1980' => 'images/1business1980.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
+        DB::table('business')->insert([
+            'img640' => 'images/2business640.jpg',
+            'img1280' => 'images/2business1280.jpg',
+            'img1980' => null,
             'description' => 'Тестовое описание',
             'price' => 1000,
         ]);

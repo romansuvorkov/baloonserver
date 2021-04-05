@@ -37,7 +37,13 @@ function HeaderMenu() {
           <li className="header_menu_list_point"><Link className="link" to="/bouqet#catalog_start">Букеты из шаров</Link></li>
         </ul>
       </nav>
-      <div className={mobMenuActive ? 'mobile_menu_wrapper mobile_menu_active' : 'mobile_menu_wrapper'} onClick={handleClick}>
+      <div
+        className={mobMenuActive ? 'mobile_menu_wrapper mobile_menu_active' : 'mobile_menu_wrapper'}
+        onClick={handleClick}
+        role="button"
+        tabIndex={0}
+        onKeyPress={(e) => { if (e.key === 'Enter') handleClick(); }}
+      >
         <div className="burger_line first" />
         <div className="burger_line second" />
         <div className="burger_line third" />
@@ -60,7 +66,9 @@ function HeaderMenu() {
           sendActionGAandYM('Messenger', 'Переход WhatsApp', 'WhatsApp', 50, 'ymWhatsapp');
           sendActionGAandYM('MessengerLink', 'messengerHeader', 'headerMessenger', 50, 'ymHeaderLink');
         }}
-      />
+      >
+        <span className="social_link_text">WhatsApp</span>
+      </a>
       <a
         href="https://t.me/RomanSuvorkov"
         target="_blank"
@@ -70,7 +78,9 @@ function HeaderMenu() {
           sendActionGAandYM('Messenger', 'Переход Telegram', 'Telegram', 50, 'ymTelegram');
           sendActionGAandYM('MessengerLink', 'messengerHeader', 'headerMessenger', 50, 'ymHeaderLink');
         }}
-      />
+      >
+        <span className="social_link_text">Telegram</span>
+      </a>
       <a
         href="viber://add?number=79521381601"
         target="_blank"
@@ -80,7 +90,9 @@ function HeaderMenu() {
           sendActionGAandYM('Messenger', 'Переход Viber', 'Viber', 50, 'ymViber');
           sendActionGAandYM('MessengerLink', 'messengerHeader', 'headerMessenger', 50, 'ymHeaderLink');
         }}
-      />
+      >
+        <span className="social_link_text">Viber</span>
+      </a>
 
       {/* <img className="header_menu_logo" src={whats_logo} alt="WhatsApp"/> */}
       <span className="phone phone_text">+79521381601</span>

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function CatalogCard(props) {
-  const { setter, descr} = props;
+  const { setter, descr } = props;
 
   const handleClick = () => {
-      setter(descr);
+    setter(descr);
   };
 
   return (
@@ -17,8 +17,14 @@ function CatalogCard(props) {
           onKeyPress={(e) => { if (e.key === 'Enter') handleClick(); }}
         >
           <source srcSet={`${descr.img640} 1x, ${descr.img1280} 2x`} media="(max-width: 640px)" />
-          <source srcSet={`${descr.img1280} 1x, ${descr.img1980} 2x`} media="(min-width: 641px)  and (max-width: 960px)" />
-          <source srcSet={descr.img1980} media="(min-width: 961px)" />
+          {descr.img1980 !== null ?
+            <source srcSet={`${descr.img1280} 1x, ${descr.img1980} 2x`} media="(min-width: 641px)  and (max-width: 960px)" />
+            : <source srcSet={descr.img1280} media="(min-width: 641px)  and (max-width: 960px)" />
+          }
+          {descr.img1980 !== null ? <source srcSet={descr.img1980} media="(min-width: 961px)" />
+            : <source srcSet={descr.img1280} media="(min-width: 961px)" />
+          }
+          {descr.img1980 !== null ? 
           <img
             className="catalog_card_img"
             onClick={handleClick}
@@ -27,6 +33,16 @@ function CatalogCard(props) {
             srcSet={`${descr.img1280} 1x, ${descr.img1980} 2x`}
             alt="Пример"
           />
+          :
+          <img
+            className="catalog_card_img"
+            onClick={handleClick}
+            src={descr.img1980}
+            onKeyPress={(e) => { if (e.key === 'Enter') handleClick(); }}
+            srcSet={descr.img1280}
+            alt="Пример"
+          />
+          }
         </picture>
       </div>
       <div className="catalog_card_text_wrapper">
@@ -53,11 +69,9 @@ CatalogCard.propTypes = {
     description: PropTypes.string,
     price: PropTypes.number,
   }),
-  screenWidth: PropTypes.number
 };
 
 CatalogCard.defaultProps = {
   setter: () => {},
   descr: {},
-  screenWidth: null
 };

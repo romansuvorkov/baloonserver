@@ -30,5 +30,13 @@ class ChildSeeder extends Seeder
             'price' => 1000,
         ]);
 
+        DB::table('child')->insert([
+            'img640' => 'images/3child640.jpg',
+            'img1280' => 'images/3child1280.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
     }
 }
