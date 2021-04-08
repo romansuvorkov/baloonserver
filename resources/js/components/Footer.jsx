@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 import ym from 'react-yandex-metrika';
-import baloons from '../img/baloons.png';
+import baloons800 from '../img/baloons800.png';
 
 function Footer() {
   const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
@@ -97,7 +97,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="footer_baloons_wrapper"><img className="footer_baloons" src={baloons} alt="Шарики для фона" /></div>
+        <div className="footer_baloons_wrapper"><img className="footer_baloons" src={baloons800} alt="Шарики для фона" /></div>
       </div>
 
     </footer>

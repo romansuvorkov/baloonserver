@@ -512,7 +512,7 @@ body {
   top: -55px;
   left: 0;
   position: absolute;
-  background-image: url("./img/baloons.png");
+  background-image: url("./img/baloons160.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -527,7 +527,7 @@ body {
   top: -50px;
   right: 0;
   position: absolute;
-  background-image: url("./img/baloons.png");
+  background-image: url("./img/baloons160.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -552,7 +552,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: flex-start;
-  background-image: url("./img/cloud.png");
+  background-image: url("./img/cloud1280.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1058,6 +1058,10 @@ body {
   
   .advantage_card::after {
     min-height: 50px;
+  }
+
+  .catalog_list_wrapper {
+    background-image: url("./img/cloud1980.png");
   }
 
   .catalog_card {

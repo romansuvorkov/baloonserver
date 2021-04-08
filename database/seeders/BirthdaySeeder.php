@@ -26,7 +26,7 @@ class BirthdaySeeder extends Seeder
             'img640' => 'images/2birthday640.jpg',
             'img1280' => 'images/2birthday1280.jpg',
             'img1980' => 'images/2birthday1980.jpg',
-            'description' => 'Фольгированные цифры, гелиевая арка, букеты из шаров на стол',
+            'description' => 'Фольгированные цифры, гелиевая арка, букеты из шаров',
             'price' => 2800,
         ]);
 
@@ -44,6 +44,22 @@ class BirthdaySeeder extends Seeder
             'img1980' => null,
             'description' => 'Фотозона из цифр и арки',
             'price' => 3800,
+        ]);
+
+        DB::table('birthday')->insert([
+            'img640' => 'images/5birthday640.jpg',
+            'img1280' => 'images/5birthday1280.jpg',
+            'img1980' => null,
+            'description' => 'Нужно описание',
+            'price' => 9999,
+        ]);
+
+        DB::table('birthday')->insert([
+            'img640' => 'images/6birthday640.jpg',
+            'img1280' => 'images/6birthday1280.jpg',
+            'img1980' => 'images/6birthday1980.jpg',
+            'description' => 'Нужно описание',
+            'price' => 9999,
         ]);
 
     }

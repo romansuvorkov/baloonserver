@@ -30,5 +30,37 @@ class BusinessSeeder extends Seeder
             'price' => 1000,
         ]);
 
+        DB::table('business')->insert([
+            'img640' => 'images/3business640.jpg',
+            'img1280' => 'images/3business1280.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
+        DB::table('business')->insert([
+            'img640' => 'images/4business640.jpg',
+            'img1280' => 'images/4business1280.jpg',
+            'img1980' => 'images/4business1280.jpg',
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
+        DB::table('business')->insert([
+            'img640' => 'images/5business640.jpg',
+            'img1280' => 'images/5business1280.jpg',
+            'img1980' => 'images/5business1280.jpg',
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
+        DB::table('business')->insert([
+            'img640' => 'images/6business640.jpg',
+            'img1280' => 'images/6business1280.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
     }
 }

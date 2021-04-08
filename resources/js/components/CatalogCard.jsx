@@ -21,7 +21,7 @@ function CatalogCard(props) {
             <source srcSet={`${descr.img1280} 1x, ${descr.img1980} 2x`} media="(min-width: 641px)  and (max-width: 960px)" />
             : <source srcSet={descr.img1280} media="(min-width: 641px)  and (max-width: 960px)" />
           }
-          {descr.img1980 !== null ? <source srcSet={descr.img1980} media="(min-width: 961px)" />
+          {descr.img1280 !== null ? <source srcSet={descr.img1280} media="(min-width: 961px)" />
             : <source srcSet={descr.img1280} media="(min-width: 961px)" />
           }
           {descr.img1980 !== null ? 
@@ -37,7 +37,7 @@ function CatalogCard(props) {
           <img
             className="catalog_card_img"
             onClick={handleClick}
-            src={descr.img1980}
+            src={descr.img1280}
             onKeyPress={(e) => { if (e.key === 'Enter') handleClick(); }}
             srcSet={descr.img1280}
             alt="Пример"

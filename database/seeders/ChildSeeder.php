@@ -38,5 +38,45 @@ class ChildSeeder extends Seeder
             'price' => 1000,
         ]);
 
+        DB::table('child')->insert([
+            'img640' => 'images/4child640.jpg',
+            'img1280' => 'images/4child1280.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
+        DB::table('child')->insert([
+            'img640' => 'images/5child640.jpg',
+            'img1280' => 'images/5child1280.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
+        DB::table('child')->insert([
+            'img640' => 'images/6child640.jpg',
+            'img1280' => 'images/6child1280.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
+        DB::table('child')->insert([
+            'img640' => 'images/7child640.jpg',
+            'img1280' => 'images/7child1280.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
+        DB::table('child')->insert([
+            'img640' => 'images/8child640.jpg',
+            'img1280' => 'images/8child1280.jpg',
+            'img1980' => null,
+            'description' => 'Тестовое описание',
+            'price' => 1000,
+        ]);
+
     }
 }

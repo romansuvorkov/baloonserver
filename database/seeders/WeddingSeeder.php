@@ -69,5 +69,13 @@ class WeddingSeeder extends Seeder
             'description' => 'Фигура обручальные кольца, букеты из шаров,',
             'price' => 2900,
         ]);
+
+        DB::table('wedding')->insert([
+            'img640' => 'images/8wedding640.jpg',
+            'img1280' => 'images/8wedding1280.jpg',
+            'img1980' => 'images/8wedding1980.jpg',
+            'description' => 'Фигура обручальные кольца, букеты из шаров,',
+            'price' => 2900,
+        ]);
     }
 }
