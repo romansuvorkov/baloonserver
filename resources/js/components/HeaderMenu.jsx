@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import ReactGA from 'react-ga';
-import ym from 'react-yandex-metrika';
+import sendActionGAandYM from '../api/sendActionGAandYM';
+// import ReactGA from 'react-ga';
+// import ym from 'react-yandex-metrika';
 
 function HeaderMenu() {
   const [mobMenuActive, setMobMenuActive] = useState(false);
@@ -14,16 +15,16 @@ function HeaderMenu() {
     }
   };
 
-  const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
-    ReactGA.event({
-      category,
-      action: actionName,
-      label,
-      value,
-    });
+  // const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
+  //   ReactGA.event({
+  //     category,
+  //     action: actionName,
+  //     label,
+  //     value,
+  //   });
 
-    ym('reachGoal', yandexMetrics);
-  };
+  //   ym('reachGoal', yandexMetrics);
+  // };
 
   return (
     <header className="head_menu">
@@ -58,7 +59,7 @@ function HeaderMenu() {
         </nav>
       </div>
       <a
-        href="https://wa.me/79521381601"
+        href="https://wa.me/79502013349"
         target="_blank"
         rel="noreferrer"
         className="header_menu_logo whatsapp_logo"
@@ -82,7 +83,7 @@ function HeaderMenu() {
         <span className="social_link_text">Telegram</span>
       </a>
       <a
-        href="viber://add?number=79521381601"
+        href="viber://add?number=79502013349"
         target="_blank"
         rel="noreferrer"
         className="header_menu_logo viber_logo"
@@ -95,16 +96,16 @@ function HeaderMenu() {
       </a>
 
       {/* <img className="header_menu_logo" src={whats_logo} alt="WhatsApp"/> */}
-      <span className="phone phone_text">+79521381601</span>
+      <span className="phone phone_text">+79502013349</span>
       <a
         className="phone phone_link"
-        href="tel:+79521381601"
+        href="tel:+79502013349"
         onClick={() => {
           sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
           sendActionGAandYM('MessengerLink', 'messengerHeader', 'headerMessenger', 50, 'ymHeaderLink');
         }}
       >
-        +79521381601
+        +79502013349
       </a>
     </header>
   );

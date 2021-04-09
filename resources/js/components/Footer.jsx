@@ -1,51 +1,40 @@
 import React from 'react';
-import ReactGA from 'react-ga';
-import ym from 'react-yandex-metrika';
+import sendActionGAandYM from '../api/sendActionGAandYM';
 import baloons800 from '../img/baloons800.png';
 
 function Footer() {
-  const sendActionGAandYM = (category, actionName, label, value, yandexMetrics) => {
-    ReactGA.event({
-      category,
-      action: actionName,
-      label,
-      value,
-    });
-
-    ym('reachGoal', yandexMetrics);
-  };
 
   return (
     <footer className="main_footer">
       <h2 className="header2">Контакты</h2>
       <div className="footer_wrapper">
-        <span className="phone phone_text">+79521381601</span>
+        <span className="phone phone_text">+79502013349</span>
         <a
           className="phone phone_link"
-          href="tel:+79521381601"
+          href="tel:+79502013349"
           onClick={() => {
             sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
             sendActionGAandYM('Footer', 'Footer', 'FooterClick', 50, 'ymFooter');
           }}
         >
-          +79521381601
+          +79502013349
         </a>
         <a
           className="email_footer"
-          href="mailto:centr_ug@mail.ru?subject=Заказ на шарики &body=Здравствуйте!%0AПрошу связаться со мной.%0A%0A%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШИ КОНТАКТНЫЕ ДАННЫЕ"
+          href="mailto:brigidaev1982@gmail.com?subject=Заказ на шарики &body=Здравствуйте!%0AПрошу связаться со мной.%0A%0A%0AУКАЖИТЕ ПОЖАЛУЙСТА ВАШИ КОНТАКТНЫЕ ДАННЫЕ"
           onClick={() => {
             sendActionGAandYM('Email', 'emailClick', 'emailClick', 50, 'ymEmail');
             sendActionGAandYM('Footer', 'Footer', 'FooterClick', 50, 'ymFooter');
           }}
         >
-          Email
+          brigidaev1982@gmail.com
         </a>
         <span className="city">г. Каменск-Уральский</span>
         <div className="footer_social">
           <ul className="socials">
             <li className="socials_item">
               <a
-                href="https://wa.me/79521381601?text=Тестовый+текст"
+                href="https://wa.me/79502013349?text=Тестовый+текст"
                 target="_blank"
                 rel="noreferrer"
                 className="socials_link socials_link_fb"

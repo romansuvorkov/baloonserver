@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-// import wedding from '../img/wedding.jpg';
-// import b2b from '../img/b2b.jpg';
-// import birthday from '../img/birthday.jpg';
-// import child from '../img/child.jpg';
-// import bouquet from '../img/bouquet.jpg';
 import wedding640 from '../img/wedding640.jpg';
 import wedding1280 from '../img/wedding1280.jpg';
 import b2b640 from '../img/b2b640.jpg';
@@ -16,19 +11,9 @@ import child1280 from '../img/child1280.jpg';
 import bouquet640 from '../img/bouquet640.jpg';
 import bouquet1280 from '../img/bouquet1280.jpg';
 import bouquet1980 from '../img/bouquet1980.jpg';
-// import {
-//   useLocation
-// } from "react-router-dom";
 
 function ServicesList() {
   const [activeItem, setActiveItem] = useState(1);
-  // let location = useLocation();
-
-  // useEffect(() => {
-  //   console.log(location);
-
-  //   // ga.send(["pageview", location.pathname]);
-  // }, [location]);
 
   const handleClick = (numb) => {
     const newActiveItem = activeItem + numb;

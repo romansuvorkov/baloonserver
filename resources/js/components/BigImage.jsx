@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
-import ym from 'react-yandex-metrika';
+import sendActionGAandYM from '../api/sendActionGAandYM';
 
 function BigImage(props) {
   const [isActive, setIsActive] = useState(false);
@@ -10,7 +9,6 @@ function BigImage(props) {
   const [showResult, setShowResult] = useState(false);
   const [resultText, setResultText] = useState('');
   const { setter, api, img } = props;
-  // const screenWidth = props.screen;
   const [messenger, setMessenger] = useState('');
   const [orderCall, setOrderCall] = useState({
     name: '',
@@ -19,7 +17,6 @@ function BigImage(props) {
 
   const handleRadio = (e) => {
     setMessenger(e.target.value);
-    // console.log(e.target.value);
   };
 
   const handleFormClick = () => {
@@ -96,23 +93,6 @@ function BigImage(props) {
 
   const clearImage = () => {
     setter(null);
-  };
-
-  const sendActionGAandYM = (
-    categoryInput,
-    actionNameInput,
-    labelInput,
-    valueInput,
-    yandexMetrics,
-  ) => {
-    ReactGA.event({
-      category: categoryInput,
-      action: actionNameInput,
-      label: labelInput,
-      value: valueInput,
-    });
-
-    ym('reachGoal', yandexMetrics);
   };
 
   return (

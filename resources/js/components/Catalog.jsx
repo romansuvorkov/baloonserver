@@ -38,12 +38,6 @@ function Catalog(props) {
       const loadedNumb = lastItem + 5;
       setLastItem(loadedNumb);
     }
-    // const loadedItems = API.lazyload(category, lastItem).then(function(value) {
-    //   if (value.length < 5) {
-    //     setShowButtonActive(false);
-    //   }
-    //   setItems(prevState => ([...prevState, ...value]));
-    // });
   };
 
   return (
