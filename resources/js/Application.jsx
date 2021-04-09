@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import { YMInitializer } from 'react-yandex-metrika';
 import ReactGA from 'react-ga';
 import {
