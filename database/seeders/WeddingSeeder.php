@@ -26,7 +26,7 @@ class WeddingSeeder extends Seeder
             'img640' => 'images/2wedding640.jpg',
             'img1280' => 'images/2wedding1280.jpg',
             'img1980' => 'images/2wedding1980.jpg',
-            'description' => 'Фигура лебеди - 1500 руб. Тканевое оформление стульев и столов от 4000 руб.',
+            'description' => 'Лебеди, тканевое оформление стульев и столов',
             'price' => 5500,
         ]);
 
@@ -34,7 +34,7 @@ class WeddingSeeder extends Seeder
             'img640' => 'images/3wedding640.jpg',
             'img1280' => 'images/3wedding1280.jpg',
             'img1980' => 'images/3wedding1980.jpg',
-            'description' => 'Фигура сердце, букеты из шаров, арка из гелиевых шаров',
+            'description' => 'Оформление зала тканью',
             'price' => 4500,
         ]);
 
@@ -58,7 +58,7 @@ class WeddingSeeder extends Seeder
             'img640' => 'images/6wedding640.jpg',
             'img1280' => 'images/6wedding1280.jpg',
             'img1980' => null,
-            'description' => 'Фигуры из шаров, оформление столов',
+            'description' => 'Офорлмение выездной регистрации',
             'price' => 2900,
         ]);
 
@@ -74,7 +74,7 @@ class WeddingSeeder extends Seeder
             'img640' => 'images/8wedding640.jpg',
             'img1280' => 'images/8wedding1280.jpg',
             'img1980' => 'images/8wedding1980.jpg',
-            'description' => 'Фигура обручальные кольца, букеты из шаров,',
+            'description' => 'Сердца, фонтаны из шаров,',
             'price' => 2900,
         ]);
     }

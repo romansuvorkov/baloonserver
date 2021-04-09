@@ -48,7 +48,7 @@ function Application() {
               'С обработкой hi-float гаратия полета 20 часов',
             ]}
             />
-            <Catalog category="child" header="Примеры украшения дестких праздников" />
+            <Catalog category="child" header="Примеры оформления дестких праздников" />
           </Route>
           <Route path="/wedding">
             <Advantage dataText={[
@@ -57,17 +57,16 @@ function Application() {
               'С обработкой hi-float гаратия полета 20 часов',
             ]}
             />
-            <Catalog category="wedding" header="Примеры украшения свадеб" />
+            <Catalog category="wedding" header="Примеры оформления свадеб" />
           </Route>
           <Route path="/business">
             <Advantage dataText={[
               'Три варианта оформления Вашего праздника уже через час после заявки',
               'Без обработки гарантия полета 8 часов',
               'С обработкой hi-float гаратия полета 20 часов',
-              'Документально оформление, в соответсвии с законодательством',
             ]}
             />
-            <Catalog category="business" header="Примеры украшения магазинов" />
+            <Catalog category="business" header="Примеры оформления магазинов" />
           </Route>
           <Route path="/birthday">
             <Advantage dataText={[
@@ -76,7 +75,7 @@ function Application() {
               'С обработкой hi-float гаратия полета 20 часов',
             ]}
             />
-            <Catalog category="birthday" header="Примеры украшения залов на день рождения" />
+            <Catalog category="birthday" header="Примеры оформления дней рождения" />
           </Route>
           <Route path="/bouqet">
             <Advantage dataText={[
