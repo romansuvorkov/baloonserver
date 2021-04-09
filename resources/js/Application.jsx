@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense } from 'react';
+import React, { useEffect } from 'react';
 import { YMInitializer } from 'react-yandex-metrika';
 import ReactGA from 'react-ga';
 import {
@@ -7,15 +7,15 @@ import {
 import Header from './components/Header';
 import HeaderMenu from './components/HeaderMenu';
 import ServiceList from './components/ServicesList';
-// import Catalog from './components/Catalog';
+import Catalog from './components/Catalog';
 import Footer from './components/Footer';
 import Location from './components/Location';
-// import Advantage from './components/Advantage';
-// import Page404 from './components/Page404';
+import Advantage from './components/Advantage';
+import Page404 from './components/Page404';
 import './App.css';
-const Advantage = React.lazy(() => import('./components/Advantage'));
-const Page404 = React.lazy(() => import('./components/Page404'));
-const Catalog = React.lazy(() => import('./components/Catalog'));
+// const Advantage = React.lazy(() => import('./components/Advantage'));
+// const Page404 = React.lazy(() => import('./components/Page404'));
+// const Catalog = React.lazy(() => import('./components/Catalog'));
 
 function Application() {
 
@@ -27,7 +27,12 @@ function Application() {
   return (
     <Router>
       <div className="App">
-        <Suspense fallback={<div>Загрузка...</div>}>
+        {/* <Suspense fallback={<div className="preloader">
+                              <span />
+                              <span />
+                              <span />
+                              <span />
+                            </div>}> */}
           <HeaderMenu />
           {/* <RouteChangeTracker /> */}
           <Location />
@@ -37,6 +42,12 @@ function Application() {
             <Route path="/" exact>
               <ServiceList />
             </Route>
+            <Suspense fallback={<div className="preloader">
+                              <span />
+                              <span />
+                              <span />
+                              <span />
+                            </div>}>
             <Route path="/child">
               <Advantage dataText={[
                 'Три варианта оформления Вашего праздника уже через час после заявки',
@@ -89,9 +100,10 @@ function Application() {
             <Route path="*">
               <Redirect to="/404" />
             </Route>
+            </Suspense>
           </Switch>
           <Footer />
-        </Suspense>
+        {/* </Suspense> */}
       </div>
     </Router>
 
