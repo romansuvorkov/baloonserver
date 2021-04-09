@@ -7,15 +7,15 @@ import {
 import Header from './components/Header';
 import HeaderMenu from './components/HeaderMenu';
 import ServiceList from './components/ServicesList';
-import Catalog from './components/Catalog';
+// import Catalog from './components/Catalog';
 import Footer from './components/Footer';
 import Location from './components/Location';
-import Advantage from './components/Advantage';
-import Page404 from './components/Page404';
+// import Advantage from './components/Advantage';
+// import Page404 from './components/Page404';
 import './App.css';
-// const Advantage = React.lazy(() => import('./components/Advantage'));
-// const Page404 = React.lazy(() => import('./components/Page404'));
-// const Catalog = React.lazy(() => import('./components/Catalog'));
+const Advantage = React.lazy(() => import('./components/Advantage'));
+const Page404 = React.lazy(() => import('./components/Page404'));
+const Catalog = React.lazy(() => import('./components/Catalog'));
 
 function Application() {
 
