@@ -1170,7 +1170,7 @@ body {
 
   .footer_wrapper {
     font-size: 25px;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
   }
 
@@ -1179,7 +1179,7 @@ body {
   } */
 
   .email_footer {
-    width: 200px;
+    width: 300px;
   }
 
   .city {
@@ -1496,12 +1496,20 @@ body {
 
   .footer_wrapper {
     font-size: 35px;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
   }
 
   /* .footer_social {
     justify-content: flex-start;
+  } */
+
+  .email_footer {
+    width: 400px;
+  }
+
+  /* .city {
+    width: 300px;
   } */
 
   .city {
@@ -1548,6 +1556,7 @@ body {
 }
 
 @media (min-width:1301px) {
+  
   .head_menu {
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -1628,7 +1637,7 @@ body {
   }
 
   .header_background_confetti {
-    top: 15%;
+    top: 0;
     left: 20%;
     width: 60%;
   }

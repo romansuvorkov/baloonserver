@@ -40,24 +40,24 @@ export default class API {
     });
   }
 
-  sendOrder(name, phone, messenger) {
-    return new Promise((resolve, reject) => {
-      const params = new URLSearchParams();
-      params.append('name', name);
-      params.append('phone', phone);
-      params.append('messenger', messenger);
-      const xhr = new XMLHttpRequest();
-      xhr.open('POST', `${this.server}/test`);
-      xhr.setRequestHeader('X-CSRF-TOKEN', window.csrfToken);
-      xhr.addEventListener('load', () => {
-        if (xhr.status === 200) {
-          return resolve(xhr.responseText);
-        }
-        return reject(xhr.responseText);
-      });
-      xhr.send(params);
-    });
-  }
+  // sendOrder(name, phone, messenger) {
+  //   return new Promise((resolve, reject) => {
+  //     const params = new URLSearchParams();
+  //     params.append('name', name);
+  //     params.append('phone', phone);
+  //     params.append('messenger', messenger);
+  //     const xhr = new XMLHttpRequest();
+  //     xhr.open('POST', `${this.server}/test`);
+  //     xhr.setRequestHeader('X-CSRF-TOKEN', window.csrfToken);
+  //     xhr.addEventListener('load', () => {
+  //       if (xhr.status === 200) {
+  //         return resolve(xhr.responseText);
+  //       }
+  //       return reject(xhr.responseText);
+  //     });
+  //     xhr.send(params);
+  //   });
+  // }
 }
 // const axios = window.axios;
 // console.log(axios);

@@ -11,10 +11,10 @@ import ServiceList from './components/ServicesList';
 import Footer from './components/Footer';
 import Location from './components/Location';
 // import Advantage from './components/Advantage';
-// import Page404 from './components/Page404';
+import Page404 from './components/Page404';
 import './App.css';
 const Advantage = React.lazy(() => import('./components/Advantage'));
-const Page404 = React.lazy(() => import('./components/Page404'));
+// const Page404 = React.lazy(() => import('./components/Page404'));
 const Catalog = React.lazy(() => import('./components/Catalog'));
 
 function Application() {
@@ -94,13 +94,13 @@ function Application() {
               />
               <Catalog category="bouqet" header="Доставка букетов из шаров" />
             </Route>
+            </Suspense>
             <Route path="/404" exact>
               <Page404 />
             </Route>
             <Route path="*">
               <Redirect to="/404" />
             </Route>
-            </Suspense>
           </Switch>
           <Footer />
         {/* </Suspense> */}
