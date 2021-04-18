@@ -608,6 +608,7 @@ body {
   justify-content: space-around;
   align-content: flex-start;
   background-image: url("./img/cloud1280.png");
+  /* background-image: url("./img/cloud1280.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1117,6 +1118,7 @@ body {
 
   .catalog_list_wrapper {
     background-image: url("./img/cloud1980.png");
+    /* background-image: url("./img/cloud1980.jpg"); */
   }
 
   .catalog_card {
