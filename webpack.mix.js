@@ -15,3 +15,18 @@ mix.react('resources/js/app.js', 'public/js')
   .postCss('resources/css/app.css', 'public/css', [
     //
   ]);
+
+  // module.exports = {
+  //     optimization: {
+  //         minimize: true,
+  //         namedModules: true,
+  //         namedChunks: true,
+  //         removeAvailableModules: true,
+  //         flagIncludedChunks: true,
+  //         occurrenceOrder: false,
+  //         usedExports: true,
+  //         concatenateModules: true,
+  //         sideEffects: false, // <----- in prod defaults to true if left blank
+  //     }
+  // };
+  

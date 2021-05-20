@@ -131,7 +131,7 @@ function BigImage(props) {
 
             <div className="messengers_wrapper">
               <a
-                href="https://wa.me/79521381601"
+                href="https://wa.me/79502013349"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Открыть Whatsapp"
@@ -156,7 +156,7 @@ function BigImage(props) {
                 <span className="social_link_text">Telegram</span>
               </a>
               <a
-                href="viber://add?number=79521381601"
+                href="viber://add?number=79502013349"
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => {
@@ -179,15 +179,15 @@ function BigImage(props) {
             >
               Email
             </a>
-            <span className="order_phone">888888888</span>
+            <span className="order_phone">+79502013349</span>
             <a
               className="order_btn phone_link order_link"
-              href="tel:+79521381601"
+              href="tel:+79502013349"
               onClick={() => {
                 sendActionGAandYM('phoneCall', 'phoneCall', 'phoneCall', 50, 'ymPhoneLink');
               }}
             >
-              +79521381601
+              +79502013349
             </a>
             {showResult && <p>{resultText}</p>}
           </div>

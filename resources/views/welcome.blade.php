@@ -8,7 +8,7 @@
         <script type="text/javascript">
             window.csrfToken = '{{ csrf_token() }}';
         </script>
-        <script>
+        <!-- <script>
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function () {
                     navigator.serviceWorker.register('/serviceWorker.js').then(function (registration) {
@@ -18,9 +18,9 @@
                     });
                 });
             }
-        </script>
+        </script> -->
         <script src="{{ asset('js/app.js') }}" defer></script>
-        <link rel="manifest" href="/webmanifest.json">
+        <!-- <link rel="manifest" href="/webmanifest.json">  -->
         <!-- Yandex.Metrika counter -->
         <!-- <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
